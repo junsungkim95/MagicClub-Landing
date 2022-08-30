@@ -12,8 +12,8 @@ import avatarThumb8 from "../../images/team/crew_avatar8.png";
 const data = [
   {
     avatar: avatarThumb1,
-    name: "Berneice Tran",
-    designation: "Founder",
+    name: "david Choi",
+    designation: "CEO",
     socialLinks: [
       {
         icon: <FaLinkedinIn />,
@@ -31,8 +31,44 @@ const data = [
   },
   {
     avatar: avatarThumb2,
-    name: "Nathan Bean",
-    designation: "Co-Founder",
+    name: "OOOO",
+    designation: "CTO",
+    socialLinks: [
+      {
+        icon: <FaLinkedinIn />,
+        url: "#",
+      },
+      {
+        icon: <FaTwitter />,
+        url: "#",
+      },
+      {
+        icon: <FaInstagram />,
+        url: "#",
+      },
+    ],
+  },{
+    avatar: avatarThumb2,
+    name: "0.feel",
+    designation: "ARTIST",
+    socialLinks: [
+      {
+        icon: <FaLinkedinIn />,
+        url: "#",
+      },
+      {
+        icon: <FaTwitter />,
+        url: "#",
+      },
+      {
+        icon: <FaInstagram />,
+        url: "#",
+      },
+    ],
+  },{
+    avatar: avatarThumb2,
+    name: "Gray",
+    designation: "Team Manager",
     socialLinks: [
       {
         icon: <FaLinkedinIn />,
@@ -50,8 +86,8 @@ const data = [
   },
   {
     avatar: avatarThumb3,
-    name: "Lynnette Wilkes",
-    designation: "Artist",
+    name: "Jun",
+    designation: "Designer",
     socialLinks: [
       {
         icon: <FaLinkedinIn />,
@@ -69,8 +105,8 @@ const data = [
   },
   {
     avatar: avatarThumb4,
-    name: "Claudia Hicks",
-    designation: "Co-Artist",
+    name: "Johnny",
+    designation: "Overseas Affairs",
     socialLinks: [
       {
         icon: <FaLinkedinIn />,
@@ -88,8 +124,8 @@ const data = [
   },
   {
     avatar: avatarThumb5,
-    name: "Moneo Doa",
-    designation: "UI Designer",
+    name: "Sooyong Park",
+    designation: "Advisor",
     socialLinks: [
       {
         icon: <FaLinkedinIn />,
@@ -107,8 +143,8 @@ const data = [
   },
   {
     avatar: avatarThumb6,
-    name: "Tamsan Doe",
-    designation: "Software Engineer",
+    name: "OOOO",
+    designation: "Fullstack",
     socialLinks: [
       {
         icon: <FaLinkedinIn />,
@@ -126,8 +162,8 @@ const data = [
   },
   {
     avatar: avatarThumb7,
-    name: "Sony Jina",
-    designation: "Blockchain Dev",
+    name: "OOOO",
+    designation: "Front End",
     socialLinks: [
       {
         icon: <FaLinkedinIn />,
@@ -145,8 +181,8 @@ const data = [
   },
   {
     avatar: avatarThumb8,
-    name: "Natala Elon",
-    designation: "SEO Engineer",
+    name: "OOOO",
+    designation: "Back End",
     socialLinks: [
       {
         icon: <FaLinkedinIn />,

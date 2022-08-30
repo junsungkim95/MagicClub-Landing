@@ -76,28 +76,6 @@ const Header = () => {
                 <li>
                   <a href="#faq">FAQ</a>
                 </li>
-                <li className="submenu">
-                  <a href="# ">Pages +</a>
-                  <div className="sub_menu_sect">
-                    <ul className="sub_menu_list">
-                      <li>
-                        <a href="/">Home One</a>
-                      </li>
-                      <li>
-                        <a href="/home-two">Home Two</a>
-                      </li>
-                      <li>
-                        <a href="/home-three">Home Three</a>
-                      </li>
-                      <li>
-                        <a href="/blogs">Latest Blog</a>
-                      </li>
-                      <li>
-                        <a href="/post">Blog Details</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
               </ul>
             </div>
             <div className="bithu_menu_btns">

@@ -58,30 +58,6 @@ const MobileMenu = ({ mobileMenuhandle }) => {
             <li className="mobile_menu_hide">
               <a href="#faq">FAQ</a>
             </li>
-            <li className="submenu mobile_submenu" onClick={handleSubmenu}>
-              <a href="# ">Pages +</a>
-              <ul
-                className={`sub_menu_list mobile_sub_menu_list ${
-                  isSubmenu === true && "submenu_hovered"
-                }`}
-              >
-                <li className="mobile_menu_hide">
-                  <a href="/">Home One</a>
-                </li>
-                <li className="mobile_menu_hide">
-                  <a href="/home-two">Home Two</a>
-                </li>
-                <li className="mobile_menu_hide">
-                  <a href="/home-three">Home Three</a>
-                </li>
-                <li className="mobile_menu_hide">
-                  <a href="/blogs">Latest Blog</a>
-                </li>
-                <li className="mobile_menu_hide">
-                  <a href="/post">Blog Details</a>
-                </li>
-              </ul>
-            </li>
           </ul>
         </div>
         <div className="mobile_menu_social_links">

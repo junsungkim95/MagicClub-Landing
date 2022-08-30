@@ -1,9 +1,22 @@
 import styled from "styled-components";
 
 const CharacterSliderWrapper = styled.section`
-  padding: 20px 40px;
+  padding: 80px 40px;
   position: relative;
   z-index: 1;
+
+  .chars-wrapper {
+    max-width: 1800px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .chars-box {
+    max-width: 320px;
+  }
 
   p {
     font-family: 'Noto Sans JP';
@@ -33,10 +46,10 @@ const CharacterSliderWrapper = styled.section`
   }
 
   .character-thumb {
-    width: 280px;
-    height: 280px;
-    display: flex;
-    justify-content: center;
+    width: 320px;
+    height: 320px;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
     background: none;
     border-radius: 15px;

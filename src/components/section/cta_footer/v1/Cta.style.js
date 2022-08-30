@@ -42,17 +42,9 @@ const star7 = keyframes`
 `;
 
 const CTAStyleWrapper = styled.section`
-  .subtitle{
-    font-family: Noto Sans JP;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 64px;
-    letter-spacing: 0em;
-    text-align: center;
-  }
-
+margin-bottom: 1000px;
   .bithu_title_section {
-    width: 85%;
+    width: 45%;
     margin: 0 auto;
     img {
       display: none;
@@ -129,7 +121,7 @@ const CTAStyleWrapper = styled.section`
   .join_comunity_btns {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     max-width: 430px;
     margin: auto;
@@ -155,7 +147,7 @@ const CTAStyleWrapper = styled.section`
       li {
         width: 11%;
         height: 60px;
-        background: none;
+        background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(10px);
         display: flex;
         align-items: center;
@@ -199,7 +191,7 @@ const CTAStyleWrapper = styled.section`
 
   @media only screen and (max-width: 768px) {
     .bithu_title_section {
-      width: 75%;
+      width: 60%;
     }
     .title-emo {
       font-size: 40px;
@@ -240,7 +232,7 @@ const CTAStyleWrapper = styled.section`
 
   @media (max-width: 425px) {
     .bithu_title_section {
-      width: 95%;
+      width: 85%;
     }
     .title-emo {
       font-size: 30px;

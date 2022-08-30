@@ -31,13 +31,13 @@ const HomeV1 = () => {
       {connectWalletModal && <ConnectWallet/> }
       <Header />
       <Banner />
+      <HowToMint />
+      <About />
       <CharsBG />
-      {/* <HowToMint />
-      <About /> */}
+      <CharacterSlider />
       <CTA />
       <TreeUpperBG />
-      {/* <CharacterSlider />
-      <AboutInfoCardList />
+      {/* <AboutInfoCardList />
       <RoadMap /> 
       <Team /> */}
       <BdUpperBG />

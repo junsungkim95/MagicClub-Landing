@@ -10,51 +10,8 @@ import homeImageBG from "../../../../assets/images/nft/home_img_bg.png";
 import { useEffect, useState } from "react";
 import { totalMintCount } from '../../../../utils/web3mint';
 
-import styled from "styled-components"
-import Vimeo from "@u-wave/react-vimeo"
-
-const VideoContainer = styled.div`
-bottom: 0;
-left: 0;
-min-height: 100%;
-min-width: 100%;
-object-fit: cover;
-object-position: center;
-position: fixed;
-right: 0;
-top: 0;
-z-index: -1;
-`
-
-const Video = styled(props => <Vimeo {...props} />)`
-height: 56.25vw; // for a 16:9 aspect ratio, 9/16*100 = 56.25
-left: 50%;
-min-height: 100vh;
-min-width: 177.77vh; // for a 16:9 aspect ratio, 16/9*100 = 177.77
-position: absolute;
-top: 50%;
-transform: translate(-50%, -50%);
-width: 100vw;
-`
-
-{/*
-For a nice vintage and darkening effect
-*/}
-
-const Overlay = styled.div`
-background-color: rgba(0, 0, 0, 0.66);
-bottom: 0;
-box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
-left: 0;
-min-height: 100%;
-min-width: 100%;
-object-fit: cover;
-object-position: center;
-position: fixed;
-right: 0;
-top: 0;
-z-index: -1;
-`
+import ReactPlayer from 'react-player';
+import VideoBG from "../../../../assets/images/bg/Video_BG.mp4"
 
 const Banner = () => {
   const { mintModalHandle, connectWalletModalHanlde, account } = useModal();
@@ -100,12 +57,11 @@ const Banner = () => {
                 </Button>
               </div>
               <div className="coin-info">
-                <span>Max 2 NFTs per wallet . Price 0.09 ETH + gas</span>
+                <span>MAX 5 NFTS PER WALLET . PRICE 0.4 ETH + GAS</span>
                 <span>
-                  MINT IS LIVE{" "}
-                  <span className="highlighted">UNTIL 25 APR 04:00H</span>
+                  PRESALE IS LIVE{" "}
+                  <span className="highlighted">UNTIL 25 Oct 04:00</span>
                 </span>
-                <span>Presale : SOLDOUT</span>
               </div>
             </div>
           </div>
@@ -133,17 +89,18 @@ const Banner = () => {
           </div> */}
         </div>
       </div>
-      <VideoContainer>
-        <Video
-          background={true}
-          height={1080}
+      <div className="player-wrapper">
+        <ReactPlayer
+          className="react-player"
+          url={VideoBG} // 플레이어 url
+          width="screen%" // 플레이어 크기 (가로)
+          height="100%" // 플레이어 크기 (세로)
+          playing={true} // 자동 재생 on
+          muted={true} // 자동 재생 on
           loop={true}
-          responsive
-          video="../../../../assets/images/bg/Video_bg.mp4"
-          width={1920}
+          playsinline={true} // ios 동영상 플레이어로 넘어가는 것 방지
         />
-      </VideoContainer>
-      <Overlay />
+      </div>
     </BannerV1Wrapper>
   );
 

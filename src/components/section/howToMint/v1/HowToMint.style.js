@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const HowToMintWrapper = styled.section`
-  padding-top: 113px;
+  padding-top: 85px;
   padding-bottom: 85px;
 
   .how_to_mint_container {

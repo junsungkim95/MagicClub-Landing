@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import aboutBg from "../../../../assets/images/nft/v2_about_bg.png"
 const AboutStyleWrapper = styled.section` 
-    min-height: 914px; 
-    padding-top: 133px;
+    min-height: 430px; 
+    padding-top: 85px;
     padding-bottom: 0px;
     background: none;
     background-position: center center;

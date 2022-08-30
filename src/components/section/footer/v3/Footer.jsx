@@ -1,15 +1,11 @@
 import FooterBottom from "./footerBottom/FooterBottom";
+import CTA_footer from "../../cta_footer/v1"
 
 import FooterStyleWrapper from "./Footer.style";
 const Footer = () => {
   return (
     <FooterStyleWrapper>
-      <div className="top-footer-content">
-        <div className="container">
-          <div className="row">
-          </div>
-        </div>
-      </div>
+      <CTA_footer />
       {/* footer bottom  */}
       <FooterBottom />
     </FooterStyleWrapper>

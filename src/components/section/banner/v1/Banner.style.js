@@ -12,13 +12,21 @@ to {
 `;
 
 const BannerV1Wrapper = styled.section`
-  background: url(${sectionBgImage});
+  background: none;
   min-height: 950px;
   width: 100%;
   background-size: 100% 100%;
   background-position: top center;
   background-repeat: no-repeat;
   padding-top: 192px;
+  position: relative;
+
+  .react-player {
+    position: absolute;
+    // z-index: -1000;
+    top: 0;
+    left: 0;
+  }
 
   .bithu_v1_baner_left {
     margin-top: 66px;

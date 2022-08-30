@@ -3,7 +3,11 @@ import styled from "styled-components"
 
 const AboutInfoCardListWrapper = styled.div` 
     position: relative;
-    margin-top: 120px; 
+    padding-top: 140px; 
+    padding-bottom: 200px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 1;  
 
     .project_title {
