@@ -89,7 +89,7 @@ const Banner = () => {
           </div> */}
         </div>
       </div>
-      <div className="player-wrapper">
+      {/* <div className="player-wrapper">
         <ReactPlayer
           className="react-player"
           url={VideoBG} // 플레이어 url
@@ -100,7 +100,7 @@ const Banner = () => {
           loop={true}
           playsinline={true} // ios 동영상 플레이어로 넘어가는 것 방지
         />
-      </div>
+      </div> */}
     </BannerV1Wrapper>
   );
 

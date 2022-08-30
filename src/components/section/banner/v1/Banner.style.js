@@ -12,7 +12,7 @@ to {
 `;
 
 const BannerV1Wrapper = styled.section`
-  background: none;
+  background: url(${sectionBgImage});;
   min-height: 950px;
   width: 100%;
   background-size: 100% 100%;
