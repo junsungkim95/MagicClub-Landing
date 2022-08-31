@@ -4,7 +4,7 @@ import { FaDiscord, FaTwitter, FaWallet } from "react-icons/fa";
 import { BsXLg } from "react-icons/bs";
 import Button from "../../../../common/button";
 import logo from "../../../../assets/images/logo.png";
-import openseaIcon from "../../../../assets/images/icon/opensea.svg";
+import gitbook_logo from "../../../../assets/images/icon/gitbook-icon.svg";
 import Dropdown from 'react-bootstrap/Dropdown';
 import { isMetaMaskInstalled } from '../../../../config';
 import MobileMenuStyleWrapper from "./MobileMenu.style";
@@ -12,6 +12,7 @@ import MobileMenuStyleWrapper from "./MobileMenu.style";
 const MobileMenu = ({ mobileMenuhandle }) => {
   const { walletModalHandle, metamaskModalHandle, account, disconnectWalletFromApp } = useModal();
   const [isSubmenu, setSubmenu] = useState(false);
+  const [currentLang, setCurrentLang] = useState("Eng")
 
   const handleSubmenu = () => {
     setSubmenu(!isSubmenu);
@@ -41,6 +42,16 @@ const MobileMenu = ({ mobileMenuhandle }) => {
             <BsXLg />{" "}
           </button>
         </div>
+        <Dropdown>
+            <Dropdown.Toggle variant="white" id="dropdown-lang-mobile" className="lang_btn_mobile">
+              {currentLang}
+            </Dropdown.Toggle>
+      
+            <Dropdown.Menu>
+              <Dropdown.Item href="# " onClick={() => setCurrentLang("Eng") }>English</Dropdown.Item>
+              <Dropdown.Item href="# " onClick={() => setCurrentLang("Kor") }>Korean</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         <div className="bithu_mobile_menu_list">
           <ul>
             <li className="mobile_menu_hide">
@@ -62,13 +73,13 @@ const MobileMenu = ({ mobileMenuhandle }) => {
         </div>
         <div className="mobile_menu_social_links">
           <a href="# ">
-            <img src={openseaIcon} alt="magic club social icon" />
-          </a>
-          <a href="# ">
             <FaTwitter />
           </a>
           <a href="# ">
             <FaDiscord />
+          </a>
+          <a href="#Gitbook">
+            <img className="gitbook_logo_mobile" src={gitbook_logo} alt="bithu nft logo" />
           </a>
         </div>
         { account ?

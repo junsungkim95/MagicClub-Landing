@@ -23,6 +23,18 @@ position: relative;
   position: absolute;
   bottom: 0;
 }
+
+@media (max-width: 1000px) {
+  min-height: 900px;
+}
+
+@media (max-width: 600px) {
+  min-height: 700px;
+}
+
+@media (max-width: 400px) {
+  min-height: 550px;
+}
 `;
 
 export default CharsBG;

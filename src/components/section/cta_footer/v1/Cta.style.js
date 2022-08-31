@@ -1,45 +1,4 @@
-import styled, { keyframes } from "styled-components";
-
-const star1 = keyframes`
-        0%,
-        100% {
-            top: 0%;
-        }
-
-        50% {
-            top: 3%;
-    }
-`;
-const star2 = keyframes`
-        0%,
-    100% {
-        top: 20%;
-    }
-
-    50% {
-        top: 23%;
-    }
-`;
-const star6 = keyframes`
-      0%,
-    100% {
-        bottom: 15%;
-    }
-
-    50% {
-        bottom: 18%;
-    }
-`;
-const star7 = keyframes`
-      0%,
-    100% {
-        bottom: 0%;
-    }
-
-    50% {
-        bottom: 3%;
-    }
-`;
+import styled from "styled-components";
 
 const CTAStyleWrapper = styled.section`
 margin-bottom: 1000px;
@@ -72,49 +31,6 @@ margin-bottom: 1000px;
       position: absolute;
       top: -150px;
       z-index: 0;
-      .footer_stars {
-        position: relative;
-        height: 100%;
-        /* width: 100%; */
-        span {
-          position: absolute;
-        }
-        .star_1 {
-          top: 0%;
-          right: 5%;
-          animation: ${star1} 4s infinite;
-        }
-        .star_2 {
-          top: 20%;
-          left: 0%;
-          animation: ${star2} 5s infinite;
-        }
-        .star_3 {
-          top: 34%;
-          left: 20%;
-          /* animation: star3 4s infinite; */
-        }
-        .star_4 {
-          top: 50%;
-          left: 44%;
-          /* animation: star4 4s infinite; */
-        }
-        .star_5 {
-          bottom: 26%;
-          right: 27%;
-          /* animation: star5 4s infinite; */
-        }
-        .star_6 {
-          bottom: 15%;
-          right: 10%;
-          animation: ${star6} 3.5s infinite;
-        }
-        .star_7 {
-          bottom: 0px;
-          left: 10%;
-          animation: ${star7} 3.5s infinite;
-        }
-      }
     }
   }
 
@@ -190,6 +106,7 @@ margin-bottom: 1000px;
   }
 
   @media only screen and (max-width: 768px) {
+    margin-bottom: 600px;
     .bithu_title_section {
       width: 60%;
     }
@@ -198,6 +115,7 @@ margin-bottom: 1000px;
     }
   }
   @media only screen and (max-width: 575px) {
+    margin-bottom: 500px;
     .join_comunity_btns {
       max-width: 400px;
       .wishlist_btn {

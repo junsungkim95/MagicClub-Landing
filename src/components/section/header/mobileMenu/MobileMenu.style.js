@@ -4,6 +4,21 @@ import { slideInRight } from "react-animations";
 const menuAnimation = keyframes`${slideInRight}`;
 
 const MobileMenuStyleWrapper = styled.div`
+  .gitbook_logo_mobile {
+    width: 25px;
+  }
+
+  .lang_btn_mobile {
+    color: white;
+    height: 50px;
+    min-width: 50px;
+    border: none;
+    background: rgba(255, 255, 255, 0.0);
+    svg {
+      font-size: 20px;
+    }
+  }
+
   &.bithu_mobile_menu {
     position: absolute;
     right: 0;

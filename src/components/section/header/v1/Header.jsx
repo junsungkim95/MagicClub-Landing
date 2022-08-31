@@ -13,6 +13,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 const Header = () => {
   const { walletModalHandle, metamaskModalHandle, account, isWalletAlreadyConnected, disconnectWalletFromApp } = useModal();
   const [isMobileMenu, setMobileMenu] = useState(false);
+  const [currentLang, setCurrentLang] = useState("Eng")
   const handleMobileMenu = () => {
     setMobileMenu(!isMobileMenu);
   };
@@ -108,9 +109,19 @@ const Header = () => {
               </Button>
 
               }
-              <a href={"#"}>
+              <a href="#Gitbook">
                 <img className="gitbook_logo" src={gitbook_logo} alt="bithu nft logo" />
               </a>
+              <Dropdown>
+                <Dropdown.Toggle variant="white" id="dropdown-lang" className="lang_btn">
+                  {currentLang}
+                </Dropdown.Toggle>
+          
+                <Dropdown.Menu>
+                  <Dropdown.Item href="# " onClick={() => setCurrentLang("Eng") }>English</Dropdown.Item>
+                  <Dropdown.Item href="# " onClick={() => setCurrentLang("Kor") }>Korean</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
             </div>
           </div>
         </div>

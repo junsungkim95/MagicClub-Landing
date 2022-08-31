@@ -51,7 +51,7 @@ const NavWrapper = styled.nav`
   }
 
   .bithu_menu_right_sect {
-    width: 85%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -169,7 +169,7 @@ const NavWrapper = styled.nav`
 
     .join_btn {
       height: 50px;
-      width: 114px;
+      width: 70px;
       background-color: transparent;
     }
 
@@ -179,6 +179,18 @@ const NavWrapper = styled.nav`
       border: none;
       margin-left: 20px;
       background: rgba(255, 255, 255, 0.2);
+
+      svg {
+        font-size: 20px;
+      }
+    }
+
+    .lang_btn {
+      height: 50px;
+      min-width: 50px;
+      border: none;
+      margin-left: 20px;
+      background: rgba(255, 255, 255, 0.0);
 
       svg {
         font-size: 20px;
@@ -212,6 +224,14 @@ const NavWrapper = styled.nav`
       visibility: hidden;
       opacity: 0;
     }
+    .gitbook_logo {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .lang_btn {
+      display: none;
+    }
   }
 
   @media (max-width: 667px) {
@@ -219,7 +239,6 @@ const NavWrapper = styled.nav`
       .connect_btn {
         display: none;
       }
-
       .menu_btn {
         svg {
           font-size: 30px;

@@ -25,6 +25,24 @@ url(${treeUpperBG});
 .treeBG-logo {
   width: 300px;
 }
+
+@media (max-width: 767px) {
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+  .treeBG-logo-wrapper {
+    padding-top: 140px;
+    padding-bottom: 340px;
+  }
+}
+
+@media (max-width: 575px) {
+  background-size: 100% 40%;
+  background-repeat: no-repeat;
+  .treeBG-logo-wrapper {
+    padding-top: 120px;
+    padding-bottom: 200px;
+  }
+}
 `;
 
 export default TreeUpperBG;
