@@ -1,0 +1,9 @@
+@font-face {
+    font-family: NotoSansJP;
+    src: url('../styles/fonts/NotoSansJP-Regular');
+}
+
+@font-face {
+    font-family: NotoSansJP-Bold;
+    src: url('../styles/fonts/NotoSansJP-Bold');
+}
