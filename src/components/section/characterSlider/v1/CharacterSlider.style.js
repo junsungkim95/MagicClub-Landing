@@ -18,8 +18,8 @@ const CharacterSliderWrapper = styled.section`
     max-width: 320px;
   }
 
-  p {
-    font-family: 'Noto Sans JP';
+  .nft-title {
+    font-family: 'NotoSansJP-Bold';
     font-size: 48px;
     font-weight: 700;
     line-height: 64px;

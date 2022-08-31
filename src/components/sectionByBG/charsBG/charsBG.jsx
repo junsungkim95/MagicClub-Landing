@@ -12,7 +12,7 @@ function charsBG() {
   return (
     <CharsrBG>
         {/* <HowToMint /> */}
-        {/* <About /> */}
+        <About />
         <div className='charsOnBD-wrapper'>
           <img className='charsOnBD' src={characters} alt='characters' />
         </div>

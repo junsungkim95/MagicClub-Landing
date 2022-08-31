@@ -33,7 +33,7 @@ const HowToMintWrapper = styled.section`
           align-items: center;
           justify-content: flex-start;
           h4 {
-            font-family: "Bakbak One";
+            font-family: "NotoSansJP-Bold";
             font-style: normal;
             font-weight: 400;
             font-size: 100px;
@@ -56,7 +56,7 @@ const HowToMintWrapper = styled.section`
           }
 
           p {
-            font-family: "Bakbak One";
+            font-family: "NotoSansJP-Bold";
             font-style: normal;
             font-weight: 400;
             font-size: 24px;

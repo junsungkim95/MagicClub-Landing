@@ -23,7 +23,6 @@ const BannerV1Wrapper = styled.section`
 
   .react-player {
     position: absolute;
-    // z-index: -1000;
     top: 0;
     left: 0;
   }

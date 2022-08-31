@@ -93,7 +93,7 @@ const Banner = () => {
         <ReactPlayer
           className="react-player"
           url={VideoBG} // 플레이어 url
-          width="screen%" // 플레이어 크기 (가로)
+          width="screen" // 플레이어 크기 (가로)
           height="100%" // 플레이어 크기 (세로)
           playing={true} // 자동 재생 on
           muted={true} // 자동 재생 on

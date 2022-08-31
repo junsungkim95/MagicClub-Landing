@@ -13,7 +13,7 @@ import aboutCardImage2 from "../../images/logo.png"
         },
         {
             image: aboutCardImage2,
-            title: "Magic Club NFT",
+            title: "MarketPlace",
             text: 'Magic Club'
         },
         {

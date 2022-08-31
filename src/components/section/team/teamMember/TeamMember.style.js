@@ -13,6 +13,7 @@ const TeamMemberStyleWrapper = styled.article`
     flex-direction: column;
     h3 {
       color: #ffffff;
+      font-family: "NotoSansJP-Bold";
       font-size: 24px;
       line-height: 34px;
       text-align: center;
@@ -21,7 +22,7 @@ const TeamMemberStyleWrapper = styled.article`
     }
 
     h4 {
-      font-family: "Inter";
+      font-family: "NotoSansJP";
       font-style: normal;
       text-align: center;
       font-size: 16px;

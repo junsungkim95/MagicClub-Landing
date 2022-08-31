@@ -16,7 +16,7 @@ background: linear-gradient(
   ), 
 url(${charsBG});
 background-size: 100% 100%;
-min-height: 1400px;
+min-height: 1200px;
 position: relative;
 
 .charsOnBD {

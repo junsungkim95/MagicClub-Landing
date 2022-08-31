@@ -35,7 +35,7 @@ const FAQ = () => {
               {data?.map((item, i) => (
                 <AccordionItem key={i}>
                   <AccordionTitle handleExpand={handleExpand}>
-                    <h5>{item.title}</h5>
+                    <h5>{item.eng_title}</h5>
                     <IconWrapper>
                       <OpenIcon>
                         <FaMinus />
@@ -46,7 +46,7 @@ const FAQ = () => {
                     </IconWrapper>
                   </AccordionTitle>
                   <AccordionBody>
-                    <p>{item.text}</p>
+                    <p>{item.eng_text}</p>
                   </AccordionBody>
                 </AccordionItem>
               ))}

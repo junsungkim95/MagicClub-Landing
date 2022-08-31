@@ -43,7 +43,7 @@ const star7 = keyframes`
 
 const CTAStyleWrapper = styled.section`
   .subtitle{
-    font-family: Noto Sans JP;
+    font-family: NotoSansJP;
     font-size: 48px;
     font-weight: 400;
     line-height: 64px;

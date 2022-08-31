@@ -8,7 +8,7 @@ const ButtonWrapper = styled.button`
   background-color: rgba(255, 255, 255, 0.2);
   color: #ffffff;
   align-items: center;
-  font-family: "Bakbak One";
+  font-family: "NotoSansJP-Bold";
   line-height: 22px;
   text-align: center;
   font-size: 16px;

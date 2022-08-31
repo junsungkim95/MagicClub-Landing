@@ -1,4 +1,4 @@
-const RoadMapItem = ({ id, icon, title, text }) => {
+const RoadMapItem = ({ id, title, text }) => {
   return (
     <div
       className={

@@ -11,7 +11,7 @@ const AboutInfoCardListWrapper = styled.div`
     z-index: 1;  
 
     .project_title {
-        font-family: Noto Sans JP;
+        font-family: NotoSansJP-Bold;
         font-size: 50px;
         font-weight: 700;
         line-height: 42px;
@@ -20,9 +20,9 @@ const AboutInfoCardListWrapper = styled.div`
         color: white;
     }
 
-    h4 {
-        font-family: Noto Sans JP;
-        font-size: 48px;
+    .project_name {
+        font-family: NotoSansJP-Bold;
+        font-size: 32px;
         font-weight: 700;
         line-height: 64px;
         letter-spacing: 0em;
@@ -30,9 +30,9 @@ const AboutInfoCardListWrapper = styled.div`
         color: white;
     }
 
-    p {
-        font-family: Noto Sans JP;
-        font-size: 32px;
+    .project_text {
+        font-family: NotoSansJP-Bold;
+        font-size: 16px;
         font-weight: 700;
         line-height: 48px;
         letter-spacing: 0em;
@@ -64,6 +64,13 @@ const AboutInfoCardListWrapper = styled.div`
             margin-top: 0;
         }
         }
+    }
+
+    .row {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 960px;
     }
 
     @media only screen and (max-width: 767px) {

@@ -5,7 +5,7 @@ const SectionTitleWrapper = styled.div`
   z-index: 1;
 
   h2 {
-    font-family: "Bakbak One";
+    font-family: "NotoSansJP-Bold";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -29,7 +29,7 @@ const SectionTitleWrapper = styled.div`
   }
 
   h3 {
-    font-family: "Bakbak One";
+    font-family: "NotoSansJP-Bold";
     font-style: normal;
     font-weight: 400;
     font-size: 48px;

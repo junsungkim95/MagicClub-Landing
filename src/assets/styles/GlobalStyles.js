@@ -22,6 +22,9 @@ body {
     font-weight: 500;
     overflow-x: hidden; 
     background-color: #040C12 !important;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1700px;
 }
 
 img {
@@ -43,7 +46,7 @@ h5,
 h6 {
     margin: 0px;
     line-height: 1.35;
-    font-family: 'Bakbak One', cursive;
+    font-family: 'NotoSansJP-Bold', cursive;
 }
 
 a {
@@ -61,7 +64,7 @@ ul, ol {
 
 html,
 body, p, a{
-    font-family: 'Inter', sans-serif;
+    font-family: 'NotoSansJP', sans-serif;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
 } 

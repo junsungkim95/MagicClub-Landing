@@ -21,6 +21,7 @@ const FooterBottom = () => {
               <div className="copyright_text">
                 <img className="footerLogo" src={logo} alt="magic clib logo" />
               </div>
+              <p className="email_address">info@magicclub.io</p>
             </div>
             <a href="# " className="bact_to_top_btn">
               <img src={backToTopIcon} alt="bithu nft back to top" />

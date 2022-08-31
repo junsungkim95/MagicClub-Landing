@@ -5,7 +5,7 @@ import CharacterSliderWrapper from "./CharacterSlider.style";
 const CharacterSlider = () => {
   return (
     <CharacterSliderWrapper>
-      <p>Magic Club NFT</p>
+      <p className="nft-title">Magic Club NFT</p>
       <div className="chars-wrapper">
         {data?.map((item, i) => (
           <div className="chars-box">

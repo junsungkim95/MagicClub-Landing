@@ -6,6 +6,10 @@ const FooterBottomStyleWrapper = styled.div`
   .footerLogo{
     max-width: 150px;
   }
+  .email_address {
+    font-family: NotoSansJP;
+    margin-left: 60px;
+  }
   .footer_bottom_content {
     position: relative;
     height: 100%;
@@ -44,7 +48,7 @@ const FooterBottomStyleWrapper = styled.div`
 
     .copyright_text {
       color: rgba(255, 255, 255, 0.8);
-      font-family: "Inter";
+      font-family: "NotoSansJP";
       font-style: normal;
       font-weight: 500;
       font-size: 16px;

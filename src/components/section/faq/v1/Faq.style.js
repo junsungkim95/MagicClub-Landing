@@ -45,7 +45,7 @@ const FAQStyleWrapper = styled.section`
   .accordion__body {
     p {
       padding: 0px 48px 24px 29px;
-      font-family: Inter;
+      font-family: NotoSansJP;
       font-style: normal;
       font-weight: 500;
       font-size: 16px;

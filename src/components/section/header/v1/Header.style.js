@@ -2,6 +2,12 @@ import styled from "styled-components";
 
 const NavWrapper = styled.nav`
   z-index: 999;
+
+  .gitbook_logo {
+    width: 25px;
+    margin-left: 10px;
+  }
+
   &.bithu_header {
     position: absolute;
     top: 0;
@@ -53,7 +59,7 @@ const NavWrapper = styled.nav`
 
   .bithu_menu_list {
     margin-left: 65px;
-    margin-right: 96px;
+    margin-right: 20px;
     max-width: 514px;
     min-width: 409px;
     width: 100%;
@@ -70,7 +76,7 @@ const NavWrapper = styled.nav`
         cursor: pointer;
 
         a {
-          font-family: "Bakbak One";
+          font-family: "NotoSansJP-Bold";
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
@@ -106,7 +112,7 @@ const NavWrapper = styled.nav`
               flex-wrap: wrap;
               li {
                 a {
-                  font-family: "Bakbak One";
+                  font-family: "NotoSansJP-Bold";
                   font-style: normal;
                   font-weight: 400;
                   font-size: 16px;
@@ -142,11 +148,11 @@ const NavWrapper = styled.nav`
     align-items: center;
     justify-content: space-between;
     align-items: center;
-    min-width: 284px;
+    min-width: 350px;
     button {
       color: #ffffff;
       text-transform: uppercase;
-      font-family: "Bakbak One";
+      font-family: "NotoSansJP-Bold";
       font-weight: 400;
       font-size: 16px;
     }

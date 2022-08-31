@@ -3,11 +3,11 @@ import styled from "styled-components";
 const AboutCardStyleWrapper = styled.article`
   background: none;
   width: 100%;
-  min-height: 220px;
-  padding: 35px;
+  min-height: 160px;
+  padding: 10px;
 
   .project_card_text {
-    font-family: "Bakbak One";
+    font-family: "NotoSansJP-Bold";
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -26,10 +26,11 @@ const AboutCardStyleWrapper = styled.article`
   .project_name {
     font-size: 20px;
     text-align: center;
+    height: 30px;
   }
 
   .project_text {
-    padding-top: 18px;
+    padding-top: 2px;
     font-family: "Inter";
     font-style: normal;
     font-weight: 500;

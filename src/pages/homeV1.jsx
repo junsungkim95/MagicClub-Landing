@@ -32,7 +32,7 @@ const HomeV1 = () => {
       <Header />
       <Banner />
       <HowToMint />
-      <About />
+      {/* <About /> */}
       <CharsBG />
       <CharacterSlider />
       <CTA />

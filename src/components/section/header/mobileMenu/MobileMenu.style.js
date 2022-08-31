@@ -71,7 +71,7 @@ const MobileMenuStyleWrapper = styled.div`
         position: relative;
 
         a {
-          font-family: "Bakbak One";
+          font-family: "NotoSansJP-Bold";
           font-style: normal;
           font-weight: 400;
           font-size: 16px;

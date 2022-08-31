@@ -2,41 +2,31 @@ import {
   FaLinkedinIn,
   FaTwitter,
   FaInstagram,
-  FaTelegramPlane,
   FaFacebook,
 } from "react-icons/fa";
 
-import openseaIcon from "../images/icon/opensea.svg";
 import mediumIcon from "../images/icon/med.svg";
 
 const data = [
   {
-    thumb: openseaIcon,
-    url: "#",
-  },
-  {
     icon: <FaTwitter />,
-    url: "#",
+    url: "https://twitter.com/magic_club_io",
   },
   {
     icon: <FaLinkedinIn />,
-    url: "#",
+    url: "https://www.linkedin.com/in/magicclub-io-01182a24a",
   },
   {
     icon: <FaFacebook />,
-    url: "#",
+    url: "https://www.facebook.com/Magic-Club-105759395603782",
   },
   {
     icon: <FaInstagram />,
-    url: "#",
-  },
-  {
-    icon: <FaTelegramPlane />,
-    url: "#",
+    url: "https://www.instagram.com/magic_club_io/",
   },
   {
     thumb: mediumIcon,
-    url: "#",
+    url: "https://medium.com/@Magic_Club",
   },
 ];
 

@@ -6,6 +6,7 @@ import Button from "../../../../common/button";
 import NavWrapper from "./Header.style";
 import MobileMenu from "../mobileMenu/MobileMenu";
 import logo from "../../../../assets/images/logo.png";
+import gitbook_logo from "../../../../assets/images/icon/gitbook-icon.svg";
 import { isMetaMaskInstalled } from '../../../../config';
 import Dropdown from 'react-bootstrap/Dropdown';
 
@@ -107,6 +108,9 @@ const Header = () => {
               </Button>
 
               }
+              <a href={"#"}>
+                <img className="gitbook_logo" src={gitbook_logo} alt="bithu nft logo" />
+              </a>
             </div>
           </div>
         </div>
