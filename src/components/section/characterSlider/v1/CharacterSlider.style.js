@@ -10,7 +10,9 @@ const CharacterSliderWrapper = styled.section`
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: 320px 320px 320px 320px;
+    gap: 20px;
     justify-content: space-between;
   }
 
@@ -64,6 +66,21 @@ const CharacterSliderWrapper = styled.section`
   .charsDesc {
     color: white;
   }
+
+  @media (max-width: 1400px) {
+    .chars-wrapper {
+      max-width: 700px;
+      grid-template-columns: 320px 320px;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .chars-wrapper {
+      max-width: 320px;
+      grid-template-columns: 320px;
+    }
+  }
+  
 `;
 
 export default CharacterSliderWrapper;
