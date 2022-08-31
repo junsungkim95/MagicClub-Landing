@@ -30,7 +30,7 @@ const BannerV1Wrapper = styled.section`
 
   .bithu_v1_baner_left {
     margin-top: 66px;
-    max-width: 500px;
+    max-width: 600px;
     width: 100%;
     min-height: 550px;
     display: flex;
@@ -39,7 +39,7 @@ const BannerV1Wrapper = styled.section`
     flex-direction: column;
 
     h2 {
-      font-family: "Bakbak One";
+      font-family: "NotoSansJP-Bold";
       font-style: normal;
       font-weight: 400;
       font-size: 60px;
@@ -50,7 +50,7 @@ const BannerV1Wrapper = styled.section`
     }
 
     h3 {
-      font-family: "Bakbak One";
+      font-family: "NotoSansJP-Bold";
       font-style: normal;
       font-weight: 400;
       font-size: 40px;
@@ -70,7 +70,7 @@ const BannerV1Wrapper = styled.section`
       flex-direction: column;
       margin-top: 37px;
       span {
-        font-family: "Bakbak One";
+        font-family: "NotoSansJP-Bold";
         font-size: 18px;
         line-height: 36px;
         text-transform: uppercase;
