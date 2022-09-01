@@ -1,6 +1,10 @@
 import AboutCardStyleWrapper from "./AboutCard.style";
 
+import { useRecoilState } from "recoil";
+import { langState } from '../../../../../Atoms/langState';
+
 const AboutCard = ({ title, text, mainTitle, image }) => {
+  const [lang] = useRecoilState(langState);
   return (
     <AboutCardStyleWrapper className="about_us_text_card">
       <div className="cardContainer">

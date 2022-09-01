@@ -13,11 +13,15 @@ import {
 import data from "../../../../assets/data/faq";
 import FAQStyleWrapper from "./Faq.style";
 
+import { useRecoilState } from "recoil";
+import { langState } from '../../../../Atoms/langState';
+
 const FAQ = () => {
   const handleExpand = (e) => {
     e.preventDefault();
     console.log(e);
   };
+  const [lang] = useRecoilState(langState);
 
   return (
     <FAQStyleWrapper className="bithu_faq_sect" id="faq">

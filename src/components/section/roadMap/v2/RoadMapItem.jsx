@@ -1,4 +1,8 @@
+import { useRecoilState } from "recoil";
+import { langState } from '../../../../Atoms/langState';
+
 const RoadMapItem = ({ id, title, text }) => {
+  const [lang] = useRecoilState(langState);
   return (
     <div
       className={

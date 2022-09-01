@@ -10,12 +10,17 @@ import homeImageBG from "../../../../assets/images/nft/home_img_bg.png";
 import { useEffect, useState } from "react";
 import { totalMintCount } from '../../../../utils/web3mint';
 
+import { useRecoilState } from "recoil";
+import { langState } from '../../../../Atoms/langState';
+
 import ReactPlayer from 'react-player';
 import VideoBG from "../../../../assets/images/bg/Video_BG.mp4"
 
 const Banner = () => {
   const { mintModalHandle, connectWalletModalHanlde, account } = useModal();
   const [remaining, setRemaining] = useState(0);
+
+  const [lang] = useRecoilState(langState);
 
   useEffect(() =>{
     const calculateRemainingItems = async () => {

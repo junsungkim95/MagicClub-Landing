@@ -1,7 +1,11 @@
 import SectionTitle from "../../../../common/sectionTitle";
 import AboutStyleWrapper from "./About.style";
 
+import { useRecoilState } from "recoil";
+import { langState } from '../../../../Atoms/langState';
+
 const About = () => {
+  const [lang] = useRecoilState(langState);
   return (
     <AboutStyleWrapper className="v2_about_us_section" id="about">
       <div className="v2_about_overlay"></div>

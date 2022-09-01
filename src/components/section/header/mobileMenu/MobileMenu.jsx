@@ -9,10 +9,13 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import { isMetaMaskInstalled } from '../../../../config';
 import MobileMenuStyleWrapper from "./MobileMenu.style";
 
+import { useRecoilState } from "recoil";
+import { langState } from '../../../../Atoms/langState';
+
 const MobileMenu = ({ mobileMenuhandle }) => {
   const { walletModalHandle, metamaskModalHandle, account, disconnectWalletFromApp } = useModal();
   const [isSubmenu, setSubmenu] = useState(false);
-  const [currentLang, setCurrentLang] = useState("Eng")
+  const [lang, setLang] = useRecoilState(langState);
 
   const handleSubmenu = () => {
     setSubmenu(!isSubmenu);
@@ -44,12 +47,12 @@ const MobileMenu = ({ mobileMenuhandle }) => {
         </div>
         <Dropdown>
             <Dropdown.Toggle variant="white" id="dropdown-lang-mobile" className="lang_btn_mobile">
-              {currentLang}
+              {lang}
             </Dropdown.Toggle>
       
             <Dropdown.Menu>
-              <Dropdown.Item href="# " onClick={() => setCurrentLang("Eng") }>English</Dropdown.Item>
-              <Dropdown.Item href="# " onClick={() => setCurrentLang("Kor") }>Korean</Dropdown.Item>
+              <Dropdown.Item href="# " onClick={() => setLang("Eng") }>English</Dropdown.Item>
+              <Dropdown.Item href="# " onClick={() => setLang("Kor") }>Korean</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         <div className="bithu_mobile_menu_list">

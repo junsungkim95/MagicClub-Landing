@@ -1,8 +1,13 @@
 import AboutCard from "./aboutCard/AboutCard";
 import data from "../../../../assets/data/about/aboutv1";
 import AboutInfoCardListWrapper from "./AboutInfoCardList.style";
+
+import { useRecoilState } from "recoil";
+import { langState } from '../../../../Atoms/langState';
+
 const AboutInfoCardList = () => {
   const { aboutInfo } = data; 
+  const [lang] = useRecoilState(langState);
   return (
     <AboutInfoCardListWrapper className="about_us_text_card_sect">
       <h2 className="project_title">Project</h2>

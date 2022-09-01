@@ -10,13 +10,18 @@ import gitbook_logo from "../../../../assets/images/icon/gitbook-icon.svg";
 import { isMetaMaskInstalled } from '../../../../config';
 import Dropdown from 'react-bootstrap/Dropdown';
 
+import { useRecoilState } from "recoil";
+import { langState } from '../../../../Atoms/langState';
+
 const Header = () => {
   const { walletModalHandle, metamaskModalHandle, account, isWalletAlreadyConnected, disconnectWalletFromApp } = useModal();
   const [isMobileMenu, setMobileMenu] = useState(false);
-  const [currentLang, setCurrentLang] = useState("Eng")
   const handleMobileMenu = () => {
     setMobileMenu(!isMobileMenu);
   };
+
+  const [lang, setLang] = useRecoilState(langState);
+
 
   const substr = (str, n) =>{
     return str.length > n ? str.substr(0, n -1) : str;
@@ -112,16 +117,20 @@ const Header = () => {
               <a href="#Gitbook">
                 <img className="gitbook_logo" src={gitbook_logo} alt="bithu nft logo" />
               </a>
+              {/* 리코일 테스트 공간 */}
+
+              {/* 언어변경 버튼 */}
               <Dropdown>
                 <Dropdown.Toggle variant="white" id="dropdown-lang" className="lang_btn">
-                  {currentLang}
+                  {lang}
                 </Dropdown.Toggle>
           
                 <Dropdown.Menu>
-                  <Dropdown.Item href="# " onClick={() => setCurrentLang("Eng") }>English</Dropdown.Item>
-                  <Dropdown.Item href="# " onClick={() => setCurrentLang("Kor") }>Korean</Dropdown.Item>
+                  <Dropdown.Item href="# " onClick={() => setLang("Eng") }>English</Dropdown.Item>
+                  <Dropdown.Item href="# " onClick={() => setLang("Kor") }>Korean</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
+              {/* 언어변경 버튼 끝 */}
             </div>
           </div>
         </div>

@@ -5,10 +5,13 @@ import data from "../../../../assets/data/socialProfile";
 
 import hoverShape from "../../../../assets/images/icon/hov_shape_s.svg";
 
+import { useRecoilState } from "recoil";
+import { langState } from '../../../../Atoms/langState';
 
 import CTAStyleWrapper from "./Cta.style";
 
 const CTA_footer = () => {
+  const [lang] = useRecoilState(langState);
   return (
     <CTAStyleWrapper>
       <div className="container">

@@ -4,7 +4,11 @@ import RoadMapItem from "./RoadMapItem";
 import data from "../../../../assets/data/roadMap/roadMapV1";
 import RoadMapStyleWrapper from "./RoadMap.style";
 
+import { useRecoilState } from "recoil";
+import { langState } from '../../../../Atoms/langState';
+
 const RoadMap = () => {
+  const [lang] = useRecoilState(langState);
   return (
     <RoadMapStyleWrapper id="roadmap">
       <div className="container">

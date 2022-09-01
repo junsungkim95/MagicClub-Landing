@@ -3,8 +3,11 @@ import Button from "../../../../common/button";
 
 import CTAStyleWrapper from "./Cta.style";
 
-const CTA = () => {
+import { useRecoilState } from "recoil";
+import { langState } from '../../../../Atoms/langState';
 
+const CTA = () => {
+  const [lang] = useRecoilState(langState);
   return (
     <CTAStyleWrapper>
       <div className="container">

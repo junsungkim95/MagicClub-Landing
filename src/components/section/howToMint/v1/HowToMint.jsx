@@ -3,7 +3,11 @@ import data from "../../../../assets/data/howToMint";
 
 import HowToMintWrapper from "./HowToMint.style";
 
+import { useRecoilState } from "recoil";
+import { langState } from '../../../../Atoms/langState';
+
 const HowToMint = () => {
+  const [lang] = useRecoilState(langState);
   return (
     <HowToMintWrapper>
       <div className="container how_to_mint_container">

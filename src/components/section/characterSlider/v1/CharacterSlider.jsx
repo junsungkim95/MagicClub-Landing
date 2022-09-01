@@ -2,7 +2,11 @@ import data from "../../../../assets/data/characterSlider/characterSlider";
 
 import CharacterSliderWrapper from "./CharacterSlider.style";
 
+import { useRecoilState } from "recoil";
+import { langState } from '../../../../Atoms/langState';
+
 const CharacterSlider = () => {
+  const [lang] = useRecoilState(langState);
   return (
     <CharacterSliderWrapper>
       <p className="nft-title">Magic Club NFT</p>
