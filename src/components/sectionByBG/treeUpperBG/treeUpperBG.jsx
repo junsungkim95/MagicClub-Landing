@@ -6,11 +6,15 @@ import Team from "../../../components/section/team/v1";
 
 import TreeUpperBG from './TreeUpperBG.style';
 
+import MoonBG from '../../../assets/images/bg/TreeupperBg.png';
 import logo from '../../../assets/images/logo.png'
 
 function treeUpperBG() {
   return (
     <TreeUpperBG>
+      <div>
+        <img className='moonBG' src={MoonBG} alt='Moon upper tree Bg' />
+      </div>
       <div className='treeBG-logo-wrapper'>
         <img className='treeBG-logo' src={logo} alt='magic club logo' />
       </div>
