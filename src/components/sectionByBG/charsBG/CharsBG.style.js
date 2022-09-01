@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import charsBG from "../../../assets/images/bg/BackCityView.png"
+import charsBG from "../../../assets/images/bg/CharsWithLightBg.png"
 
 
 const CharsBG = styled.section`
@@ -16,7 +16,8 @@ background: linear-gradient(
   ), 
 url(${charsBG});
 background-size: 100% 100%;
-min-height: 1500px;
+padding-top: 200px;
+min-height: 1300px;
 position: relative;
 
 .charsOnBD {
@@ -25,19 +26,22 @@ position: relative;
 }
 
 @media (max-width: 1850px) {
-  min-height: 1200px;
+  padding-top: 100px;
+  min-height: 1100px;
 }
 
 @media (max-width: 1000px) {
-  min-height: 900px;
+  padding-top: 80px;
+  min-height: 1000px;
 }
 
 @media (max-width: 600px) {
-  min-height: 700px;
+  padding-top: 0px;
+  min-height: 600px;
 }
 
 @media (max-width: 400px) {
-  min-height: 550px;
+  min-height: 650px;
 }
 `;
 

@@ -13,9 +13,9 @@ function charsBG() {
     <CharsrBG>
         {/* <HowToMint /> */}
         <About />
-        <div className='charsOnBD-wrapper'>
+        {/* <div className='charsOnBD-wrapper'>
           <img className='charsOnBD' src={characters} alt='characters' />
-        </div>
+        </div> */}
     </CharsrBG>
   )
 }
