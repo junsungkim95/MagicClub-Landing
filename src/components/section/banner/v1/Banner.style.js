@@ -23,6 +23,7 @@ const BannerV1Wrapper = styled.section`
   position: relative;
 
   .player-wrapper {
+    z-index: 0;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -54,6 +55,7 @@ const BannerV1Wrapper = styled.section`
       text-transform: uppercase;
       color: #ffffff;
       margin-bottom: 32px;
+      z-index: 1;
     }
 
     h3 {
@@ -64,6 +66,7 @@ const BannerV1Wrapper = styled.section`
       line-height: 60px;
       text-transform: uppercase;
       color: #ffffff;
+      z-index: 1;
     }
 
     .banner_buttons {
@@ -82,6 +85,7 @@ const BannerV1Wrapper = styled.section`
         line-height: 36px;
         text-transform: uppercase;
         color: rgba(255, 255, 255, 0.8);
+        z-index: 1;
 
         & .highlighted {
           color: #ffe600;

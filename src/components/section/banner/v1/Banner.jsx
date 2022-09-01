@@ -3,10 +3,6 @@ import Counter from "../../../../common/counter";
 import Button from "../../../../common/button";
 import BannerV1Wrapper from "./Banner.style";
 
-import characterThumb from "../../../../assets/images/nft/Character1.png";
-import mintLiveDownArrow from "../../../../assets/images/nft/mint_live_down_arrow.svg";
-import mintLiveText from "../../../../assets/images/nft/mint_live_text.png";
-import homeImageBG from "../../../../assets/images/nft/home_img_bg.png";
 import { useEffect, useState } from "react";
 import { totalMintCount } from '../../../../utils/web3mint';
 
