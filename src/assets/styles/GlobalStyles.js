@@ -24,7 +24,7 @@ body {
     background-color: #040C12 !important;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1700px;
+    max-width: 2550px;
 }
 
 img {

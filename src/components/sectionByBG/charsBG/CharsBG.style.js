@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import charsBG from "../../../assets/images/bg/BDupperBg.png"
+import charsBG from "../../../assets/images/bg/BackCityView.png"
 
 
 const CharsBG = styled.section`
@@ -16,12 +16,16 @@ background: linear-gradient(
   ), 
 url(${charsBG});
 background-size: 100% 100%;
-min-height: 1200px;
+min-height: 1500px;
 position: relative;
 
 .charsOnBD {
   position: absolute;
   bottom: 0;
+}
+
+@media (max-width: 1850px) {
+  min-height: 1200px;
 }
 
 @media (max-width: 1000px) {
