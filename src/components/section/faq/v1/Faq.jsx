@@ -14,7 +14,7 @@ import data from "../../../../assets/data/faq";
 import FAQStyleWrapper from "./Faq.style";
 
 import { useRecoilState } from "recoil";
-import { langState } from '../../../../Atoms/langState';
+import { langState } from "../../../../Atoms/langState";
 
 const FAQ = () => {
   const handleExpand = (e) => {
@@ -33,13 +33,12 @@ const FAQ = () => {
             subtitle="QUESTIONS & ANSWERS"
             className="text-center"
           />
-
           <div className="bithu_faq_questions">
             <Accordion className="faq_questions">
               {data?.map((item, i) => (
                 <AccordionItem key={i}>
                   <AccordionTitle handleExpand={handleExpand}>
-                    <h5>{item.eng_title}</h5>
+                    <h5>{item[`${lang}_title`]}</h5>
                     <IconWrapper>
                       <OpenIcon>
                         <FaMinus />
@@ -50,7 +49,7 @@ const FAQ = () => {
                     </IconWrapper>
                   </AccordionTitle>
                   <AccordionBody>
-                    <p>{item.eng_text}</p>
+                    <p>{item[`${lang}_text`]}</p>
                   </AccordionBody>
                 </AccordionItem>
               ))}
