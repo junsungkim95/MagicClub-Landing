@@ -3,6 +3,7 @@ import {
   FaTwitter,
   FaInstagram,
   FaFacebook,
+  FaTelegramPlane,
 } from "react-icons/fa";
 
 import mediumIcon from "../images/icon/med.svg";
@@ -27,6 +28,10 @@ const data = [
   {
     thumb: mediumIcon,
     url: "https://medium.com/@Magic_Club",
+  },
+  {
+    icon: <FaTelegramPlane />,
+    url: "#",
   },
 ];
 

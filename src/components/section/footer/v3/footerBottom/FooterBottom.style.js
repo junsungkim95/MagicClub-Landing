@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const FooterBottomStyleWrapper = styled.div`
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(20px);
   .footerLogo{
     max-width: 150px;
@@ -34,6 +34,8 @@ const FooterBottomStyleWrapper = styled.div`
   }
   .footer_menu {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
     justify-content: space-between;
     min-height: 100px;
