@@ -90,7 +90,7 @@ const Header = () => {
                 <MdNotes />
               </button>
               <Button sm variant="outline" className="join_btn">
-                <FaDiscord /> Join
+                <FaDiscord /> <span>Join</span>
               </Button>
               { account ?
               <Dropdown>
@@ -110,7 +110,7 @@ const Header = () => {
                 onClick={() => handleWalletConnect()}
               >
                 <FaWallet />
-                Connect
+                <span>Connect</span>
               </Button>
 
               }

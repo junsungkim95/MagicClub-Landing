@@ -58,7 +58,7 @@ const NavWrapper = styled.nav`
   }
 
   .bithu_menu_list {
-    margin-left: 65px;
+    margin-left: 35px;
     margin-right: 20px;
     max-width: 514px;
     min-width: 409px;
@@ -169,13 +169,13 @@ const NavWrapper = styled.nav`
 
     .join_btn {
       height: 50px;
-      width: 70px;
+      width: 130px;
       background-color: transparent;
     }
 
     .connect_btn {
       height: 50px;
-      min-width: 150px;
+      min-width: 80px;
       border: none;
       margin-left: 20px;
       background: rgba(255, 255, 255, 0.2);
@@ -198,6 +198,19 @@ const NavWrapper = styled.nav`
     }
   }
 
+  @media (max-width: 1200px) {
+    .join_btn {
+      span {
+        display: none;
+      }
+    }
+    .connect_btn {
+      justify-content: center;
+      span {
+        display: none;
+      }
+    }
+  }
   @media (max-width: 1024px) {
     .bithu_menu_list {
       margin-right: 20px;
