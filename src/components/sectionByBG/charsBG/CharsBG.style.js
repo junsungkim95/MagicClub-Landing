@@ -17,7 +17,7 @@ const CharsBG = styled.section`
 // url(${charsBG});
 background-size: 100% 100%;
 padding-top: 200px;
-min-height: 1300px;
+min-height: 1900px;
 position: relative;
 
 .characters_bg {
@@ -30,11 +30,11 @@ position: relative;
   mask-image: linear-gradient(
     to bottom,
     rgba(8, 7, 9, 0.05) 10%,
-    rgba(8, 7, 9, 0.4) 20%,
-    rgba(8, 7, 9, 0.6) 30%,
-    rgba(8, 7, 9, 0.7) 50%,
-    rgba(8, 7, 9, 0.8) 75%,
-    rgba(8, 7, 9, 0.1) 100%
+    rgba(8, 7, 9, 0.15) 20%,
+    rgba(8, 7, 9, 0.75) 30%,
+    rgba(8, 7, 9, 0.85) 50%,
+    rgba(8, 7, 9, 0.9) 75%,
+    rgba(8, 7, 9, 1) 100%
   );
 }
 
@@ -42,8 +42,19 @@ position: relative;
   position: absolute;
   bottom: 0;
 }
+@media (max-width: 2500px) {
+  min-height: 1700px;
+}
 
-@media (max-width: 1850px) {
+@media (max-width: 2000px) {
+  min-height: 1500px;
+}
+
+@media (max-width: 1600px) {
+  min-height: 1300px;
+}
+
+@media (max-width: 1350px) {
   padding-top: 100px;
   min-height: 1100px;
 }

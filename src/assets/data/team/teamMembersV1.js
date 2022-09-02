@@ -86,7 +86,7 @@ const data = [
   },
   {
     avatar: avatarThumb3,
-    name: "Jun",
+    name: "Spencer",
     designation: "Designer",
     socialLinks: [
       {
