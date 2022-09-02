@@ -24,16 +24,16 @@ const FAQ = () => {
   const [lang] = useRecoilState(langState);
 
   return (
-    <FAQStyleWrapper className="bithu_faq_sect" id="faq">
+    <FAQStyleWrapper className="magic_club_faq_sect" id="faq">
       <div className="container">
-        <div className="bithu_faq_content">
+        <div className="magic_club_faq_content">
           <SectionTitle
             isCenter={true}
             title="FREQUENTLY ASKED QUESTIONS"
             subtitle="QUESTIONS & ANSWERS"
             className="text-center"
           />
-          <div className="bithu_faq_questions">
+          <div className="magic_club_faq_questions">
             <Accordion className="faq_questions">
               {data?.map((item, i) => (
                 <AccordionItem key={i}>

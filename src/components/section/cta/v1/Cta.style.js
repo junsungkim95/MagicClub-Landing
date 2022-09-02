@@ -51,7 +51,7 @@ const CTAStyleWrapper = styled.section`
     text-align: center;
   }
 
-  .bithu_title_section {
+  .magic_club_title_section {
     width: 85%;
     margin: 0 auto;
     img {
@@ -68,7 +68,7 @@ const CTAStyleWrapper = styled.section`
     font-size: 50px;
   }
 
-  .bithu_v1_cta_content {
+  .magic_club_v1_cta_content {
     position: relative;
     z-index: 1;
 
@@ -198,7 +198,7 @@ const CTAStyleWrapper = styled.section`
   }
 
   @media only screen and (max-width: 768px) {
-    .bithu_title_section {
+    .magic_club_title_section {
       width: 75%;
     }
     .title-emo {
@@ -239,7 +239,7 @@ const CTAStyleWrapper = styled.section`
   }
 
   @media (max-width: 425px) {
-    .bithu_title_section {
+    .magic_club_title_section {
       width: 95%;
     }
     .title-emo {

@@ -100,7 +100,7 @@ const RoadMapStyleWrapper = styled.section`
     }
   }
   /* bg image  */
-  .bithu_v2_roadmap_mass_gard {
+  .magic_club_v2_roadmap_mass_gard {
     position: absolute;
     bottom: -400px;
     text-align: center;

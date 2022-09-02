@@ -32,7 +32,7 @@ const Banner = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-            <div className="bithu_v1_baner_left">
+            <div className="magic_club_v1_baner_left">
               <h2>Magic Club 🎯 NFT collections</h2>
               <h3>
                 <span className="count">

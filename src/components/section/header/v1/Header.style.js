@@ -8,7 +8,7 @@ const NavWrapper = styled.nav`
     margin-left: 10px;
   }
 
-  &.bithu_header {
+  &.magic_club_header {
     position: absolute;
     top: 0;
     left: 0;
@@ -29,7 +29,7 @@ const NavWrapper = styled.nav`
     }
   }
 
-  .bithu_menu_sect {
+  .magic_club_menu_sect {
     height: 90px;
     width: 100%;
     display: flex;
@@ -37,7 +37,7 @@ const NavWrapper = styled.nav`
     justify-content: space-between;
   }
 
-  .bithu_menu_left_sect {
+  .magic_club_menu_left_sect {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -50,14 +50,14 @@ const NavWrapper = styled.nav`
     }
   }
 
-  .bithu_menu_right_sect {
+  .magic_club_menu_right_sect {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: end;
   }
 
-  .bithu_menu_list {
+  .magic_club_menu_list {
     margin-left: 35px;
     margin-right: 20px;
     max-width: 514px;
@@ -143,7 +143,7 @@ const NavWrapper = styled.nav`
     }
   }
 
-  .bithu_menu_btns {
+  .magic_club_menu_btns {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -212,27 +212,27 @@ const NavWrapper = styled.nav`
     }
   }
   @media (max-width: 1024px) {
-    .bithu_menu_list {
+    .magic_club_menu_list {
       margin-right: 20px;
     }
   }
   @media (max-width: 991px) {
-    .bithu_menu_right_sect {
+    .magic_club_menu_right_sect {
       justify-content: end;
     }
-    .bithu_menu_btns {
+    .magic_club_menu_btns {
       justify-content: end;
       .menu_btn {
         display: block;
       }
     }
 
-    .bithu_menu_btns {
+    .magic_club_menu_btns {
       .join_btn {
         display: none;
       }
     }
-    .bithu_menu_list {
+    .magic_club_menu_list {
       display: none;
       visibility: hidden;
       opacity: 0;
@@ -248,7 +248,7 @@ const NavWrapper = styled.nav`
   }
 
   @media (max-width: 667px) {
-    .bithu_menu_btns {
+    .magic_club_menu_btns {
       .connect_btn {
         display: none;
       }
@@ -261,7 +261,7 @@ const NavWrapper = styled.nav`
   }
 
   @media (max-width: 540px) {
-    .bithu_menu_left_sect {
+    .magic_club_menu_left_sect {
       width: 180px;
       .logo {
         img {
@@ -270,9 +270,9 @@ const NavWrapper = styled.nav`
       }
     }
 
-    .bithu_menu_right_sect {
+    .magic_club_menu_right_sect {
       width: 50%;
-      .bithu_menu_right_sect {
+      .magic_club_menu_right_sect {
         width: 50%;
       }
     }

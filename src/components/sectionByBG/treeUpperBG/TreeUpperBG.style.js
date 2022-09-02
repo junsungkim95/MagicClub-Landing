@@ -34,6 +34,15 @@ overflow: hidden;
   left: 50%;
   transform: translate(-50%, 0%);
   top: 0;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(8, 7, 9, 1) 10%,
+    rgba(8, 7, 9, 0.7) 20%,
+    rgba(8, 7, 9, 0.5) 30%,
+    rgba(8, 7, 9, 0.05) 50%,
+    rgba(8, 7, 9, 0.0) 75%,
+    rgba(8, 7, 9, 0.0) 100%
+  );
 }
 
 .treeBG-logo-wrapper {

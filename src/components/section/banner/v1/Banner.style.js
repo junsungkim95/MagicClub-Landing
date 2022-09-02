@@ -36,7 +36,7 @@ const BannerV1Wrapper = styled.section`
   
   
 
-  .bithu_v1_baner_left {
+  .magic_club_v1_baner_left {
     margin-top: 66px;
     max-width: 600px;
     width: 100%;
@@ -94,7 +94,7 @@ const BannerV1Wrapper = styled.section`
     }
   }
 
-  .bithu_v1_baner_right {
+  .magic_club_v1_baner_right {
     max-width: 500px;
     width: 100%;
     margin-left: auto;
@@ -129,7 +129,7 @@ const BannerV1Wrapper = styled.section`
       }
     }
 
-    .bithu_v1_baner_right_img_sect {
+    .magic_club_v1_baner_right_img_sect {
       position: relative;
       width: 100%;
       height: 550px;
@@ -137,7 +137,7 @@ const BannerV1Wrapper = styled.section`
       align-items: center;
       justify-content: center;
 
-      .bithu_v1_baner_right_img_bg {
+      .magic_club_v1_baner_right_img_bg {
         position: absolute;
         top: 0px;
         left: 0px;
@@ -150,7 +150,7 @@ const BannerV1Wrapper = styled.section`
         }
       }
 
-      .bithu_v1_baner_right_img {
+      .magic_club_v1_baner_right_img {
         position: relative;
         z-index: 1;
       }
@@ -158,7 +158,7 @@ const BannerV1Wrapper = styled.section`
   }
 
   @media only screen and (max-width: 1199px) {
-    .bithu_v1_baner_left {
+    .magic_club_v1_baner_left {
       h2 {
         font-size: 50px;
         line-height: 65px;
@@ -176,25 +176,25 @@ const BannerV1Wrapper = styled.section`
   }
 
   @media only screen and (max-width: 991px) {
-    .bithu_v1_baner_left {
+    .magic_club_v1_baner_left {
       margin-top: 0px;
       justify-content: flex-start;
     }
 
-    .bithu_v1_baner_right {
+    .magic_club_v1_baner_right {
       margin: 70px auto;
       padding: 0px 68px;
       max-width: 568px;
       width: 100%;
 
-      .bithu_v1_baner_right_img {
+      .magic_club_v1_baner_right_img {
         width: 55%;
       }
     }
   }
 
   @media only screen and (max-width: 767px) {
-    .bithu_v1_baner_left {
+    .magic_club_v1_baner_left {
       h2 {
         font-size: 40px;
         line-height: 50px;
@@ -212,17 +212,17 @@ const BannerV1Wrapper = styled.section`
       }
     }
 
-    .bithu_v1_baner_right {
+    .magic_club_v1_baner_right {
       padding-right: 0px;
 
-      .bithu_v1_baner_right_img_sect {
+      .magic_club_v1_baner_right_img_sect {
         height: 480px;
       }
     }
   }
 
   @media only screen and (max-width: 480px) {
-    .bithu_v1_baner_left {
+    .magic_club_v1_baner_left {
       h2 {
         font-size: 37px;
       }
@@ -241,13 +241,13 @@ const BannerV1Wrapper = styled.section`
             justify-content: flex-start;
             align-items: flex-start;
         
-            .bithu-btn + .bithu-btn {
+            .magic_club-btn + .magic_club-btn {
                 margin-top: 20px;
             }
         }
     }
 
-    .bithu_v1_baner_right {
+    .magic_club_v1_baner_right {
       padding-left: 34px;
 
       .mint_live_circle_sect{
@@ -260,7 +260,7 @@ const BannerV1Wrapper = styled.section`
   }
 
   @media (max-width: 375px) {
-    .bithu_v1_baner_left {
+    .magic_club_v1_baner_left {
       h2 {
         font-size: 35px;
       }
@@ -271,7 +271,7 @@ const BannerV1Wrapper = styled.section`
   }
 
   @media (max-width: 360px) {
-    .bithu_v1_baner_left {
+    .magic_club_v1_baner_left {
       .coin-info {
         font-size: 13px;
       }

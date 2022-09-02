@@ -16,10 +16,10 @@ const CTA_footer = () => {
     <CTAStyleWrapper>
       <div className="container">
         <SectionTitle
-          className="bithu_title_section text-center"
+          className="magic_club_title_section text-center"
           title="Join Our community &amp; get Early access"
         ></SectionTitle>
-        <div className="bithu_v1_cta_content">
+        <div className="magic_club_v1_cta_content">
           <div className="join_comunity_btns">
             <Button lg variant="mint" className="wishlist_btn">
               Whitelist Now
@@ -35,7 +35,7 @@ const CTA_footer = () => {
                 <li key={i}>
                   <a href={item.url}>
                     {item.thumb ? (
-                      <img src={item.thumb} alt="bithu nft profiles" />
+                      <img src={item.thumb} alt="magic_club nft profiles" />
                     ) : (
                       item.icon
                     )}
@@ -43,7 +43,7 @@ const CTA_footer = () => {
                   <img
                     className="social_hover_shape"
                     src={hoverShape}
-                    alt="bithu nft hover"
+                    alt="magic_club nft hover"
                   />
                 </li>
               ))}

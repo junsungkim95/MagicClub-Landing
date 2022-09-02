@@ -33,10 +33,10 @@ const MobileMenu = ({ mobileMenuhandle }) => {
     }
   }
   return (
-    <MobileMenuStyleWrapper className="bithu_mobile_menu">
-      <div className="bithu_mobile_menu_content">
+    <MobileMenuStyleWrapper className="magic_club_mobile_menu">
+      <div className="magic_club_mobile_menu_content">
         <div className="mobile_menu_logo">
-          <img className="bithu_logo" src={logo} alt="magic club logo" />
+          <img className="magic_club_logo" src={logo} alt="magic club logo" />
           <button
             className="mobile_menu_close_btn"
             onClick={() => mobileMenuhandle()}
@@ -55,7 +55,7 @@ const MobileMenu = ({ mobileMenuhandle }) => {
               <Dropdown.Item href="# " onClick={() => setLang("Kor") }>Korean</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-        <div className="bithu_mobile_menu_list">
+        <div className="magic_club_mobile_menu_list">
           <ul>
             <li className="mobile_menu_hide">
               <a href="#home">Home</a>
@@ -82,7 +82,7 @@ const MobileMenu = ({ mobileMenuhandle }) => {
             <FaDiscord />
           </a>
           <a href="#Gitbook">
-            <img className="gitbook_logo_mobile" src={gitbook_logo} alt="bithu nft logo" />
+            <img className="gitbook_logo_mobile" src={gitbook_logo} alt="magic_club nft logo" />
           </a>
         </div>
         { account ?

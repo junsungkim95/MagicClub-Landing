@@ -80,6 +80,25 @@ const CharacterSliderWrapper = styled.section`
       grid-template-columns: 320px;
     }
   }
+
+  @media (max-width: 420px) {
+    .chars-wrapper {
+      max-width: 200px;
+    }
+    .chars-box {
+      max-width: 200px;
+    }
+    .character-thumb {
+      width: 200px;
+      height: 200px;
+    }
+    .charsName {
+      font-size: 14px;
+    }
+    .charsDesc {
+      font-size: 11px;
+    }
+  }
   
 `;
 

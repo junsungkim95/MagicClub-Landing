@@ -24,7 +24,7 @@ const FooterBottom = () => {
               <p className="email_address">info@magicclub.io</p>
             </div>
             <a href="# " className="bact_to_top_btn">
-              <img src={backToTopIcon} alt="bithu nft back to top" />
+              <img src={backToTopIcon} alt="magic_club nft back to top" />
             </a>
             <div className="bottom_footer_right">
               <ul>
@@ -32,7 +32,7 @@ const FooterBottom = () => {
                   <li key={i}>
                     <a href={item.url}>
                       {item.thumb ? (
-                        <img src={item.thumb} alt="bithu nft social" />
+                        <img src={item.thumb} alt="magic_club nft social" />
                       ) : (
                         item.icon
                       )}

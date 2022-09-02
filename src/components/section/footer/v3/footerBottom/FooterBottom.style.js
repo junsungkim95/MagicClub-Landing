@@ -105,7 +105,12 @@ const FooterBottomStyleWrapper = styled.div`
 
   @media only screen and (max-width: 991px) {
     padding: 50px 0px;
-
+    .footerLogo{
+      max-width: 120px;
+    }
+    .email_address {
+      margin-left: 40px;
+    }
     .top-footer-content {
       .footer_image {
         padding-right: 55px;

@@ -54,19 +54,19 @@ const Header = () => {
   },[isWalletAlreadyConnected]);
 
   return (
-    <NavWrapper className="bithu_header" id="navbar">
+    <NavWrapper className="magic_club_header" id="navbar">
       <div className="container">
         {/* Main Menu Start */}
-        <div className="bithu_menu_sect">
-          <div className="bithu_menu_left_sect">
+        <div className="magic_club_menu_sect">
+          <div className="magic_club_menu_left_sect">
             <div className="logo">
               <a href="/">
-                <img src={logo} alt="bithu nft logo" />
+                <img src={logo} alt="magic_club nft logo" />
               </a>
             </div>
           </div>
-          <div className="bithu_menu_right_sect bithu_v1_menu_right_sect">
-            <div className="bithu_menu_list">
+          <div className="magic_club_menu_right_sect magic_club_v1_menu_right_sect">
+            <div className="magic_club_menu_list">
               <ul>
                 <li>
                   <a href="#home">Home</a>
@@ -85,7 +85,7 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-            <div className="bithu_menu_btns">
+            <div className="magic_club_menu_btns">
               <button className="menu_btn" onClick={() => handleMobileMenu()}>
                 <MdNotes />
               </button>
@@ -115,7 +115,7 @@ const Header = () => {
 
               }
               <a href="#Gitbook">
-                <img className="gitbook_logo" src={gitbook_logo} alt="bithu nft logo" />
+                <img className="gitbook_logo" src={gitbook_logo} alt="magic_club nft logo" />
               </a>
               {/* 리코일 테스트 공간 */}
 

@@ -30,10 +30,10 @@ const ConnectWallet = (props) => {
 
             <div className="modal_bottom_shape_wrap">
               <span className="modal_bottom_shape shape_left">
-                <img src={hoverShape} alt="bithu nft hover shape" />
+                <img src={hoverShape} alt="magic club nft hover shape" />
               </span>
               <span className="modal_bottom_shape shape_right">
-                <img src={hoverShape} alt="bithu nft hover shape" />
+                <img src={hoverShape} alt="magic club nft hover shape" />
               </span>
             </div>
           </div>

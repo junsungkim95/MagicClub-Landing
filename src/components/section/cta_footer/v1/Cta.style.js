@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const CTAStyleWrapper = styled.section`
 margin-bottom: 1000px;
-  .bithu_title_section {
+  .magic_club_title_section {
     width: 45%;
     margin: 0 auto;
     img {
@@ -19,7 +19,7 @@ margin-bottom: 1000px;
     font-size: 50px;
   }
 
-  .bithu_v1_cta_content {
+  .magic_club_v1_cta_content {
     position: relative;
     z-index: 1;
 
@@ -107,7 +107,7 @@ margin-bottom: 1000px;
 
   @media only screen and (max-width: 768px) {
     margin-bottom: 600px;
-    .bithu_title_section {
+    .magic_club_title_section {
       width: 60%;
     }
     .title-emo {
@@ -149,7 +149,7 @@ margin-bottom: 1000px;
   }
 
   @media (max-width: 425px) {
-    .bithu_title_section {
+    .magic_club_title_section {
       width: 85%;
     }
     .title-emo {

@@ -6,7 +6,7 @@ const Particle = ({ particles }) => {
       <div className="particle_stars">
         {particles?.map((shape, i) => (
           <span key={i} className={`star_${i + 1}`}>
-            <img src={shape} alt="bithu nft background particle" />
+            <img src={shape} alt="magic club nft background particle" />
           </span>
         ))}
       </div>

@@ -7,11 +7,11 @@ import TeamStyleWrapper from "./Team.style";
 const Team = () => {
   return (
     <TeamStyleWrapper>
-      <div className="bithu_team_sect v1_team_sect" id="team">
+      <div className="magic_club_team_sect v1_team_sect" id="team">
         <div className="v1_team_overlay">
           <div className="container">
             <SectionTitle title="Team" />
-            <div className="bithu_team_content">
+            <div className="magic_club_team_content">
               <div className="row">
                 {data?.map((member, i) => (
                   <div key={i} className="col-lg-3 col-md-4 col-sm-6">
