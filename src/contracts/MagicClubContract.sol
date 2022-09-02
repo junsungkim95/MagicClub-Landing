@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
-contract BithuContract is ERC721Enumerable, Ownable {
+contract Magic Club Contract is ERC721Enumerable, Ownable {
   using Strings for uint256;
 
   using Counters for Counters.Counter;
