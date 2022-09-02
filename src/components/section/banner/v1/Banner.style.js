@@ -271,6 +271,13 @@ const BannerV1Wrapper = styled.section`
   }
 
   @media (max-width: 360px) {
+    min-height: 640px;
+    .player-wrapper {
+      height: 640px;
+    }
+    .magic_club_v1_baner_left {
+      min-height: 448px;
+    }
     .magic_club_v1_baner_left {
       .coin-info {
         font-size: 13px;
