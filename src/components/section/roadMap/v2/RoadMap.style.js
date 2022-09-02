@@ -99,13 +99,6 @@ const RoadMapStyleWrapper = styled.section`
       }
     }
   }
-  /* bg image  */
-  .magic_club_v2_roadmap_mass_gard {
-    position: absolute;
-    bottom: -400px;
-    text-align: center;
-    width: 100%;
-  }
 
   @media only screen and (max-width: 767px) {
     .v2_roadmap_card_list {
