@@ -81,13 +81,19 @@ const AboutStyleWrapper = styled.section`
 
     @media only screen and (max-width: 991px) {
         padding-top: 75px;
-    }
-
-    @media only screen and (max-width: 575px) {
         .v2_about_us_text {
             p {
                 font-size: 13px;
-                line-height: 25px;
+                line-height: 16px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+        .v2_about_us_text {
+            p {
+                font-size: 11px;
+                line-height: 15px;
                 margin-bottom: 12px;
             }
         }
