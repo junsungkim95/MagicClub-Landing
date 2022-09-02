@@ -13,7 +13,7 @@ import { useRecoilState } from "recoil";
 import { langState } from '../../../../Atoms/langState';
 
 const MobileMenu = ({ mobileMenuhandle }) => {
-  const { walletModalHandle, metamaskModalHandle, account, disconnectWalletFromApp } = useModal();
+  const { walletModalHandle, connectWalletHandle, metamaskModalHandle, account, disconnectWalletFromApp } = useModal();
   const [isSubmenu, setSubmenu] = useState(false);
   const [lang, setLang] = useRecoilState(langState);
 
@@ -29,7 +29,8 @@ const MobileMenu = ({ mobileMenuhandle }) => {
     if(!isMetaMaskInstalled()){
       metamaskModalHandle();
     }else{
-      walletModalHandle();
+      // walletModalHandle();
+      connectWalletHandle();
     }
   }
   return (
