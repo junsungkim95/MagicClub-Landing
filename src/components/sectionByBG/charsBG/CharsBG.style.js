@@ -16,7 +16,7 @@ const CharsBG = styled.section`
 //   ), 
 // url(${charsBG});
 background-size: 100% 100%;
-padding-top: 200px;
+padding-top: 0px;
 min-height: 1900px;
 position: relative;
 
@@ -27,15 +27,15 @@ position: relative;
   left: 50%;
   transform: translate(-50%, 0%);
   bottom: 0;
-  mask-image: linear-gradient(
-    to bottom,
-    rgba(8, 7, 9, 0.05) 10%,
-    rgba(8, 7, 9, 0.15) 20%,
-    rgba(8, 7, 9, 0.75) 30%,
-    rgba(8, 7, 9, 0.85) 50%,
-    rgba(8, 7, 9, 0.9) 75%,
-    rgba(8, 7, 9, 1) 100%
-  );
+  // mask-image: linear-gradient(
+  //   to bottom,
+  //   rgba(8, 7, 9, 0.05) 10%,
+  //   rgba(8, 7, 9, 0.15) 20%,
+  //   rgba(8, 7, 9, 0.75) 30%,
+  //   rgba(8, 7, 9, 0.85) 50%,
+  //   rgba(8, 7, 9, 0.9) 75%,
+  //   rgba(8, 7, 9, 1) 100%
+  // );
 }
 
 .charsOnBD {
@@ -55,17 +55,14 @@ position: relative;
 }
 
 @media (max-width: 1350px) {
-  padding-top: 100px;
   min-height: 1100px;
 }
 
 @media (max-width: 1000px) {
-  padding-top: 80px;
   min-height: 1000px;
 }
 
 @media (max-width: 600px) {
-  padding-top: 0px;
   min-height: 620px;
 }
 

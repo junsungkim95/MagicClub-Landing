@@ -14,7 +14,6 @@ const About = () => {
           className="text-center"
           isCenter={true}
           title="About Us"
-          subtitle="THE STORY"
         />
         <div className="v2_about_us_content">
           <div className="v2_about_us_text">
