@@ -18,10 +18,10 @@ overflow: hidden;
   mask-image: linear-gradient(
     to bottom,
     rgba(8, 7, 9, 1) 10%,
-    rgba(8, 7, 9, 0.7) 20%,
-    rgba(8, 7, 9, 0.5) 30%,
-    rgba(8, 7, 9, 0.05) 50%,
-    rgba(8, 7, 9, 0.0) 75%,
+    rgba(8, 7, 9, 0.9) 30%,
+    rgba(8, 7, 9, 0.7) 40%,
+    rgba(8, 7, 9, 0.4) 70%,
+    rgba(8, 7, 9, 0.1) 85%,
     rgba(8, 7, 9, 0.0) 100%
   );
 }

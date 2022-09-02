@@ -10,7 +10,7 @@ function bdUpperBG() {
     <BdUpperBG>
         <FAQ />
         <Footer />
-        {/* <img className='bdUpper_BG' src={bdUpperBg} alt='BuildingUpperBG' /> */}
+        <img className='bdUpper_BG' src={bdUpperBg} alt='BuildingUpperBG' />
     </BdUpperBG>
   )
 }

@@ -21,7 +21,7 @@ margin-bottom: 1000px;
 
   .magic_club_v1_cta_content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 
     /* particles */
     /* particles */
@@ -30,7 +30,7 @@ margin-bottom: 1000px;
       width: 100%;
       position: absolute;
       top: -150px;
-      z-index: 0;
+      z-index: 2;
     }
   }
 
@@ -44,7 +44,7 @@ margin-bottom: 1000px;
     margin-top: 47px;
     margin-bottom: 60px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
   }
 
   .cta_social_links {
@@ -52,7 +52,7 @@ margin-bottom: 1000px;
     margin: auto;
     margin-bottom: 70px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 
     ul {
       display: flex;

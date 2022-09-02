@@ -9,6 +9,7 @@ const FooterStyleWrapper = styled.footer`
   p {
     margin-bottom: 0;
   }
+  z-index: 1;
   /* footer top  */
   .top-footer-content {
     padding-bottom: 90px;

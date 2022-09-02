@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 const FooterBottomStyleWrapper = styled.div`
+  position: relative;
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(20px);
+  z-index: 10;
   .footerLogo{
     max-width: 150px;
   }
