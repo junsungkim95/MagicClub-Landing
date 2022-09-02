@@ -3,7 +3,7 @@ import data from "../../../../../assets/data/socialProfile";
 import backToTopIcon from "../../../../../assets/images/icon/back_to_top.svg";
 import footerShapesLeft from "../../../../../assets/images/icon/footer_shapes_left.png";
 import footerShapesRight from "../../../../../assets/images/icon/footer_shapes_right.png";
-import logo from "../../../../../assets/images/logo.png";
+import logo from "../../../../../assets/images/white_logo.png";
 
 const FooterBottom = () => {
   return (
