@@ -106,7 +106,7 @@ const FooterBottomStyleWrapper = styled.div`
   }
 
   @media only screen and (max-width: 991px) {
-    padding: 50px 0px;
+    padding: 10px 0px;
     .footerLogo{
       max-width: 120px;
     }
