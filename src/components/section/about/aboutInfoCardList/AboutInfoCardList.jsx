@@ -9,7 +9,7 @@ const AboutInfoCardList = () => {
   const { aboutInfo } = data; 
   const [lang] = useRecoilState(langState);
   return (
-    <AboutInfoCardListWrapper className="about_us_text_card_sect">
+    <AboutInfoCardListWrapper className="about_us_text_card_sect" id="project">
       <h2 className="project_title">Project</h2>
       <div className="row">
         {aboutInfo?.map((item, i) => (
