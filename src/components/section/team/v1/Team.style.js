@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import teamBg from "../../../../assets/images/bg/v1_team_bg.png";
 
 const TeamStyleWrapper = styled.section`
   background: none;

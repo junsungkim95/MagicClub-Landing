@@ -60,9 +60,13 @@ const AboutInfoCardListWrapper = styled.div`
         .about_us_text_card_sect {
         margin-top: 60px;
 
-        &.md-mt-0 {
-            margin-top: 0;
+            &.md-mt-0 {
+                margin-top: 0;
+            }
         }
+        .cardContainer {
+            width: 240px;
+            height: 240px;
         }
     }
 
