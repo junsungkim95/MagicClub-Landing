@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 const HowToMintWrapper = styled.section`
-  padding-top: 110px;
-  padding-bottom: 85px;
-
+  padding-top: 190px;
   .how_to_mint_container {
     position: relative;
 
@@ -36,7 +34,7 @@ const HowToMintWrapper = styled.section`
             font-family: "NotoSansJP-Bold";
             font-style: normal;
             font-weight: 400;
-            font-size: 100px;
+            font-size: 60px;
             line-height: 140px;
             text-transform: uppercase;
             color: transparent;
@@ -72,7 +70,20 @@ const HowToMintWrapper = styled.section`
     }
   }
 
+  @media (max-width: 2000px) {
+    padding-top: 60px;
+  }
+
+  @media (max-width: 1600px) {
+    padding-top: 60px;
+  }
+
+  @media (max-width: 1350px) {
+    padding-top: 110px;
+  }
+
   @media only screen and (max-width: 1199px) {
+    padding-top: 40px;
     .how_to_mint_container {
       .how_to_mint_content {
         ul {
@@ -92,15 +103,12 @@ const HowToMintWrapper = styled.section`
       .how_to_mint_content {
         ul {
           li {
-            h3 {
-              font-size: 35px;
-            }
             h4 {
-              font-size: 65px;
-              line-height: 95px;
+              font-size: 45px;
+              line-height: 65px;
             }
             p {
-              font-size: 18px;
+              font-size: 16px;
               line-height: 27px;
               margin-left: 15px;
             }
@@ -111,14 +119,19 @@ const HowToMintWrapper = styled.section`
   }
 
   @media only screen and (max-width: 767px) {
+    padding-top: 50px;
     .how_to_mint_container {
       .how_to_mint_content {
         ul {
           flex-wrap: wrap;
           li {
             width: 50%;
+            h4 {
+              font-size: 30px;
+              line-height: 45px;
+            }
             p {
-              font-size: 18px;
+              font-size: 12px;
             }
           }
         }
@@ -127,6 +140,7 @@ const HowToMintWrapper = styled.section`
   }
 
   @media only screen and (max-width: 480px) {
+    padding-top: 60px;
     .how_to_mint_container {
       .how_to_mint_content {
         ul {

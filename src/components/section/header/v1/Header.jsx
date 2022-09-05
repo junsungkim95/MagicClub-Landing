@@ -6,6 +6,7 @@ import Button from "../../../../common/button";
 import NavWrapper from "./Header.style";
 import MobileMenu from "../mobileMenu/MobileMenu";
 import logo from "../../../../assets/images/logo.png";
+import frame from "../../../../assets/images/Frame.svg";
 import gitbook_logo from "../../../../assets/images/icon/gitbook-icon.svg";
 import { isMetaMaskInstalled } from '../../../../config';
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -62,11 +63,12 @@ const Header = () => {
           <div className="magic_club_menu_left_sect">
             <div className="logo">
               <a href="/">
-                <img src={logo} alt="magic_club nft logo" />
+                {/* <img src={frame} alt="magic_club nft frame" /> */}
+                <img className="header_logo_img" src={logo} alt="magic_club nft logo" />
               </a>
             </div>
           </div>
-          <div className="magic_club_menu_right_sect magic_club_v1_menu_right_sect">
+          <div className="magic_club_menu_right_sect">
             <div className="magic_club_menu_list">
               <ul>
                 <li>
@@ -74,6 +76,9 @@ const Header = () => {
                 </li>
                 <li>
                   <a href="#about">About</a>
+                </li>
+                <li>
+                  <a href="#project">Project</a>
                 </li>
                 <li>
                   <a href="#roadmap">Roadmap</a>

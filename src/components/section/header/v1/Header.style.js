@@ -264,7 +264,7 @@ const NavWrapper = styled.nav`
     .magic_club_menu_left_sect {
       width: 180px;
       .logo {
-        img {
+        .header_logo_img {
           width: 100px;
         }
       }
@@ -272,9 +272,6 @@ const NavWrapper = styled.nav`
 
     .magic_club_menu_right_sect {
       width: 50%;
-      .magic_club_menu_right_sect {
-        width: 50%;
-      }
     }
   }
 `;

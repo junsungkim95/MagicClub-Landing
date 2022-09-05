@@ -16,9 +16,8 @@ const CharsBG = styled.section`
 //   ), 
 // url(${charsBG});
 background-size: 100% 100%;
-padding-top: 450px;
-min-height: 2500px;
 position: relative;
+overflow: hidden;
 
 .characters_bg {
   z-index: 0;
@@ -43,34 +42,29 @@ position: relative;
   bottom: 0;
 }
 @media (max-width: 2500px) {
-  padding-top: 200px;
-  min-height: 2100px;
+  padding-top: 0px;
+
 }
 
 @media (max-width: 2000px) {
   padding-top: 100px;
-  min-height: 1600px;
+  // min-height: 1600px;
 }
 
 @media (max-width: 1600px) {
   padding-top: 0px;
-  min-height: 1300px;
 }
 
 @media (max-width: 1350px) {
-  min-height: 1050px;
 }
 
 @media (max-width: 991px) {
-  min-height: 800px;
 }
 
 @media (max-width: 600px) {
-  min-height: 620px;
 }
 
 @media (max-width: 400px) {
-  min-height: 500px;
 }
 `;
 

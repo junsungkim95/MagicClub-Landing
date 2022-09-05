@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import aboutBg from "../../../../assets/images/nft/v2_about_bg.png"
 const AboutStyleWrapper = styled.section` 
-    min-height: 430px; 
+    min-height: 1590px;
     padding-top: 85px;
     padding-bottom: 0px;
     background: none;
@@ -9,15 +9,6 @@ const AboutStyleWrapper = styled.section`
     background-repeat: no-repeat;
     background-size: cover;
     position: relative; 
-
-    .v2_about_overlay {
-        width: 100%;
-        height: 70%;
-        position: absolute;
-        bottom: 0px;
-        background: none;
-        z-index: 1;
-    }
 
     .v2_about_us_content {
         position: relative;
@@ -77,11 +68,51 @@ const AboutStyleWrapper = styled.section`
         &.v2_about_img_right{
             right: 0px;
         }
-    } 
+    }
+
+    @media (max-width: 2000px) {
+        padding-top: 60px;
+        min-height: 1190px;
+    }
+
+    @media (max-width: 1600px) {
+        min-height: 1075px;
+    }
+
+    @media (max-width: 1350px) {
+        padding-top: 0px;
+        min-height: 870px;
+        .v2_about_us_text {
+            
+            margin-top: 15px;
+            p {
+                font-size: 14px;
+                max-width: 700px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1199px) {
+        padding-top: 10px;
+        min-height: 750px;
+        .v2_about_us_text {
+            margin-top: 15px;
+        }
+    }
 
     @media only screen and (max-width: 991px) {
-        padding-top: 75px;
+        min-height: 700px;
+        padding-top: 40px;
         .v2_about_us_text {
+            margin-top: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        min-height: 700px;
+        padding-top: 100px;
+        .v2_about_us_text {
+            margin-top: 14px;
             p {
                 font-size: 13px;
                 line-height: 16px;
@@ -89,8 +120,20 @@ const AboutStyleWrapper = styled.section`
         }
     }
 
+    @media only screen and (max-width: 650px) {
+        min-height: 550px;
+        padding-top: 65px;
+    }
+
+    @media only screen and (max-width: 480px) {
+        min-height: 470px;
+        padding-top: 45px;
+    }
+
     @media only screen and (max-width: 400px) {
+        min-height: 380px;
         .v2_about_us_text {
+            margin-top: 20px;
             p {
                 font-size: 11px;
                 line-height: 15px;

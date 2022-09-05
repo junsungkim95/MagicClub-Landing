@@ -8,7 +8,7 @@ import CharsrBG from "./CharsBG.style";
 function charsBG() {
   return (
     <CharsrBG>
-        {/* <HowToMint /> */}
+        <HowToMint />
         <About />
         {/* <div className='charsOnBD-wrapper'>
           <img className='charsOnBD' src={characters} alt='characters' />

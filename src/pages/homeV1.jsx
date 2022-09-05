@@ -25,7 +25,7 @@ const HomeV1 = () => {
       {connectWalletModal && <ConnectWallet/> }
       <Header />
       <Banner />
-      <HowToMint />
+      {/* <HowToMint /> */}
       <CharsBG />
       <CharacterSlider />
       <CTA />

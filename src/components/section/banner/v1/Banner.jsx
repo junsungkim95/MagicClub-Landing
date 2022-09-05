@@ -58,10 +58,10 @@ const Banner = () => {
                 </Button>
               </div>
               <div className="coin-info">
-                <span>MAX 5 NFTS PER WALLET . PRICE 0.4 ETH + GAS</span>
+                <span>MAX 5 NFTS PER WALLET.</span>
                 <span>
-                  PRESALE IS LIVE{" "}
-                  <span className="highlighted">UNTIL 25 Oct 04:00</span>
+                  Price and Minting Date: TBA{" "}
+                  <span className="highlighted">TBA</span>
                 </span>
               </div>
             </div>

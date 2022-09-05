@@ -8,7 +8,6 @@ const About = () => {
   const [lang] = useRecoilState(langState);
   return (
     <AboutStyleWrapper className="v2_about_us_section" id="about">
-      <div className="v2_about_overlay"></div>
       <div className="container">
         <SectionTitle
           className="text-center"
