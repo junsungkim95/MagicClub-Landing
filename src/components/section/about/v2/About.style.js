@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import aboutBg from "../../../../assets/images/nft/v2_about_bg.png"
 const AboutStyleWrapper = styled.section` 
-    min-height: 1590px;
-    padding-top: 85px;
+    // min-height: 1590px;
+    // padding-top: 185px;
     padding-bottom: 0px;
     background: none;
     background-position: center center;
@@ -32,56 +32,18 @@ const AboutStyleWrapper = styled.section`
         }
     }
 
-    .counter-wrap{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        text-align: center;
-        max-width: 414px;
-        width: 100%;
-        margin: auto;
-        margin-top: 20px;
-          h4 {  
-            font-size: 18px;
-            line-height: 40px; 
-            text-transform: uppercase;
-            color: #FFFFFF;
-
-            span{
-                display: block;
-                font-size: 36px;
-                line-height: 40px; 
-                text-transform: uppercase;
-                color: #FFFFFF;
-            }
-        }
-    }
-
-    .v2_about_img{ 
-        position: absolute; 
-        top: 10px;
-        z-index: 0;
-
-        &.v2_about_img_left{
-            left: 0px;
-        }
-        &.v2_about_img_right{
-            right: 0px;
-        }
-    }
-
     @media (max-width: 2000px) {
-        padding-top: 60px;
-        min-height: 1190px;
+        // padding-top: 60px;
+        // min-height: 1190px;
     }
 
     @media (max-width: 1600px) {
-        min-height: 1075px;
+        // min-height: 1075px;
     }
 
     @media (max-width: 1350px) {
         padding-top: 0px;
-        min-height: 870px;
+        // min-height: 870px;
         .v2_about_us_text {
             
             margin-top: 15px;
@@ -93,24 +55,24 @@ const AboutStyleWrapper = styled.section`
     }
 
     @media only screen and (max-width: 1199px) {
-        padding-top: 10px;
-        min-height: 750px;
+        // padding-top: 10px;
+        // min-height: 750px;
         .v2_about_us_text {
             margin-top: 15px;
         }
     }
 
     @media only screen and (max-width: 991px) {
-        min-height: 700px;
-        padding-top: 40px;
+        // min-height: 700px;
+        // padding-top: 40px;
         .v2_about_us_text {
             margin-top: 10px;
         }
     }
 
     @media only screen and (max-width: 767px) {
-        min-height: 700px;
-        padding-top: 100px;
+        // min-height: 700px;
+        // padding-top: 100px;
         .v2_about_us_text {
             margin-top: 14px;
             p {
@@ -121,17 +83,17 @@ const AboutStyleWrapper = styled.section`
     }
 
     @media only screen and (max-width: 650px) {
-        min-height: 550px;
-        padding-top: 65px;
+        // min-height: 550px;
+        // padding-top: 65px;
     }
 
     @media only screen and (max-width: 480px) {
-        min-height: 470px;
-        padding-top: 45px;
+        // min-height: 470px;
+        // padding-top: 45px;
     }
 
     @media only screen and (max-width: 400px) {
-        min-height: 380px;
+        // min-height: 380px;
         .v2_about_us_text {
             margin-top: 20px;
             p {

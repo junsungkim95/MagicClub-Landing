@@ -8,8 +8,8 @@ import CharsrBG from "./CharsBG.style";
 function charsBG() {
   return (
     <CharsrBG>
-        <HowToMint />
-        <About />
+        <div className='htm-absolute'><HowToMint /></div>
+        <div className='about-absolute'><About /></div>
         {/* <div className='charsOnBD-wrapper'>
           <img className='charsOnBD' src={characters} alt='characters' />
         </div> */}

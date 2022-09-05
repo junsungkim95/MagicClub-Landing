@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const HowToMintWrapper = styled.section`
-  padding-top: 190px;
+  // padding-top: 190px;
   .how_to_mint_container {
     position: relative;
 
@@ -9,7 +9,7 @@ const HowToMintWrapper = styled.section`
       position: absolute;
       top: -370px;
       left: -130px;
-      max-width: 687px;
+      max-width: 900px;
       width: 100%;
       height: 547px;
       z-index: 0;
@@ -26,7 +26,7 @@ const HowToMintWrapper = styled.section`
         margin: 0;
         padding: 0;
         li {
-          width: 25%;
+          width: 50%;
           display: flex;
           align-items: center;
           justify-content: flex-start;
@@ -71,19 +71,19 @@ const HowToMintWrapper = styled.section`
   }
 
   @media (max-width: 2000px) {
-    padding-top: 60px;
+    // padding-top: 60px;
   }
 
   @media (max-width: 1600px) {
-    padding-top: 60px;
+    // padding-top: 60px;
   }
 
   @media (max-width: 1350px) {
-    padding-top: 110px;
+    // padding-top: 110px;
   }
 
   @media only screen and (max-width: 1199px) {
-    padding-top: 40px;
+    // padding-top: 40px;
     .how_to_mint_container {
       .how_to_mint_content {
         ul {
@@ -119,7 +119,7 @@ const HowToMintWrapper = styled.section`
   }
 
   @media only screen and (max-width: 767px) {
-    padding-top: 50px;
+    // padding-top: 50px;
     .how_to_mint_container {
       .how_to_mint_content {
         ul {
@@ -140,7 +140,7 @@ const HowToMintWrapper = styled.section`
   }
 
   @media only screen and (max-width: 480px) {
-    padding-top: 60px;
+    // padding-top: 60px;
     .how_to_mint_container {
       .how_to_mint_content {
         ul {
