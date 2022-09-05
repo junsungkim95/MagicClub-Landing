@@ -94,7 +94,19 @@ overflow: hidden;
       transform: translate(-50%, 100px);
     }
     .about-absolute {
-      transform: translate(-50%, 330px);
+      transform: translate(-50%, 380px);
+    }
+    .characters_bg {
+      padding-top: 0px;
+    }
+  }
+
+  @media (max-width: 1150px) {
+    .htm-absolute {
+      transform: translate(-50%, 60px);
+    }
+    .about-absolute {
+      transform: translate(-50%, 320px);
     }
     .characters_bg {
       padding-top: 0px;
