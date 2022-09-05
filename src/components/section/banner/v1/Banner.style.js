@@ -37,10 +37,10 @@ const BannerV1Wrapper = styled.section`
   
 
   .magic_club_v1_baner_left {
-    margin-top: 66px;
+    margin-top: 240px;
     max-width: 600px;
     width: 100%;
-    min-height: 550px;
+    min-height: 450px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -50,8 +50,8 @@ const BannerV1Wrapper = styled.section`
       font-family: "NotoSansJP-Bold";
       font-style: normal;
       font-weight: 400;
-      font-size: 60px;
-      line-height: 80px;
+      font-size: 40px;
+      line-height: 55px;
       text-transform: uppercase;
       color: #ffffff;
       margin-bottom: 32px;
@@ -72,13 +72,13 @@ const BannerV1Wrapper = styled.section`
     .banner_buttons {
       display: flex;
       column-gap: 30px;
-      margin-top: 58px;
+      margin-top: 38px;
     }
 
     .coin-info {
       display: flex;
       flex-direction: column;
-      margin-top: 37px;
+      margin-top: 17px;
       span {
         font-family: "NotoSansJP-Bold";
         font-size: 18px;
@@ -159,25 +159,33 @@ const BannerV1Wrapper = styled.section`
 
   @media only screen and (max-width: 1199px) {
     .magic_club_v1_baner_left {
+      margin-top: 300px;
+      min-height: 400px;
       h2 {
-        font-size: 50px;
-        line-height: 65px;
+        font-size: 40px;
+        line-height: 50px;
       }
 
       h3 {
-        font-size: 34px;
-        line-height: 38px;
+        font-size: 30px;
+        line-height: 34px;
       }
 
-      .baner_buttons {
-        margin-top: 40px;
+      .coin-info {
+        span {
+          font-size: 20px;
+          line-height: 28px;
+        }
+      }
+
+      .banner_buttons {
+        margin-top: 20px;
       }
     }
   }
 
   @media only screen and (max-width: 991px) {
     .magic_club_v1_baner_left {
-      margin-top: 0px;
       justify-content: flex-start;
     }
 
@@ -195,16 +203,25 @@ const BannerV1Wrapper = styled.section`
 
   @media only screen and (max-width: 767px) {
     .magic_club_v1_baner_left {
+      margin-top: 400px;
+      min-height: 330px;
       h2 {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 34px;
+        line-height: 40px;
         margin-bottom: 20px;
       }
 
       h3 {
-        font-size: 28px;
-        line-height: 38px;
+        font-size: 25px;
+        line-height: 34px;
         
+      }
+
+      .coin-info {
+        span {
+          font-size: 16px;
+          line-height: 24px;
+        }
       }
 
       .banner_buttons{
@@ -223,8 +240,8 @@ const BannerV1Wrapper = styled.section`
 
   @media only screen and (max-width: 480px) {
     .magic_club_v1_baner_left {
-      margin
-      min-height: 430px;
+      margin-top: 340px;
+      min-height: 400px;
       h2 {
         font-size: 28px;
       }

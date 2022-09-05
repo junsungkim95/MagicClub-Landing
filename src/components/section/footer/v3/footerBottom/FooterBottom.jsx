@@ -4,6 +4,8 @@ import backToTopIcon from "../../../../../assets/images/icon/back_to_top.svg";
 import footerShapesLeft from "../../../../../assets/images/icon/footer_shapes_left.png";
 import footerShapesRight from "../../../../../assets/images/icon/footer_shapes_right.png";
 import logo from "../../../../../assets/images/white_logo.png";
+import frame from "../../../../../assets/images/Frame.svg";
+
 
 const FooterBottom = () => {
   return (
@@ -19,6 +21,7 @@ const FooterBottom = () => {
           <div className="footer_menu">
             <div className="bottom_footer_left">
               <div className="copyright_text">
+                <img className="footerFrame" src={frame} alt="magic clib frame" />
                 <img className="footerLogo" src={logo} alt="magic clib logo" />
               </div>
               <p className="email_address">info@magicclub.io</p>

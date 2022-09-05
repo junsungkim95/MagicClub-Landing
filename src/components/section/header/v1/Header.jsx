@@ -63,7 +63,7 @@ const Header = () => {
           <div className="magic_club_menu_left_sect">
             <div className="logo">
               <a href="/">
-                {/* <img src={frame} alt="magic_club nft frame" /> */}
+                <img className="header_frame_img" src={frame} alt="magic_club nft frame" />
                 <img className="header_logo_img" src={logo} alt="magic_club nft logo" />
               </a>
             </div>

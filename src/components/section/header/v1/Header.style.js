@@ -8,6 +8,10 @@ const NavWrapper = styled.nav`
     margin-left: 10px;
   }
 
+  .header_frame_img {
+    height: 40px;
+  }
+
   &.magic_club_header {
     position: absolute;
     top: 0;
@@ -45,7 +49,7 @@ const NavWrapper = styled.nav`
 
     .logo {
       a {
-        display: inline-block;
+        display: flex;
       }
     }
   }
@@ -210,6 +214,9 @@ const NavWrapper = styled.nav`
         display: none;
       }
     }
+    .header_frame_img {
+      height: 20px;
+    }
   }
   @media (max-width: 1024px) {
     .magic_club_menu_list {
@@ -264,6 +271,9 @@ const NavWrapper = styled.nav`
     .magic_club_menu_left_sect {
       width: 180px;
       .logo {
+        .header_frame_img {
+          height: 30px;
+        }
         .header_logo_img {
           width: 100px;
         }

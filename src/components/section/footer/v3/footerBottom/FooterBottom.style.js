@@ -8,6 +8,9 @@ const FooterBottomStyleWrapper = styled.div`
   .footerLogo{
     max-width: 150px;
   }
+  .footerFrame {
+    height: 43px;
+  }
   .email_address {
     font-family: NotoSansJP;
     margin-left: 60px;
@@ -51,6 +54,7 @@ const FooterBottomStyleWrapper = styled.div`
     height: 100%;
 
     .copyright_text {
+      display: flex;
       color: rgba(255, 255, 255, 0.8);
       font-family: "NotoSansJP";
       font-style: normal;
@@ -132,6 +136,10 @@ const FooterBottomStyleWrapper = styled.div`
     .footer_menu {
       flex-direction: column-reverse;
       row-gap: 20px;
+    }
+
+    .footerFrame {
+      height: 35px;
     }
   }
 `;
