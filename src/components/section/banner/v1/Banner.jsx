@@ -60,7 +60,7 @@ const Banner = () => {
               <div className="coin-info">
                 <span>MAX 5 NFTS PER WALLET.</span>
                 <span>
-                  Price and Minting Date: TBA{" "}
+                  Price and Minting Date: {" "}
                   <span className="highlighted">TBA</span>
                 </span>
               </div>

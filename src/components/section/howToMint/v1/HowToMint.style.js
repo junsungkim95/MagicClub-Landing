@@ -105,7 +105,7 @@ const HowToMintWrapper = styled.section`
           li {
             h4 {
               font-size: 45px;
-              line-height: 65px;
+              line-height: 95px;
             }
             p {
               font-size: 16px;

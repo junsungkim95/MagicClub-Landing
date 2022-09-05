@@ -30,7 +30,7 @@ const BannerV1Wrapper = styled.section`
     top: 0;
     left: 0;
     video {
-      object-fit: fill;
+      object-fit: cover;
     }    
   }
   
@@ -223,8 +223,10 @@ const BannerV1Wrapper = styled.section`
 
   @media only screen and (max-width: 480px) {
     .magic_club_v1_baner_left {
+      margin
+      min-height: 430px;
       h2 {
-        font-size: 37px;
+        font-size: 28px;
       }
 
       h3 {
@@ -232,8 +234,10 @@ const BannerV1Wrapper = styled.section`
       }
 
       .coin-info {
-        font-size: 14px;
-        line-height: 29px;
+        span {
+          font-size: 12px;
+          line-height: 20px;
+        }
       }
 
       .banner_buttons{
@@ -255,17 +259,26 @@ const BannerV1Wrapper = styled.section`
         width: 90px;
         top: -36px;
         left: -40px;
-    }
+      }
+      
     }
   }
 
   @media (max-width: 375px) {
     .magic_club_v1_baner_left {
+      margin-top: 340px;
+      min-height: 400px;
       h2 {
-        font-size: 35px;
+        font-size: 25px;
       }
       h3 {
-        font-size: 22px;
+        font-size: 20px;
+      }
+      .coin-info {
+        span {
+          font-size: 12px;
+          line-height: 20px;
+        }
       }
     }
   }
@@ -276,11 +289,20 @@ const BannerV1Wrapper = styled.section`
       height: 640px;
     }
     .magic_club_v1_baner_left {
-      min-height: 448px;
-    }
-    .magic_club_v1_baner_left {
+      margin-top: 100px;
+      min-height: 340px;
+      h2 {
+        font-size: 20px;
+        line-height: 25px;
+      }
+      h3 {
+        font-size: 15px;
+      }
       .coin-info {
-        font-size: 13px;
+        span {
+          font-size: 10px;
+          line-height: 16px;
+        }
       }
     }
   }
