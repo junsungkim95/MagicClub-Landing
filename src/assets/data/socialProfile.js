@@ -31,7 +31,7 @@ const data = [
   },
   {
     icon: <FaTelegramPlane />,
-    url: "#",
+    url: "https://t.me/magicclub_io",
   },
 ];
 
