@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 
-const AboutInfoCardListWrapper = styled.div` 
+const ProjectWrapper = styled.div` 
     position: relative;
     padding-top: 140px; 
     padding-bottom: 200px;
@@ -49,6 +49,7 @@ const AboutInfoCardListWrapper = styled.div`
         width: 280px;
         height: 280px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: black;
@@ -86,4 +87,4 @@ const AboutInfoCardListWrapper = styled.div`
     }
 `
 
-export default AboutInfoCardListWrapper;
+export default ProjectWrapper;

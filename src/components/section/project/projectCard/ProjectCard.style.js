@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
-const AboutCardStyleWrapper = styled.article`
+const ProjectCardStyleWrapper = styled.article`
   background: none;
   width: 100%;
   min-height: 160px;
   padding: 10px;
+
+  .projectFrame {
+    margin-top: 5%;
+    width: 40%;
+  }
 
   .project_card_text {
     font-family: "NotoSansJP-Bold";
@@ -87,4 +92,4 @@ const AboutCardStyleWrapper = styled.article`
   }
 `;
 
-export default AboutCardStyleWrapper;
+export default ProjectCardStyleWrapper;

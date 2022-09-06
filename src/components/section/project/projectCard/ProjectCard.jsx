@@ -1,18 +1,19 @@
-import AboutCardStyleWrapper from "./AboutCard.style";
+import ProjectCardStyleWrapper from "./ProjectCard.style";
 
 import { useRecoilState } from "recoil";
-import { langState } from '../../../../../Atoms/langState';
+import { langState } from '../../../../Atoms/langState';
 
-const AboutCard = ({ title, text, mainTitle, image }) => {
+const AboutCard = ({ title, text, mainTitle, image, frame }) => {
   const [lang] = useRecoilState(langState);
   return (
-    <AboutCardStyleWrapper className="about_us_text_card">
+    <ProjectCardStyleWrapper className="about_us_text_card">
       <div className="cardContainer">
+        {frame == null? <></> : <img className="projectFrame" src={frame} alt="frame" />}
         {mainTitle == null? <img src={image} alt="magic club projects" /> : <h3 className="project_card_text">{mainTitle}</h3>}
       </div>
       <h4 className="project_name">{title}</h4>
       <p className="project_text">{text}</p>
-    </AboutCardStyleWrapper>
+    </ProjectCardStyleWrapper>
   );
 };
 

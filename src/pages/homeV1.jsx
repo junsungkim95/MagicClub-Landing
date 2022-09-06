@@ -3,7 +3,6 @@ import GlobalStyles from "../assets/styles/GlobalStyles";
 import Header from "../components/section/header/v1/Header";
 import Layout from "../common/layout";
 import Banner from "../components/section/banner/v1";
-import HowToMint from "../components/section/howToMint/v1";
 import CTA from "../components/section/cta/v1";
 import CharacterSlider from "../components/section/characterSlider/v1";
 import MintNowModal from "../common/modal/mintNowModal";
@@ -25,7 +24,6 @@ const HomeV1 = () => {
       {connectWalletModal && <ConnectWallet/> }
       <Header />
       <Banner />
-      {/* <HowToMint /> */}
       <CharsBG />
       <CharacterSlider />
       <CTA />
