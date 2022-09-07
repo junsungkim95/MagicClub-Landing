@@ -15,7 +15,6 @@ const RoadMapItem = ({ id, title, text }) => {
       data-aos={id % 2 === 0 ? `fade-left` : `fade-right`}
       data-aos-duration="1000"
     >
-      <div className="v2_roadmap_card_box"></div>
       <div
         className={
           id % 2 === 0
