@@ -3,6 +3,7 @@ import SectionTitle from "../../../../common/sectionTitle";
 import TeamMember from "../teamMember";
 import data from "../../../../assets/data/team/teamMembersV1";
 import TeamStyleWrapper from "./Team.style";
+import TitleFrame from "../../../../common/titleFrame/TitleFrame";
 
 const Team = () => {
   return (
@@ -11,6 +12,7 @@ const Team = () => {
         <div className="v1_team_overlay">
           <div className="container">
             <SectionTitle title="Team" />
+            <TitleFrame />
             <div className="magic_club_team_content">
               <div className="row">
                 {data?.map((member, i) => (

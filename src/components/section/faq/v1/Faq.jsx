@@ -12,6 +12,7 @@ import {
 } from "../../../../common/accordion/Accordion";
 import data from "../../../../assets/data/faq";
 import FAQStyleWrapper from "./Faq.style";
+import TitleFrame from "../../../../common/titleFrame/TitleFrame";
 
 import { useRecoilState } from "recoil";
 import { langState } from "../../../../Atoms/langState";
@@ -29,10 +30,11 @@ const FAQ = () => {
         <div className="magic_club_faq_content">
           <SectionTitle
             isCenter={true}
-            title="FREQUENTLY ASKED QUESTIONS"
+            title="FAQ"
             subtitle="QUESTIONS & ANSWERS"
             className="text-center"
           />
+          <TitleFrame />
           <div className="magic_club_faq_questions">
             <Accordion className="faq_questions">
               {data?.map((item, i) => (

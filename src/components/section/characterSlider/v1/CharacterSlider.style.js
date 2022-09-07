@@ -26,6 +26,7 @@ const CharacterSliderWrapper = styled.section`
     font-weight: 700;
     line-height: 64px;
     text-align: center;
+    margin-bottom: 0;
   }
 
   .slick-slider {

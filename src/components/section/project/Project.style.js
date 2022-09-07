@@ -18,6 +18,7 @@ const ProjectWrapper = styled.div`
         letter-spacing: -0.025em;
         text-align: center;
         color: white;
+        margin-bottom: 20px;
     }
 
     .project_name {

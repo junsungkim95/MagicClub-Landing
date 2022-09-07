@@ -3,6 +3,7 @@ import dividerShape from "../../../../assets/images/nft/roadmap_v2_middle_shape.
 import RoadMapItem from "./RoadMapItem";
 import data from "../../../../assets/data/roadMap/roadMapV1";
 import RoadMapStyleWrapper from "./RoadMap.style";
+import TitleFrame from "../../../../common/titleFrame/TitleFrame";
 
 import { useRecoilState } from "recoil";
 import { langState } from '../../../../Atoms/langState';
@@ -18,6 +19,7 @@ const RoadMap = () => {
           subtitle="Our Goals"
           className="text-center"
         />
+        <TitleFrame />
         <div className="v2_roadmap_card_list">
           <div className="v2_roadmap_divider">
             <img src={dividerShape} alt="bith nft road map" />

@@ -51,6 +51,15 @@ const CTAStyleWrapper = styled.section`
     text-align: center;
   }
 
+  .subtitle_eng{
+    font-family: NotoSansJP;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
   .magic_club_title_section {
     width: 85%;
     margin: 0 auto;

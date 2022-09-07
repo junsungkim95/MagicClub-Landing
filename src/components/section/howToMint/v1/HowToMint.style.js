@@ -14,7 +14,6 @@ const HowToMintWrapper = styled.section`
       height: 547px;
       z-index: 0;
     }
-
     .how_to_mint_content {
       position: relative;
       z-index: 1;

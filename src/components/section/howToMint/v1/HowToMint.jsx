@@ -1,5 +1,6 @@
 import SectionTitle from "../../../../common/sectionTitle";
 import data from "../../../../assets/data/howToMint";
+import TitleFrame from "../../../../common/titleFrame/TitleFrame";
 
 import HowToMintWrapper from "./HowToMint.style";
 
@@ -15,6 +16,9 @@ const HowToMint = () => {
           classNameName="md-pb-20"
           title="HOW TO MINT"
         />
+        <div className="how_to_mint_title_frame">
+          <TitleFrame />
+        </div>
         <div className="how_to_mint_content">
           <ul>
             {data?.map((item, i) => (
