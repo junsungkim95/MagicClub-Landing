@@ -1,6 +1,7 @@
 import SectionTitle from "../../../../common/sectionTitle";
 import data from "../../../../assets/data/howToMint";
 import TitleFrame from "../../../../common/titleFrame/TitleFrame";
+import htm_box from "../../../../assets/images/bg/htm_box.png"
 
 import HowToMintWrapper from "./HowToMint.style";
 
@@ -11,7 +12,7 @@ const HowToMint = () => {
   const [lang] = useRecoilState(langState);
   return (
     <HowToMintWrapper>
-      <div className="container how_to_mint_container">
+      <div className="how_to_mint_container">
         <SectionTitle
           classNameName="md-pb-20"
           title="HOW TO MINT"
@@ -25,6 +26,7 @@ const HowToMint = () => {
               <li key={i}>
                 <h4 className={item.mintColor}>{item.num}</h4>
                 <p>{item.text}</p>
+                <img src={htm_box} alt="htm box" />
               </li>
             ))}
           </ul>

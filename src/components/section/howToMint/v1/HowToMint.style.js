@@ -24,6 +24,7 @@ const HowToMintWrapper = styled.section`
         justify-content: space-between;
         margin: 0;
         padding: 0;
+        position: relative;
         li {
           width: 50%;
           display: flex;
@@ -53,6 +54,7 @@ const HowToMintWrapper = styled.section`
           }
 
           p {
+            position: absolute;
             font-family: "NotoSansJP-Bold";
             font-style: normal;
             font-weight: 400;
@@ -63,6 +65,11 @@ const HowToMintWrapper = styled.section`
             width: 100%;
             margin-left: 35px;
             margin-bottom: 0;
+          }
+
+          img {
+            position: absolute;
+            height: 100%;
           }
         }
       }
@@ -131,6 +138,9 @@ const HowToMintWrapper = styled.section`
             }
             p {
               font-size: 12px;
+            }
+            img {
+              height: 50%;
             }
           }
         }
