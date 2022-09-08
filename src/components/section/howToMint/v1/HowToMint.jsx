@@ -25,7 +25,7 @@ const HowToMint = () => {
             {data?.map((item, i) => (
               <li key={i}>
                 <h4 className={item.mintColor}>{item.num}</h4>
-                {/* <p>{item.text}</p> */}
+                <p>{item.text}</p>
                 <img src={htm_box} alt="htm box" />
               </li>
             ))}

@@ -41,7 +41,8 @@ const HowToMintWrapper = styled.section`
             font-style: normal;
             font-weight: 400;
             font-size: 60px;
-            line-height: 140px;
+            line-height: 70px;
+            margin-bottom: 100px;
             text-transform: uppercase;
             color: transparent;
 
@@ -64,12 +65,12 @@ const HowToMintWrapper = styled.section`
             font-family: "NotoSansJP-Bold";
             font-style: normal;
             font-weight: 400;
-            font-size: 24px;
-            line-height: 40px;
+            font-size: 14px;
+            line-height: 18px;
             color: #ffffff;
             max-width: 148px;
             width: 100%;
-            margin-left: 35px;
+            margin-left: 30px;
             margin-bottom: 0;
           }
 
@@ -116,13 +117,15 @@ const HowToMintWrapper = styled.section`
         ul {
           li {
             h4 {
-              font-size: 45px;
-              line-height: 95px;
+              font-size: 25px;
+              line-height: 45px;
+              margin-bottom: 50px;
             }
             p {
-              font-size: 16px;
-              line-height: 27px;
-              margin-left: 15px;
+              font-size: 10px;
+              line-height: 15px;
+              margin-left: 0px;
+              padding: 10px 50px 0;
             }
           }
         }
@@ -139,11 +142,14 @@ const HowToMintWrapper = styled.section`
           li {
             width: 50%;
             h4 {
-              font-size: 30px;
-              line-height: 45px;
+              font-size: 12px;
+              line-height: 30px;
+              margin-bottom: 30px;
             }
             p {
-              font-size: 12px;
+              font-size: 8px;
+              line-height: 10px;
+              padding: 10px 50px 0;
             }
             img {
               height: 45%;
@@ -162,6 +168,16 @@ const HowToMintWrapper = styled.section`
           flex-wrap: nowrap;
           flex-direction: column;
           li {
+            h4 {
+              font-size: 12px;
+              line-height: 30px;
+              margin-bottom: 30px;
+            }
+            p {
+              font-size: 8px;
+              line-height: 10px;
+              padding: 10px 50px 0;
+            }
             width: 100%;
             img {
               height: 20%;
