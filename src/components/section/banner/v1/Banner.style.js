@@ -15,7 +15,6 @@ const BannerV1Wrapper = styled.section`
   // background: url(${sectionBgImage});
   background: none;
   width: 100%;
-  min-height: 640px;
   background-size: 100% 100%;
   background-position: top center;
   background-repeat: no-repeat;
@@ -110,7 +109,7 @@ const BannerV1Wrapper = styled.section`
   @media only screen and (max-width: 1199px) {
     .magic_club_v1_baner_left {
       margin-top: 300px;
-      min-height: 400px;
+      min-height: 330px;
       h2 {
         font-size: 40px;
         line-height: 50px;
@@ -134,16 +133,19 @@ const BannerV1Wrapper = styled.section`
   }
 
   @media only screen and (max-width: 991px) {
+    min-height: 900px;
     .magic_club_v1_baner_left {
+      min-height: 350px;
       justify-content: flex-start;
     }
   }
 
   @media only screen and (max-width: 767px) {
+    min-height: 767px;
     .magic_club_v1_baner_left {
       left: 0;
-      margin-top: 400px;
       min-height: 330px;
+      margin-top: 400px;
       h2 {
         font-size: 34px;
         line-height: 40px;
@@ -169,6 +171,7 @@ const BannerV1Wrapper = styled.section`
   }
 
   @media only screen and (max-width: 480px) {
+    min-height: 640px;
     .player-wrapper {
       margin-top: 30px;
     }
