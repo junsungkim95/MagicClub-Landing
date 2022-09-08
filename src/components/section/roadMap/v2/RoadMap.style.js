@@ -108,6 +108,7 @@ const RoadMapStyleWrapper = styled.section`
       font-size: 24px;
       line-height: 34px;
       color: #06132D;
+      font-family: NotoSansJP;
       text-transform: uppercase;
       margin-bottom: 15px;
       padding-left: 10%;
@@ -120,6 +121,7 @@ const RoadMapStyleWrapper = styled.section`
       font-size: 32px;
       line-height: 36px;
       color: rgba(255, 255, 255, 0.8);
+      font-family: NotoSansJP;
       margin: 0;
     }
 
