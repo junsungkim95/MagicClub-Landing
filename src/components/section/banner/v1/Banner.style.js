@@ -24,10 +24,9 @@ const BannerV1Wrapper = styled.section`
 
   .player-wrapper {
     z-index: 0;
+    margin-top: 0px;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
     video {
       object-fit: cover;
     }    
@@ -170,6 +169,9 @@ const BannerV1Wrapper = styled.section`
   }
 
   @media only screen and (max-width: 480px) {
+    .player-wrapper {
+      margin-top: 30px;
+    }
     .magic_club_v1_baner_left {
       margin-top: 340px;
       h2 {
@@ -192,6 +194,9 @@ const BannerV1Wrapper = styled.section`
   }
 
   @media (max-width: 420px) {
+    .player-wrapper {
+      margin-top: 60px;
+    }
     .banner_buttons{
       flex-direction: column;
       justify-content: flex-start;
@@ -204,6 +209,9 @@ const BannerV1Wrapper = styled.section`
   }
 
   @media (max-width: 375px) {
+    .player-wrapper {
+      margin-top: 30px;
+    }
     .magic_club_v1_baner_left {
       margin-top: 340px;
       min-height: 400px;
@@ -224,6 +232,10 @@ const BannerV1Wrapper = styled.section`
 
   @media (max-width: 360px) {
     min-height: 640px;
+    .player-wrapper {
+      margin-top: 90px;
+    }
+
     .magic_club_v1_baner_left {
       margin-top: 100px;
       min-height: 340px;
