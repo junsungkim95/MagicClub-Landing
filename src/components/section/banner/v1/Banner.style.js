@@ -14,27 +14,24 @@ to {
 const BannerV1Wrapper = styled.section`
   // background: url(${sectionBgImage});
   background: none;
-  min-height: 950px;
   width: 100%;
+  min-height: 640px;
   background-size: 100% 100%;
   background-position: top center;
   background-repeat: no-repeat;
-  padding-top: 192px;
   position: relative;
+  margin-bottom: -6px;
 
   .player-wrapper {
     z-index: 0;
     width: 100%;
     height: 100%;
-    position: absolute;
     top: 0;
     left: 0;
     video {
       object-fit: cover;
     }    
   }
-  
-  
 
   .magic_club_v1_baner_left {
     margin-top: 240px;
@@ -45,6 +42,9 @@ const BannerV1Wrapper = styled.section`
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    position: absolute;
+    left: 25%;
+    bottom: 10%;
 
     h2 {
       font-family: "NotoSansJP-Bold";
@@ -94,6 +94,20 @@ const BannerV1Wrapper = styled.section`
     }
   }
 
+  @media (max-width: 1580px) {
+    .magic_club_v1_baner_left {
+      left: 8%;
+      bottom: 2%;
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      .banner_buttons {
+        margin-top: 10px;
+      }
+    }
+  }
+
   @media only screen and (max-width: 1199px) {
     .magic_club_v1_baner_left {
       margin-top: 300px;
@@ -114,10 +128,9 @@ const BannerV1Wrapper = styled.section`
           line-height: 28px;
         }
       }
-
-      .banner_buttons {
-        margin-top: 20px;
-      }
+      
+      left: 5%;
+      bottom: 0%;
     }
   }
 
@@ -129,12 +142,12 @@ const BannerV1Wrapper = styled.section`
 
   @media only screen and (max-width: 767px) {
     .magic_club_v1_baner_left {
+      left: 0;
       margin-top: 400px;
       min-height: 330px;
       h2 {
         font-size: 34px;
         line-height: 40px;
-        margin-bottom: 20px;
       }
 
       h3 {
@@ -159,7 +172,6 @@ const BannerV1Wrapper = styled.section`
   @media only screen and (max-width: 480px) {
     .magic_club_v1_baner_left {
       margin-top: 340px;
-      min-height: 400px;
       h2 {
         font-size: 28px;
       }
@@ -175,16 +187,20 @@ const BannerV1Wrapper = styled.section`
         }
       }
 
-      .banner_buttons{
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-        
-            .magic_club-btn + .magic_club-btn {
-                margin-top: 20px;
-            }
-        }
+      
     }
+  }
+
+  @media (max-width: 420px) {
+    .banner_buttons{
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+  
+      .magic_club-btn + .magic_club-btn {
+          margin-top: 20px;
+      }
+  }
   }
 
   @media (max-width: 375px) {
@@ -208,9 +224,6 @@ const BannerV1Wrapper = styled.section`
 
   @media (max-width: 360px) {
     min-height: 640px;
-    .player-wrapper {
-      height: 640px;
-    }
     .magic_club_v1_baner_left {
       margin-top: 100px;
       min-height: 340px;
