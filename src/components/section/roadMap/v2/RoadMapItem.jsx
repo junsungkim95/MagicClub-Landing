@@ -3,7 +3,7 @@ import { langState } from "../../../../Atoms/langState";
 import left_box from "../../../../assets/images/bg/roadmap_box_left.png";
 import right_box from "../../../../assets/images/bg/roadmap_box_right.png";
 
-const RoadMapItem = ({ id, title, text }) => {
+const RoadMapItem = ({ id, title, text, text2 }) => {
   const [lang] = useRecoilState(langState);
   return (
     <div
@@ -12,8 +12,8 @@ const RoadMapItem = ({ id, title, text }) => {
           ? `v2_roadmap_card_item v2_roadmap_card_item_odd`
           : `v2_roadmap_card_item v2_roadmap_card_item_even`
       }
-      data-aos={id % 2 === 0 ? `fade-left` : `fade-right`}
-      data-aos-duration="1000"
+      // data-aos={id % 2 === 0 ? `fade-left` : `fade-right`}
+      // data-aos-duration="1000"
     >
       <div
         className={
@@ -28,7 +28,10 @@ const RoadMapItem = ({ id, title, text }) => {
           <img src={right_box} alt="right-box" />
         )}
         <h3>{title} </h3>
-        <p>{text}</p>
+        <div className={text2 != null ? `roadmap_p_wrapper` : ``}>
+          <p className="text_1">{text}</p>
+          {text2 != null ? <p className="text_2">{text2}</p> : ""}
+        </div>
       </div>
     </div>
   );

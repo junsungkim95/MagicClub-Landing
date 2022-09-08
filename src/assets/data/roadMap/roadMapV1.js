@@ -9,7 +9,8 @@ const data = [
     }, 
     {
         title: "Phase 03",
-        text: "디스코드 오픈 화이트리스트 선정"
+        text: "디스코드 오픈",
+        text2: "화이트리스트 선정"
     }, 
     {
         title: "Phase 04",
@@ -37,7 +38,8 @@ const data = [
     }, 
     {
         title: "Phase 10",
-        text: "매직클럽 토큰 글로벌 거래소 상장"
+        text: "매직클럽 토큰",
+        text2: "글로벌 거래소 상장"
     }, 
 ]
 
