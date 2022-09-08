@@ -94,69 +94,6 @@ const BannerV1Wrapper = styled.section`
     }
   }
 
-  .magic_club_v1_baner_right {
-    max-width: 500px;
-    width: 100%;
-    margin-left: auto;
-    margin-top: 66px;
-
-    .mint_live_circle_sect {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 140px;
-      width: 140px;
-      border-radius: 50%;
-      border: none;
-      background: #ffe600;
-      position: absolute;
-      top: -65px;
-      left: -65px;
-      z-index: 1;
-
-      .mint_live_circle {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-
-        .mint_live_text {
-          animation: ${rotate} 20s linear infinite;
-          position: absolute;
-        }
-      }
-    }
-
-    .magic_club_v1_baner_right_img_sect {
-      position: relative;
-      width: 100%;
-      height: 550px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      .magic_club_v1_baner_right_img_bg {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
-        img {
-          width: 100%;
-          height: 100%;
-        }
-      }
-
-      .magic_club_v1_baner_right_img {
-        position: relative;
-        z-index: 1;
-      }
-    }
-  }
-
   @media only screen and (max-width: 1199px) {
     .magic_club_v1_baner_left {
       margin-top: 300px;
@@ -188,17 +125,6 @@ const BannerV1Wrapper = styled.section`
     .magic_club_v1_baner_left {
       justify-content: flex-start;
     }
-
-    .magic_club_v1_baner_right {
-      margin: 70px auto;
-      padding: 0px 68px;
-      max-width: 568px;
-      width: 100%;
-
-      .magic_club_v1_baner_right_img {
-        width: 55%;
-      }
-    }
   }
 
   @media only screen and (max-width: 767px) {
@@ -226,14 +152,6 @@ const BannerV1Wrapper = styled.section`
 
       .banner_buttons{
         margin-top: 25px;
-      }
-    }
-
-    .magic_club_v1_baner_right {
-      padding-right: 0px;
-
-      .magic_club_v1_baner_right_img_sect {
-        height: 480px;
       }
     }
   }
@@ -266,18 +184,6 @@ const BannerV1Wrapper = styled.section`
                 margin-top: 20px;
             }
         }
-    }
-
-    .magic_club_v1_baner_right {
-      padding-left: 34px;
-
-      .mint_live_circle_sect{
-        height: 90px;
-        width: 90px;
-        top: -36px;
-        left: -40px;
-      }
-      
     }
   }
 

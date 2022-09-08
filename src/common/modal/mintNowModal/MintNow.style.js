@@ -64,7 +64,7 @@ const MintModalStyleWrapper = styled.div`
 
   .modal_header {
     h2 {
-      font-family: "Bakbak One";
+      font-family: "NotoSansJP-Bold";
       font-style: normal;
       font-weight: 400;
       font-size: 24px;
@@ -122,7 +122,7 @@ const MintModalStyleWrapper = styled.div`
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
         h5 {
-          font-family: "Inter";
+          font-family: "NotoSansJP";
           font-style: normal;
           font-weight: 600;
           font-size: 16px;
@@ -145,7 +145,7 @@ const MintModalStyleWrapper = styled.div`
             outline: none;
             background: transparent;
             padding: 0px;
-            font-family: "Bakbak One";
+            font-family: "NotoSansJP-Bold";
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -168,7 +168,7 @@ const MintModalStyleWrapper = styled.div`
             background: transparent;
             padding: 0px 19px;
             outline: none;
-            font-family: "Bakbak One";
+            font-family: "NotoSansJP-Bold";
             font-style: normal;
             font-weight: 400;
             font-size: 16px;

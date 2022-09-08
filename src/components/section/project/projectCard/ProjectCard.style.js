@@ -36,7 +36,7 @@ const ProjectCardStyleWrapper = styled.article`
 
   .project_text {
     padding-top: 2px;
-    font-family: "Inter";
+    font-family: "NotoSansJP";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;

@@ -64,7 +64,7 @@ const ShareModalStyleWrapper = styled.div`
 
   .modal_header {
     h2 {
-      font-family: "Bakbak One";
+      font-family: "NotoSansJP-Bold";
       font-style: normal;
       font-weight: 400;
       font-size: 24px;

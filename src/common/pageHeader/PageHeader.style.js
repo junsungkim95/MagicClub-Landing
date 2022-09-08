@@ -9,7 +9,7 @@ const PageHeaderStyleWrapper = styled.div`
   margin-top: 90px;
 
   .breadcrumb_area {
-    font-family: "Bakbak One";
+    font-family: "NotoSansJP-Bold";
 
     .breadcrumb_menu {
       text-transform: uppercase;

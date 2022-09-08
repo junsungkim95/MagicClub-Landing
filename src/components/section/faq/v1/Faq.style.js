@@ -36,6 +36,7 @@ const FAQStyleWrapper = styled.section`
       margin-bottom: 0px;
       padding: 0 29px;
       color: rgba(255, 255, 255, 0.8);
+      font-family: NotoSansJP;
       font-size: 24px;
       line-height: 34px;
       text-transform: none;
