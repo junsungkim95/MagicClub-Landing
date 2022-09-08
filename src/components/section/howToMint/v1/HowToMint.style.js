@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
 const HowToMintWrapper = styled.section`
-  // padding-top: 190px;
   .how_to_mint_container {
     position: relative;
+
+    .how_to_mint_title_frame {
+      width: 100vw;
+    }
 
     .how_to_mint_shadow {
       position: absolute;
@@ -16,20 +19,23 @@ const HowToMintWrapper = styled.section`
     }
     .how_to_mint_content {
       position: relative;
+      padding: 0 40px;
       z-index: 1;
 
       ul {
+        margin-left: auto;
+          margin-right: auto;
+          max-width: 1480px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 0;
         padding: 0;
         position: relative;
         li {
-          width: 50%;
+          width: 25%;
           display: flex;
           align-items: center;
-          justify-content: flex-start;
+          justify-content: center;
           h4 {
             font-family: "NotoSansJP-Bold";
             font-style: normal;
@@ -140,7 +146,7 @@ const HowToMintWrapper = styled.section`
               font-size: 12px;
             }
             img {
-              height: 50%;
+              height: 45%;
             }
           }
         }
@@ -157,6 +163,9 @@ const HowToMintWrapper = styled.section`
           flex-direction: column;
           li {
             width: 100%;
+            img {
+              height: 20%;
+            }
           }
         }
       }
