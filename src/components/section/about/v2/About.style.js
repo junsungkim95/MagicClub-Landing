@@ -9,6 +9,7 @@ const AboutStyleWrapper = styled.section`
     background-repeat: no-repeat;
     background-size: cover;
     position: relative; 
+    width: 100vw;
 
     .v2_about_us_content {
         position: relative;
@@ -16,7 +17,7 @@ const AboutStyleWrapper = styled.section`
 
     .v2_about_us_text {
         position: relative;
-        max-width: 770px; 
+        // max-width: 770px; 
         margin: 46px auto auto auto; 
         z-index: 2;
         p { 
@@ -25,7 +26,7 @@ const AboutStyleWrapper = styled.section`
             line-height: 28px;
             text-align: center;
             color: rgba(255, 255, 255, 0.8);
-            margin: 0px;
+            margin: auto;
         }
         p+p {
             margin: 20px 0; 
@@ -49,7 +50,7 @@ const AboutStyleWrapper = styled.section`
             margin-top: 15px;
             p {
                 font-size: 14px;
-                max-width: 700px;
+                // max-width: 700px;
             }
         }
     }

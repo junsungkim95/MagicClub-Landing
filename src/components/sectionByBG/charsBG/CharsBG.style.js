@@ -116,34 +116,22 @@ overflow: hidden;
       transform: translate(-50%, 100px);
     }
     .about-absolute {
-      transform: translate(-50%, 430px);
+      transform: translate(-50%, 530px);
     }
     .characters_bg {
-      padding-top: 400px;
+      padding-top: 450px;
     }
   }
 
-  @media (max-width: 400px) {
-    .htm-absolute {
-      transform: translate(-50%, 50px);
-    }
-    .about-absolute {
-      transform: translate(-50%, 410px);
-    }
-    .characters_bg {
-      padding-top: 400px;
-    }
-  }
-
-  @media (max-width: 360px) {
+  @media (max-width: 480px) {
     .htm-absolute {
       transform: translate(-50%, 0);
     }
     .about-absolute {
-      transform: translate(-50%, 300px);
+      transform: translate(-50%, 620px);
     }
     .characters_bg {
-      padding-top: 300px;
+      padding-top: 600px;
     }
   }
 `;

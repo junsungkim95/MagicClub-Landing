@@ -71,6 +71,8 @@ const HowToMintWrapper = styled.section`
             max-width: 148px;
             width: 100%;
             margin-left: 30px;
+            padding: 20px;
+            margin-top: 20px;
             margin-bottom: 0;
           }
 
@@ -102,7 +104,9 @@ const HowToMintWrapper = styled.section`
         ul {
           li {
             p {
-              margin-left: 20px;
+              margin-top: 20px;
+              margin-left: 25px;
+              padding: 20px;
               line-height: 30px;
             }
           }
@@ -117,14 +121,14 @@ const HowToMintWrapper = styled.section`
         ul {
           li {
             h4 {
-              font-size: 25px;
-              line-height: 45px;
-              margin-bottom: 50px;
+              font-size: 30px;
+              line-height: 40px;
+              margin-bottom: 60px;
             }
             p {
               font-size: 10px;
               line-height: 15px;
-              margin-left: 0px;
+              margin-left: 15px;
               padding: 10px 50px 0;
             }
           }
@@ -140,11 +144,37 @@ const HowToMintWrapper = styled.section`
         ul {
           flex-wrap: wrap;
           li {
+            width: 25%;
+            h4 {
+              font-size: 30px;
+              line-height: 70px;
+              margin-bottom: 60px;
+            }
+            p {
+              font-size: 8px;
+              line-height: 10px;
+              padding: 10px 50px 0;
+            }
+            img {
+              height: 70%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .how_to_mint_container {
+      .how_to_mint_content {
+        ul {
+          flex-wrap: wrap;
+          li {
             width: 50%;
             h4 {
-              font-size: 12px;
-              line-height: 30px;
-              margin-bottom: 30px;
+              font-size: 30px;
+              line-height: 60px;
+              margin-bottom: 70px;
             }
             p {
               font-size: 8px;
@@ -169,9 +199,9 @@ const HowToMintWrapper = styled.section`
           flex-direction: column;
           li {
             h4 {
-              font-size: 12px;
-              line-height: 30px;
-              margin-bottom: 30px;
+              font-size: 30px;
+              line-height: 60px;
+              margin-bottom: 70px;
             }
             p {
               font-size: 8px;
