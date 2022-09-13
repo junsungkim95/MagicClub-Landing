@@ -23,9 +23,10 @@ const HowToMintWrapper = styled.section`
       z-index: 1;
 
       ul {
+        margin-top: 20px;
         margin-left: auto;
           margin-right: auto;
-          max-width: 1480px;
+          max-width: 1000px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -99,6 +100,7 @@ const HowToMintWrapper = styled.section`
   }
 
   @media only screen and (max-width: 1199px) {
+    margin-top: 0
     // padding-top: 40px;
     .how_to_mint_container {
       .how_to_mint_content {
@@ -169,18 +171,19 @@ const HowToMintWrapper = styled.section`
     .how_to_mint_container {
       .how_to_mint_content {
         ul {
+          max-width: 420px;
           flex-wrap: wrap;
           li {
             width: 50%;
             h4 {
-              font-size: 30px;
-              line-height: 60px;
-              margin-bottom: 70px;
+              font-size: 50px;
+              line-height: 90px;
+              margin-bottom: 120px;
             }
             p {
-              font-size: 8px;
-              line-height: 10px;
-              padding: 10px 50px 0;
+              font-size: 16px;
+              line-height: 20px;
+              padding: 10px 30px 0;
             }
             img {
               height: 45%;
@@ -196,6 +199,7 @@ const HowToMintWrapper = styled.section`
     .how_to_mint_container {
       .how_to_mint_content {
         ul {
+          max-width: none;
           flex-wrap: nowrap;
           flex-direction: column;
           li {

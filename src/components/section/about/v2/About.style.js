@@ -10,6 +10,7 @@ const AboutStyleWrapper = styled.section`
     background-size: cover;
     position: relative; 
     width: 100vw;
+    max-width: 1100px;
 
     .v2_about_us_content {
         position: relative;

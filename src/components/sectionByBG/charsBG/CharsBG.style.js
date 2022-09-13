@@ -116,10 +116,10 @@ overflow: hidden;
       transform: translate(-50%, 100px);
     }
     .about-absolute {
-      transform: translate(-50%, 530px);
+      transform: translate(-50%, 680px);
     }
     .characters_bg {
-      padding-top: 450px;
+      padding-top: 600px;
     }
   }
 
