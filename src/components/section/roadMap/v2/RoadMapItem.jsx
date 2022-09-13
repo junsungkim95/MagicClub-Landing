@@ -23,11 +23,12 @@ const RoadMapItem = ({ id, title, text, text2 }) => {
         }
       >
         {id % 2 === 0 ? (
-          <img src={left_box} alt="left-box" />
+          <img src={left_box} className="odd_left_box" alt="left-box" />
         ) : (
-          <img src={right_box} alt="right-box" />
+          <img src={right_box} className="even_right_box" alt="right-box" />
         )}
-        <h3>{title} </h3>
+        {/* <img src={right_box} className="mobile_box" alt="mobile-box" /> */}
+        <h3>{title}</h3>
         <div className={text2 != null ? `roadmap_p_wrapper` : ``}>
           <p className="text_1">{text}</p>
           {text2 != null ? <p className="text_2">{text2}</p> : ""}
