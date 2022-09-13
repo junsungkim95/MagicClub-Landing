@@ -18,7 +18,7 @@ const HowToMint = () => {
           title="HOW TO MINT"
         />
         <div className="how_to_mint_title_frame">
-          <TitleFrame />
+          {/* <TitleFrame /> */}
         </div>
         <div className="how_to_mint_content">
           <ul>

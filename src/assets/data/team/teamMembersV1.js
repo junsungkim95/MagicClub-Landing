@@ -1,18 +1,19 @@
 import { FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
 
-import avatarThumb1 from "../../images/team/crew_avatar1.png";
-import avatarThumb2 from "../../images/team/crew_avatar2.png";
-import avatarThumb3 from "../../images/team/crew_avatar3.png";
-import avatarThumb4 from "../../images/team/crew_avatar4.png";
-import avatarThumb5 from "../../images/team/crew_avatar5.png";
-import avatarThumb6 from "../../images/team/crew_avatar6.png";
-import avatarThumb7 from "../../images/team/crew_avatar7.png";
-import avatarThumb8 from "../../images/team/crew_avatar8.png";
+import David_Choi from "../../images/team/CEO_David_Choi.png";
+import Andrew_Choi from "../../images/team/CTO_Andrew_Choi.png";
+import feel from "../../images/team/ARTIST_0.feel.png";
+import Grey from "../../images/team/TeamManager_Grey.png";
+import Spencer from "../../images/team/Designer_Spencer.png";
+import Johnny from "../../images/team/Overseas_AffairsJohnny.png";
+import Sooyong_Park from "../../images/team/Advisor_Sooyong_Park.png";
+import James from "../../images/team/Fullstack__James.png";
+import Yeojin_lee from "../../images/team/Fullstack_Yeojin_lee.png";
 
 const data = [
   {
-    avatar: avatarThumb1,
-    name: "Andrew Choi",
+    // avatar: David_Choi,
+    name: "David Choi",
     designation: "CEO",
     socialLinks: [
       {
@@ -30,8 +31,8 @@ const data = [
     ],
   },
   {
-    avatar: avatarThumb2,
-    name: "OOOO",
+    // avatar: Andrew_Choi,
+    name: "Andrew Choi",
     designation: "CTO",
     socialLinks: [
       {
@@ -48,7 +49,7 @@ const data = [
       },
     ],
   },{
-    avatar: avatarThumb2,
+    // avatar: feel,
     name: "0.feel",
     designation: "ARTIST",
     socialLinks: [
@@ -66,7 +67,7 @@ const data = [
       },
     ],
   },{
-    avatar: avatarThumb2,
+    // avatar: Grey,
     name: "Grey",
     designation: "Team Manager",
     socialLinks: [
@@ -85,7 +86,7 @@ const data = [
     ],
   },
   {
-    avatar: avatarThumb3,
+    // avatar: Spencer,
     name: "Spencer",
     designation: "Designer",
     socialLinks: [
@@ -104,7 +105,7 @@ const data = [
     ],
   },
   {
-    avatar: avatarThumb4,
+    // avatar: Johnny,
     name: "Johnny",
     designation: "Overseas Affairs",
     socialLinks: [
@@ -123,7 +124,7 @@ const data = [
     ],
   },
   {
-    avatar: avatarThumb5,
+    // avatar: Sooyong_Park,
     name: "Sooyong Park",
     designation: "Advisor",
     socialLinks: [
@@ -142,7 +143,7 @@ const data = [
     ],
   },
   {
-    avatar: avatarThumb6,
+    // avatar: James,
     name: "James",
     designation: "Fullstack",
     socialLinks: [
@@ -161,47 +162,9 @@ const data = [
     ],
   },
   {
-    avatar: avatarThumb6,
+    // avatar: Yeojin_lee,
     name: "Yeojin lee",
     designation: "Fullstack",
-    socialLinks: [
-      {
-        icon: <FaLinkedinIn />,
-        url: "#",
-      },
-      {
-        icon: <FaTwitter />,
-        url: "#",
-      },
-      {
-        icon: <FaInstagram />,
-        url: "#",
-      },
-    ],
-  },
-  {
-    avatar: avatarThumb7,
-    name: "OOOO",
-    designation: "Front End",
-    socialLinks: [
-      {
-        icon: <FaLinkedinIn />,
-        url: "#",
-      },
-      {
-        icon: <FaTwitter />,
-        url: "#",
-      },
-      {
-        icon: <FaInstagram />,
-        url: "#",
-      },
-    ],
-  },
-  {
-    avatar: avatarThumb8,
-    name: "OOOO",
-    designation: "Back End",
     socialLinks: [
       {
         icon: <FaLinkedinIn />,

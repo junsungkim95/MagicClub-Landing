@@ -20,7 +20,7 @@ const RoadMap = () => {
           subtitle="Our Goals"
           className="text-center"
         />
-        <TitleFrame />
+        {/* <TitleFrame /> */}
         <div className="v2_roadmap_card_list">
           <div className="v2_roadmap_divider">
             <img src={dividerShape} alt="bith nft road map" />

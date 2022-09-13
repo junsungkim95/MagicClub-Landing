@@ -2,22 +2,27 @@ import styled from "styled-components";
 
 const TeamMemberStyleWrapper = styled.article`
   .magic_club_team_card {
-    background: rgba(255, 255, 255, 0.05);
+    // background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     max-width: 100%;
-    height: 300px;
+    // height: 300px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    .team_member_img {
+      img {
+        border-radius: 20px;
+      }
+    }
     h3 {
       color: #ffffff;
       font-family: "NotoSansJP-Bold";
       font-size: 24px;
       line-height: 34px;
       text-align: center;
-      margin-top: 28px;
+      margin-top: 12px;
       margin-bottom: 4px;
     }
 
@@ -29,6 +34,7 @@ const TeamMemberStyleWrapper = styled.article`
       line-height: 19px;
       color: rgba(255, 255, 255, 0.8);
       margin: 0;
+      padding-bottom: 20px;
     }
   }
 

@@ -1,5 +1,5 @@
 import TeamMemberStyleWrapper from "./TeamMember.style";
-import hoverShape from "../../../../assets/images/icon/hov_shape_L.svg";
+import hoverShape from "../../../../../assets/images/icon/hov_shape_L.svg";
 
 const TeamMember = ({ avatar, name, designation, socialLinks }) => {
   return (

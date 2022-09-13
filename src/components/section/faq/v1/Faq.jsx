@@ -34,7 +34,7 @@ const FAQ = () => {
             subtitle="QUESTIONS & ANSWERS"
             className="text-center"
           />
-          <TitleFrame />
+          {/* <TitleFrame /> */}
           <div className="magic_club_faq_questions">
             <Accordion className="faq_questions">
               {data?.map((item, i) => (

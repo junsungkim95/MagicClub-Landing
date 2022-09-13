@@ -1,7 +1,7 @@
 import data from "../../../../assets/data/characterSlider/characterSlider";
 
 import CharacterSliderWrapper from "./CharacterSlider.style";
-
+import SectionTitle from "../../../../common/sectionTitle";
 import { useRecoilState } from "recoil";
 import { langState } from '../../../../Atoms/langState';
 import TitleFrame from "../../../../common/titleFrame/TitleFrame";
@@ -11,8 +11,12 @@ const CharacterSlider = () => {
   const [lang] = useRecoilState(langState);
   return (
     <CharacterSliderWrapper>
-      <p className="nft-title">Magic Club NFT</p>
-      <TitleFrame />
+      <SectionTitle
+        isCenter={true}
+        title="Magic Club NFT"
+        className="text-center"
+      />
+      {/* <TitleFrame /> */}
       <div className="chars-wrapper">
         {data?.map((item, i) => (
           <div className="chars-box">
