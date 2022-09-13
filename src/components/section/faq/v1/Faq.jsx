@@ -31,7 +31,6 @@ const FAQ = () => {
           <SectionTitle
             isCenter={true}
             title="FAQ"
-            subtitle="QUESTIONS & ANSWERS"
             className="text-center"
           />
           {/* <TitleFrame /> */}

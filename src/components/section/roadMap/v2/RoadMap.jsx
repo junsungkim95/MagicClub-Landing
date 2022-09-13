@@ -17,7 +17,6 @@ const RoadMap = () => {
         <SectionTitle
           isCenter={true}
           title="Roadmap"
-          subtitle="Our Goals"
           className="text-center"
         />
         {/* <TitleFrame /> */}
