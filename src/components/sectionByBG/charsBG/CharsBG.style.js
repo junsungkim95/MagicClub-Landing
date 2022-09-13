@@ -125,13 +125,13 @@ overflow: hidden;
 
   @media (max-width: 480px) {
     .htm-absolute {
-      transform: translate(-50%, 0);
+      transform: translate(-50%, 30px);
     }
     .about-absolute {
-      transform: translate(-50%, 620px);
+      transform: translate(-50%, 650px);
     }
     .characters_bg {
-      padding-top: 600px;
+      padding-top: 630px;
     }
   }
 `;
