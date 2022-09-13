@@ -19,6 +19,7 @@ const RoadMapStyleWrapper = styled.section`
       position: absolute;
       top: 0px;
       height: 100%;
+      clip: rect(90px, auto, 1430px, 0 );
       img {
         height: 100%;
       }
@@ -34,7 +35,7 @@ const RoadMapStyleWrapper = styled.section`
         margin-right: auto;
       }
       &.v2_roadmap_card_item_odd {
-        padding: 30px 30px 0px 0px;
+        padding: 0px 30px 0px 0px;
         margin: 0 0 80px auto;
       }
 
@@ -176,6 +177,12 @@ const RoadMapStyleWrapper = styled.section`
       }
     }
 
+    .v2_roadmap_card_list {
+      .v2_roadmap_divider {
+        clip: rect(90px, auto, 1320px, 0 );
+      }
+    }
+
     .v2_roadmap_card_content_odd {
       margin-right: -5px;
     }
@@ -209,6 +216,12 @@ const RoadMapStyleWrapper = styled.section`
       }
     }
 
+    .v2_roadmap_card_list {
+      .v2_roadmap_divider {
+        clip: rect(90px, auto, 1260px, 0 );
+      }
+    }
+
     .v2_roadmap_card_content_odd {
       margin-right: -11px;
     }
@@ -239,6 +252,12 @@ const RoadMapStyleWrapper = styled.section`
 
       .roadmap_p_wrapper {
         margin-top: -11px;
+      }
+    }
+
+    .v2_roadmap_card_list {
+      .v2_roadmap_divider {
+        clip: rect(70px, auto, 1190px, 0 );
       }
     }
 
