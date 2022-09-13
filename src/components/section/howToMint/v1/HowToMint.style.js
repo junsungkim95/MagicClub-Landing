@@ -70,10 +70,11 @@ const HowToMintWrapper = styled.section`
             color: #ffffff;
             max-width: 148px;
             width: 100%;
-            margin-left: 30px;
             padding: 20px;
+            // margin-left: 30px;
             margin-top: 20px;
             margin-bottom: 0;
+            text-align: center;
           }
 
           img {
@@ -105,7 +106,7 @@ const HowToMintWrapper = styled.section`
           li {
             p {
               margin-top: 20px;
-              margin-left: 25px;
+              // margin-left: 25px;
               padding: 20px;
               line-height: 30px;
             }
@@ -128,7 +129,7 @@ const HowToMintWrapper = styled.section`
             p {
               font-size: 10px;
               line-height: 15px;
-              margin-left: 15px;
+              // margin-left: 15px;
               padding: 10px 50px 0;
             }
           }
