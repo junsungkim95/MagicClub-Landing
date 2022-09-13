@@ -12,7 +12,7 @@ import avatarThumb8 from "../../images/team/crew_avatar8.png";
 const data = [
   {
     avatar: avatarThumb1,
-    name: "David Choi",
+    name: "Andrew Choi",
     designation: "CEO",
     socialLinks: [
       {
@@ -143,7 +143,26 @@ const data = [
   },
   {
     avatar: avatarThumb6,
-    name: "OOOO",
+    name: "James",
+    designation: "Fullstack",
+    socialLinks: [
+      {
+        icon: <FaLinkedinIn />,
+        url: "#",
+      },
+      {
+        icon: <FaTwitter />,
+        url: "#",
+      },
+      {
+        icon: <FaInstagram />,
+        url: "#",
+      },
+    ],
+  },
+  {
+    avatar: avatarThumb6,
+    name: "Yeojin lee",
     designation: "Fullstack",
     socialLinks: [
       {
