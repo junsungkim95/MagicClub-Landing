@@ -12,7 +12,7 @@ const data = [
     Kor_title: "Q. 민팅 날짜가 언제인가요?",
     Eng_text:
       "Pre-sale and Public sale are scheduled for Mid-October.",
-    Kor_text: "pre sale, puplic sale 은 10월 중순경 예정입니다",
+    Kor_text: "pre sale, puplic sale 은 10월 중순경 예정입니다.",
   },
   {
     Eng_title: "How much is the minting price?",
