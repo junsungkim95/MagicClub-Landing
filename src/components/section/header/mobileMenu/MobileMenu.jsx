@@ -77,10 +77,10 @@ const MobileMenu = ({ mobileMenuhandle }) => {
           </ul>
         </div>
         <div className="mobile_menu_social_links">
-          <a href="# ">
+          <a href="https://twitter.com/magic_club_io">
             <FaTwitter />
           </a>
-          <a href="# ">
+          <a href="https://discord.gg/8BWsjJCTTX">
             <FaDiscord />
           </a>
           <a href="https://adam-gallery-2.gitbook.io/magic-club/">

@@ -96,9 +96,11 @@ const Header = () => {
               <button className="menu_btn" onClick={() => handleMobileMenu()}>
                 <MdNotes />
               </button>
-              <Button sm variant="outline" className="join_btn">
+              <a href="https://discord.gg/8BWsjJCTTX">
+                <Button sm variant="outline" className="join_btn">
                 <FaDiscord /> <span>Join</span>
               </Button>
+              </a>
               { account ?
               <Dropdown>
                 <Dropdown.Toggle variant="white" id="dropdown-basic" className="connect_btn">

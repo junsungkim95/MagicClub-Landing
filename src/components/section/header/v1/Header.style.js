@@ -10,6 +10,7 @@ const NavWrapper = styled.nav`
   .metamask_logo {
     width: 25px;
     margin-left: 10px;
+    margin-right: 10px;
   }
 
   .header_frame_img {

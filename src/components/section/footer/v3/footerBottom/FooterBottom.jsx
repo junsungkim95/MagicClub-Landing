@@ -27,7 +27,7 @@ const FooterBottom = () => {
               </div>
               <div>
                 <p className="email_address">info@magicclub.io</p>
-                <a href={pdf} className="tnc_address">info@magicclub.io</a>
+                <a href={pdf} className="tnc_address">MAGIC CLUB Terms & Conditions</a>
               </div>
             </div>
             <a href="# " className="bact_to_top_btn">
