@@ -51,7 +51,7 @@ const data = [
   },{
     avatar: Feel,
     name: "0.Feel",
-    designation: "ARTIST",
+    designation: "Artist",
     socialLinks: [
       {
         icon: <FaLinkedinIn />,
