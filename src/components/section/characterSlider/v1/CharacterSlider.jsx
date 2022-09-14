@@ -23,7 +23,9 @@ const CharacterSlider = () => {
             <div className="character-thumb">
               <img src={item.thumb} alt="magic club nft character" />
             </div>
-            <span className="charsName">{item[`${lang}_name`]}</span><br />
+            <div className="charsName">
+              <span>{item[`${lang}_name`]}</span>
+            </div>
             <span className="charsDesc">{item[`${lang}_description`]}</span>
           </div>
         ))}

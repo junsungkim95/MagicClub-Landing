@@ -20,7 +20,7 @@ const data = [
   },
   {
     thumb: characterThumb3,
-    Eng_name: "Raon",
+    Eng_name: "RAON",
     Eng_description: "Dokkaebi of Wealth and Luck - He gives people food and gives them knowledge and military advice",
     Kor_name: "라온",
     Kor_description: "재물, 행운의 도깨비 - 사람들에게 먹을것을 주기도 하고 학식과 군사 지식을 알려주기도 함"

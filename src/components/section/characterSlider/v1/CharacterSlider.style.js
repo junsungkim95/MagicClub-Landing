@@ -60,8 +60,12 @@ const CharacterSliderWrapper = styled.section`
   }
 
   .charsName {
+    font-family: NotoSansJP-Bold;
     color: white;
     font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
   }
 
   .charsDesc {
