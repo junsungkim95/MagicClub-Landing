@@ -24,11 +24,11 @@ const CTA = () => {
         )}
         <div className="magic_club_v1_cta_content">
           <div className="join_comunity_btns">
-            <Button lg variant="mint" className="wishlist_btn">
+            <Button disabled lg variant="mint" className="wishlist_btn">
             {lang === "Eng" ? 
-              "View"
+              "Starting October 4th"
               :
-              "바로가기"
+              "10월 4일 오픈예정"
             }
             </Button>
           </div>

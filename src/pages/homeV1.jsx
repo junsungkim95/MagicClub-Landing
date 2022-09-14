@@ -25,7 +25,7 @@ const HomeV1 = () => {
       <Header />
       <Banner />
       <CharsBG />
-      <CharacterSlider />
+      {/* <CharacterSlider /> */}
       <CTA />
       <TreeUpperBG />
       <BdUpperBG />

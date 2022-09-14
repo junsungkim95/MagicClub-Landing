@@ -12,6 +12,9 @@ import MoonLogo from '../../../assets/images/MoonLogo.png'
 import MoonL from '../../../assets/images/bg/MoonL-Maru_T1.png'
 import MoonR from '../../../assets/images/bg/MoonR-Maru_M1.png'
 
+import CharacterSlider from "../../section/characterSlider/v1";
+
+
 function treeUpperBG() {
   return (
     <TreeUpperBG>
@@ -28,6 +31,7 @@ function treeUpperBG() {
         </div>
       </div>
       {/* <CharacterSlider /> */}
+      <CharacterSlider />
       <Project />
       <RoadMap /> 
       <Team />
