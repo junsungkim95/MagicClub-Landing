@@ -29,7 +29,7 @@ overflow: hidden;
 .moonL {
   position: absolute;
   width: 72%;
-  top: 0;
+  top: 30px;
   left: -21%;
   opacity: 0.2;
 }
@@ -37,7 +37,7 @@ overflow: hidden;
 .moonR {
   position: absolute;
   width: 72%;
-  top: 0;
+  top: 30px;
   right: -21%;
   opacity: 0.2;
 }
