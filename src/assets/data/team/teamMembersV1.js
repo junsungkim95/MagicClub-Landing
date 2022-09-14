@@ -1,18 +1,18 @@
 import { FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
 
-import David_Choi from "../../images/team/CEO_David_Choi.png";
-import Andrew_Choi from "../../images/team/CTO_Andrew_Choi.png";
-import feel from "../../images/team/ARTIST_0.feel.png";
-import Grey from "../../images/team/TeamManager_Grey.png";
-import Spencer from "../../images/team/Designer_Spencer.png";
-import Johnny from "../../images/team/Overseas_AffairsJohnny.png";
-import Sooyong_Park from "../../images/team/Advisor_Sooyong_Park.png";
-import James from "../../images/team/Fullstack__James.png";
-import Yeojin_lee from "../../images/team/Fullstack_Yeojin_lee.png";
+import David_Choi from "../../images/team/David_Choi.png";
+import Andrew_Choi from "../../images/team/Andrew_Choi.png";
+import Feel from "../../images/team/0_Feel.png";
+import Grey from "../../images/team/Grey.png";
+import Spencer from "../../images/team/Spencer.png";
+import Johnny from "../../images/team/Johnny.png";
+import Sooyong_Park from "../../images/team/Sooyong_Park.png";
+import James from "../../images/team/James.png";
+import Yeojin_lee from "../../images/team/Yeojin_lee.png";
 
 const data = [
   {
-    // avatar: David_Choi,
+    avatar: David_Choi,
     name: "David Choi",
     designation: "CEO",
     socialLinks: [
@@ -31,7 +31,7 @@ const data = [
     ],
   },
   {
-    // avatar: Andrew_Choi,
+    avatar: Andrew_Choi,
     name: "Andrew Choi",
     designation: "CTO",
     socialLinks: [
@@ -49,8 +49,8 @@ const data = [
       },
     ],
   },{
-    // avatar: feel,
-    name: "0.feel",
+    avatar: Feel,
+    name: "0.Feel",
     designation: "ARTIST",
     socialLinks: [
       {
@@ -67,7 +67,7 @@ const data = [
       },
     ],
   },{
-    // avatar: Grey,
+    avatar: Grey,
     name: "Grey",
     designation: "Team Manager",
     socialLinks: [
@@ -86,7 +86,7 @@ const data = [
     ],
   },
   {
-    // avatar: Spencer,
+    avatar: Spencer,
     name: "Spencer",
     designation: "Designer",
     socialLinks: [
@@ -105,7 +105,7 @@ const data = [
     ],
   },
   {
-    // avatar: Johnny,
+    avatar: Johnny,
     name: "Johnny",
     designation: "Overseas Affairs",
     socialLinks: [
@@ -124,7 +124,7 @@ const data = [
     ],
   },
   {
-    // avatar: Sooyong_Park,
+    avatar: Sooyong_Park,
     name: "Sooyong Park",
     designation: "Advisor",
     socialLinks: [
@@ -143,7 +143,7 @@ const data = [
     ],
   },
   {
-    // avatar: James,
+    avatar: James,
     name: "James",
     designation: "Fullstack",
     socialLinks: [
@@ -162,7 +162,7 @@ const data = [
     ],
   },
   {
-    // avatar: Yeojin_lee,
+    avatar: Yeojin_lee,
     name: "Yeojin lee",
     designation: "Fullstack",
     socialLinks: [
