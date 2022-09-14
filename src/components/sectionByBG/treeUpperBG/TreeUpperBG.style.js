@@ -28,16 +28,18 @@ overflow: hidden;
 
 .moonL {
   position: absolute;
-  width: 40%;
+  width: 72%;
   top: 0;
-  left: 0;
+  left: -21%;
+  opacity: 0.2;
 }
 
 .moonR {
   position: absolute;
-  width: 40%;
+  width: 72%;
   top: 0;
-  right: 0;
+  right: -21%;
+  opacity: 0.2;
 }
 
 .treeBG-logo-wrapper {

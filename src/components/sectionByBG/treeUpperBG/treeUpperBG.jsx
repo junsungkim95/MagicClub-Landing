@@ -9,8 +9,8 @@ import MoonBG from '../../../assets/images/bg/TreeupperBg.png';
 import logo from '../../../assets/images/logo.png'
 import frame from '../../../assets/images/Frame.svg'
 import MoonLogo from '../../../assets/images/MoonLogo.png'
-import MoonL from '../../../assets/images/bg/MoonL-Maru_T1.png'
-import MoonR from '../../../assets/images/bg/MoonR-Maru_M1.png'
+import MoonL from '../../../assets/images/bg/Maru_T.png'
+import MoonR from '../../../assets/images/bg/Maru_M.png'
 
 import CharacterSlider from "../../section/characterSlider/v1";
 
