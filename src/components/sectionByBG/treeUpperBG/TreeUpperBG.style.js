@@ -49,6 +49,7 @@ overflow: hidden;
   padding-bottom: 550px;
 }
 .logos{
+  height: 420px;
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -98,6 +99,9 @@ overflow: hidden;
     padding-bottom: 78px;
     padding-top: 153px;
   }
+  .logos{
+    height: 360px;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -116,6 +120,9 @@ overflow: hidden;
     width: 300px;
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+  .logos{
+    height: 300px;
   }
 }
 
@@ -139,6 +146,9 @@ overflow: hidden;
     padding-top: 70px;
     padding-bottom: 94px;
   }
+  .logos{
+    height: 240px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -158,6 +168,9 @@ overflow: hidden;
     // height: 135px;
     width: 200px;
     padding-bottom: 94px;
+  }
+  .logos{
+    height: 200px;
   }
 }
 `;

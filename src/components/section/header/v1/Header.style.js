@@ -7,6 +7,10 @@ const NavWrapper = styled.nav`
     width: 25px;
     margin-left: 10px;
   }
+  .metamask_logo {
+    width: 25px;
+    margin-left: 10px;
+  }
 
   .header_frame_img {
     height: 40px;

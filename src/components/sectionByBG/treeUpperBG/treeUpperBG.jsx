@@ -27,7 +27,7 @@ function treeUpperBG() {
         <div className='logos'>
           {/* <img className='treeBG-frame' src={frame} alt='magic club frame' />
           <img className='treeBG-logo' src={logo} alt='magic club logo' /> */}
-          <img className='treeBG-logos' src={MoonLogo} alt="magic club logo" />
+          {/* <img className='treeBG-logos' src={MoonLogo} alt="magic club logo" /> */}
         </div>
       </div>
       {/* <CharacterSlider /> */}

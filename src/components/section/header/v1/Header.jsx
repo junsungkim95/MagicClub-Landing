@@ -1,6 +1,7 @@
 import { useModal } from "../../../../utils/ModalContext";
 import { useEffect, useState } from "react";
 import { FaDiscord, FaWallet } from "react-icons/fa";
+import metamaskIcon from "../../../../assets/images/icon/MetaMask.svg";
 import { MdNotes } from "react-icons/md";
 import Button from "../../../../common/button";
 import NavWrapper from "./Header.style";
@@ -115,7 +116,7 @@ const Header = () => {
                 className="connect_btn"
                 onClick={() => handleWalletConnect()}
               >
-                <FaWallet />
+                <img className="metamask_logo" src={metamaskIcon} alt="magic_club nft logo" />
                 <span>Connect</span>
               </Button>
 

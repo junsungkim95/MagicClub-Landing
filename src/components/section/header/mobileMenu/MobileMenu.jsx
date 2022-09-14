@@ -5,6 +5,7 @@ import { BsXLg } from "react-icons/bs";
 import Button from "../../../../common/button";
 import logo from "../../../../assets/images/logo.png";
 import gitbook_logo from "../../../../assets/images/icon/gitbook-icon.svg";
+import metamaskIcon from "../../../../assets/images/icon/MetaMask.svg";
 import Dropdown from 'react-bootstrap/Dropdown';
 import { isMetaMaskInstalled } from '../../../../config';
 import MobileMenuStyleWrapper from "./MobileMenu.style";
@@ -103,7 +104,7 @@ const MobileMenu = ({ mobileMenuhandle }) => {
             className="connect_btn"
             onClick={() => handleWalletConnect()}
           >
-            <FaWallet />
+            <img className="gitbook_logo_mobile" src={metamaskIcon} alt="magic_club nft logo" />
             Connect
           </Button>
 

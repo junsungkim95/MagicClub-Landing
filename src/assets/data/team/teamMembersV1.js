@@ -8,7 +8,7 @@ import Spencer from "../../images/team/Spencer.png";
 import Johnny from "../../images/team/Johnny.png";
 import Sooyong_Park from "../../images/team/Sooyong_Park.png";
 import James from "../../images/team/James.png";
-import Yeojin_lee from "../../images/team/Yeojin_lee.png";
+import Andrew_Choi from "../../images/team/Andrew_Choi.png";
 
 const data = [
   {
@@ -162,8 +162,8 @@ const data = [
     ],
   },
   {
-    avatar: Yeojin_lee,
-    name: "Yeojin lee",
+    avatar: Andrew_Choi,
+    name: "Andrew Choi",
     designation: "Fullstack",
     socialLinks: [
       {
