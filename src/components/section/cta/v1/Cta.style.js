@@ -44,7 +44,7 @@ const star7 = keyframes`
 const CTAStyleWrapper = styled.section`
   .subtitle{
     font-family: NotoSansJP;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 400;
     line-height: 64px;
     letter-spacing: 0em;
@@ -60,6 +60,13 @@ const CTAStyleWrapper = styled.section`
     text-align: center;
   }
 
+  .cta-title {
+    font-family: NotoSansJP-Bold;
+    font-size: 40px;
+    line-height: 67px;
+    margin: 0;
+  }
+
   .magic_club_title_section {
     width: 85%;
     margin: 0 auto;
@@ -70,6 +77,7 @@ const CTAStyleWrapper = styled.section`
     h2,
     h3 {
       margin: 0;
+      // font-size: 28px;
     }
   }
   .title-emo {
@@ -214,7 +222,7 @@ const CTAStyleWrapper = styled.section`
       font-size: 40px;
     }
     
-    .subttitle, .subtitle_eng {
+    .subtitle, .subtitle_eng {
       padding-top: 20px;
       font-size: 18px;
       line-height: 24px;
@@ -233,7 +241,7 @@ const CTAStyleWrapper = styled.section`
       }
     }
 
-    .subttitle, .subtitle_eng {
+    .subtitle, .subtitle_eng {
       padding-top: 20px;
       font-size: 16px;
       line-height: 24px;
@@ -284,7 +292,7 @@ const CTAStyleWrapper = styled.section`
       }
     }
 
-    .subttitle, .subtitle_eng {
+    .subtitle, .subtitle_eng {
       padding-top: 20px;
       font-size: 13px;
       line-height: 24px;

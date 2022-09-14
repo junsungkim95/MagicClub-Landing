@@ -1,6 +1,6 @@
 import SectionTitle from "../../../../common/sectionTitle";
 // import dividerShape from "../../../../assets/images/nft/roadmap_v2_middle_shape.png";
-import dividerShape from "../../../../assets/images/bg/divider_line.png";
+import dividerShape from "../../../../assets/images/bg/divdr.png";
 import RoadMapItem from "./RoadMapItem";
 import data from "../../../../assets/data/roadMap/roadMapV1";
 import RoadMapStyleWrapper from "./RoadMap.style";

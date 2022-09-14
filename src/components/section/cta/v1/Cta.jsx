@@ -12,7 +12,7 @@ const CTA = () => {
     <CTAStyleWrapper>
       <div className="container">
         <SectionTitle
-          className="magic_club_title_section text-center"
+          className="magic_club_title_section text-center cta-title"
           title="SHOW US WHAT YOU GOT !!"
         ></SectionTitle>
         {lang === "Eng" ? (

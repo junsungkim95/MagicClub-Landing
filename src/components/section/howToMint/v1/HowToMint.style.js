@@ -45,7 +45,7 @@ const HowToMintWrapper = styled.section`
             line-height: 110px;
             margin-bottom: 60px;
             text-transform: uppercase;
-            color: #D0B167;
+            color: #DAB96A;
 
             &.green {
               -webkit-text-stroke: 1px rgba(0, 255, 163, 0.7);
@@ -60,7 +60,7 @@ const HowToMintWrapper = styled.section`
               -webkit-text-stroke: 1px rgba(255, 0, 76, 0.7);
             }
             &.default {
-              -webkit-text-stroke: 1px #D0B167;
+              -webkit-text-stroke: 1px #DAB96A;
             }
           }
 
