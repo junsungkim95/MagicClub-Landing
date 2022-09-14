@@ -26,6 +26,20 @@ overflow: hidden;
   );
 }
 
+.moonL {
+  position: absolute;
+  width: 40%;
+  top: 0;
+  left: 0;
+}
+
+.moonR {
+  position: absolute;
+  width: 40%;
+  top: 0;
+  right: 0;
+}
+
 .treeBG-logo-wrapper {
   display: flex;
   justify-content: center;
@@ -48,6 +62,12 @@ overflow: hidden;
   z-index: 1;
   width: 430px;
 }
+.treeBG-logos {
+  // height: 320px;
+  width: 400px;
+  padding-bottom: 214px;
+  z-index: 1;
+}
 
 @media (max-width: 2250px) {
   .treeBG-logo-wrapper {
@@ -67,6 +87,11 @@ overflow: hidden;
   .treeBG-logo {
     width: 250px;
   }
+  .treeBG-logos {
+    // height: 246px;
+    width: 350px;
+    padding-bottom: 153px;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -79,6 +104,11 @@ overflow: hidden;
   }
   .treeBG-logo {
     width: 200px;
+  }
+  .treeBG-logos {
+    // height: 180px;
+    width: 300px;
+    padding-bottom: 100px;
   }
 }
 
@@ -96,6 +126,11 @@ overflow: hidden;
   .treeBG-logo {
     width: 170px;
   }
+  .treeBG-logos {
+    // height: 160px;
+    width: 250px;
+    padding-bottom: 94px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -110,6 +145,11 @@ overflow: hidden;
   }
   .treeBG-logo {
     width: 150px;
+  }
+  .treeBG-logos {
+    // height: 135px;
+    width: 200px;
+    padding-bottom: 94px;
   }
 }
 `;

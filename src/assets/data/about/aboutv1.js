@@ -1,6 +1,10 @@
 import projectFrame from "../../images/Frame.svg"
 import projectCardImage1 from "../../images/nft/01maru.png"
 import projectCardImage2 from "../../images/logo.png"
+import project1 from "../../images/bg/BG-project.png"
+import project2 from "../../images/bg/BG-marketplace.png"
+import project3 from "../../images/bg/BG-magicshoes.png"
+
 
 
  const data = {
@@ -15,12 +19,15 @@ import projectCardImage2 from "../../images/logo.png"
             frame: projectFrame,
             image: projectCardImage2,
             title: "MarketPlace",
-            text: 'Magic Club'
+            text: 'Magic Club',
+            bgImage: project2
         },
         {
             mainTitle: "Coming Soon",
             title: "M2E",
-            text: 'Magic Shoes'
+            frame: null,
+            text: 'Magic Shoes',
+            bgImage: project3
         }
     ]
 }

@@ -3,7 +3,7 @@ import { langState } from "../../../../Atoms/langState";
 import box from "../../../../assets/images/bg/roadmap-box.png";
 import dot from "../../../../assets/images/bg/divdr-Ellipse.png";
 
-const RoadMapItem = ({ id, title, text, text2 }) => {
+const RoadMapItem = ({ id, title, text, text2, Eng_text }) => {
   const [lang] = useRecoilState(langState);
   return (
     <div
@@ -31,8 +31,15 @@ const RoadMapItem = ({ id, title, text, text2 }) => {
         {/* <img src={right_box} className="mobile_box" alt="mobile-box" /> */}
         <h3>{title}</h3>
         <div className={text2 != null ? `roadmap_p_wrapper` : ``}>
-          <p className="text_1">{text}</p>
-          {text2 != null ? <p className="text_2">{text2}</p> : ""}
+          {
+            lang == "Eng" ? 
+            <p className="text_1">{Eng_text}</p>
+            :
+            <p className="text_1">{text}</p>
+          }
+          {
+            lang !== "Eng" && text2 != null ? <p className="text_2">{text2}</p> : ""
+          }
         </div>
       </div>
     </div>
