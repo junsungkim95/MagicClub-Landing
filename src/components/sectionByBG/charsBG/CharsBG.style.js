@@ -15,7 +15,7 @@ overflow: hidden;
   .about-absolute {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 770px);
+    transform: translate(-50%, 638ㅋpx);
   }
 
   .characters_bg {
@@ -32,7 +32,7 @@ overflow: hidden;
       transform: translate(-50%, 200px);
     }
     .about-absolute {
-      transform: translate(-50%, 640px);
+      transform: translate(-50%, 508px);
     }
     .characters_bg {
       padding-top: 0px;
@@ -44,7 +44,7 @@ overflow: hidden;
       transform: translate(-50%, 180px);
     }
     .about-absolute {
-      transform: translate(-50%, 570px);
+      transform: translate(-50%, 438px);
     }
     .characters_bg {
       padding-top: 0px;
@@ -56,7 +56,7 @@ overflow: hidden;
       transform: translate(-50%, 120px);
     }
     .about-absolute {
-      transform: translate(-50%, 470px);
+      transform: translate(-50%, 338px);
     }
     .characters_bg {
       padding-top: 0px;
@@ -68,7 +68,7 @@ overflow: hidden;
       transform: translate(-50%, 100px);
     }
     .about-absolute {
-      transform: translate(-50%, 380px);
+      transform: translate(-50%, 248px);
     }
     .characters_bg {
       padding-top: 0px;
@@ -80,7 +80,7 @@ overflow: hidden;
       transform: translate(-50%, 60px);
     }
     .about-absolute {
-      transform: translate(-50%, 320px);
+      transform: translate(-50%, 188px);
     }
     .characters_bg {
       padding-top: 0px;
@@ -92,7 +92,7 @@ overflow: hidden;
       transform: translate(-50%, 60px);
     }
     .about-absolute {
-      transform: translate(-50%, 260px);
+      transform: translate(-50%, 128px);
     }
     .characters_bg {
       padding-top: 0px;
@@ -104,7 +104,7 @@ overflow: hidden;
       transform: translate(-50%, 10px);
     }
     .about-absolute {
-      transform: translate(-50%, 190px);
+      transform: translate(-50%, 58px);
     }
     .characters_bg {
       padding-top: 0px;
@@ -116,7 +116,7 @@ overflow: hidden;
       transform: translate(-50%, 100px);
     }
     .about-absolute {
-      transform: translate(-50%, 680px);
+      transform: translate(-50%, 480px);
     }
     .characters_bg {
       padding-top: 600px;
@@ -128,7 +128,7 @@ overflow: hidden;
       transform: translate(-50%, 30px);
     }
     .about-absolute {
-      transform: translate(-50%, 400px);
+      transform: translate(-50%, 268px);
     }
     .characters_bg {
       padding-top: 380px;

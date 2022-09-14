@@ -2,7 +2,7 @@ import styled from "styled-components";
 import aboutBg from "../../../../assets/images/nft/v2_about_bg.png"
 const AboutStyleWrapper = styled.section` 
     // min-height: 1590px;
-    // padding-top: 185px;
+    padding-top: 132px;
     padding-bottom: 0px;
     background: none;
     background-position: center center;
@@ -44,7 +44,7 @@ const AboutStyleWrapper = styled.section`
     }
 
     @media (max-width: 1350px) {
-        padding-top: 0px;
+        padding-top: 132px;
         // min-height: 870px;
         .v2_about_us_text {
             
