@@ -1,7 +1,7 @@
 import React from 'react'
 import HowToMint from "../../../components/section/howToMint/v1";
 import About from "../../../components/section/about/v2";
-import characters from "../../../assets/images/bg/CharsWithLightBg.png";
+import characters from "../../../assets/images/bg/MainChars.png";
 import CharsrBG from "./CharsBG.style";
 
 

@@ -213,6 +213,12 @@ const CTAStyleWrapper = styled.section`
     .title-emo {
       font-size: 40px;
     }
+    
+    .subttitle, .subtitle_eng {
+      padding-top: 20px;
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
   @media only screen and (max-width: 575px) {
     .join_comunity_btns {
@@ -225,6 +231,12 @@ const CTAStyleWrapper = styled.section`
         width: 46%;
         font-size: 14px;
       }
+    }
+
+    .subttitle, .subtitle_eng {
+      padding-top: 20px;
+      font-size: 16px;
+      line-height: 24px;
     }
 
     .cta_social_links {
@@ -270,6 +282,12 @@ const CTAStyleWrapper = styled.section`
         width: 180px;
         font-size: 14px;
       }
+    }
+
+    .subttitle, .subtitle_eng {
+      padding-top: 20px;
+      font-size: 13px;
+      line-height: 24px;
     }
 
     .footer_social_links {

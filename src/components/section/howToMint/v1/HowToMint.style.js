@@ -202,33 +202,60 @@ const HowToMintWrapper = styled.section`
   }
 
   @media only screen and (max-width: 480px) {
-    // padding-top: 60px;
     .how_to_mint_container {
       .how_to_mint_content {
         ul {
-          max-width: none;
-          flex-wrap: nowrap;
-          flex-direction: column;
+          width: 220px;
+          flex-wrap: wrap;
           li {
+            width: 50%;
             h4 {
-              font-size: 30px;
-              line-height: 80px;
-              margin-bottom: 50px;
+              font-size: 25px;
+              line-height: 70px;
+              margin-bottom: 40px;
             }
             p {
               font-size: 14px;
               line-height: 18px;
               padding: 12px 31px 0;
             }
-            width: 100%;
             img {
-              height: 20%;
+              height: 45%;
             }
           }
         }
       }
     }
   }
+
+  // @media only screen and (max-width: 480px) {
+  //   // padding-top: 60px;
+  //   .how_to_mint_container {
+  //     .how_to_mint_content {
+  //       ul {
+  //         max-width: none;
+  //         flex-wrap: nowrap;
+  //         flex-direction: column;
+  //         li {
+  //           h4 {
+  //             font-size: 30px;
+  //             line-height: 80px;
+  //             margin-bottom: 50px;
+  //           }
+  //           p {
+  //             font-size: 14px;
+  //             line-height: 18px;
+  //             padding: 12px 31px 0;
+  //           }
+  //           width: 100%;
+  //           img {
+  //             height: 20%;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 `;
 
 export default HowToMintWrapper;

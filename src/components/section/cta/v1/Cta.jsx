@@ -25,7 +25,11 @@ const CTA = () => {
         <div className="magic_club_v1_cta_content">
           <div className="join_comunity_btns">
             <Button lg variant="mint" className="wishlist_btn">
-              바로가기
+            {lang === "Eng" ? 
+              "View"
+              :
+              "바로가기"
+            }
             </Button>
           </div>
         </div>
