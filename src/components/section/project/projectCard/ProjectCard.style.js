@@ -6,12 +6,12 @@ const ProjectCardStyleWrapper = styled.article`
   min-height: 160px;
   padding: 10px;
 
-  .projectFrame {
-    margin-top: 5%;
-    width: 40%;
+  .cardContainer {
+    position: relative;
   }
 
   .project_card_text {
+    position: absolute;
     font-family: "NotoSansJP-Bold";
     font-style: normal;
     font-weight: 400;
