@@ -141,6 +141,10 @@ const BannerV1Wrapper = styled.section`
       text-align: center;
       min-height: 350px;
       justify-content: flex-start;
+      h2 {
+        margin-left: auto;
+        margin-right: auto;
+      }
 
       h3, .banner_buttons, .coin-info {
         margin-left: auto;

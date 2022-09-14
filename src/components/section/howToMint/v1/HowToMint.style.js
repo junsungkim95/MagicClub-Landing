@@ -74,7 +74,7 @@ const HowToMintWrapper = styled.section`
             color: #ffffff;
             max-width: 148px;
             width: 100%;
-            padding: 31px;
+            padding: 28px;
             // margin-left: 30px;
             margin-top: 65px;
             margin-bottom: 0;
@@ -112,7 +112,7 @@ const HowToMintWrapper = styled.section`
             p {
               margin-top: 20px;
               // margin-left: 25px;
-              padding: 20px;
+              padding: 18px;
               line-height: 30px;
             }
           }

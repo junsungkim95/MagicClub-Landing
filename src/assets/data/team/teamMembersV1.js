@@ -1,7 +1,7 @@
 import { FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
 
 import David_Choi from "../../images/team/David_Choi.png";
-import Andrew_Choi from "../../images/team/Andrew_Choi.png";
+import Joseph_Jeong from "../../images/team/Joseph_Jeong.png";
 import Feel from "../../images/team/0_Feel.png";
 import Grey from "../../images/team/Grey.png";
 import Spencer from "../../images/team/Spencer.png";
@@ -31,8 +31,8 @@ const data = [
     ],
   },
   {
-    avatar: Andrew_Choi,
-    name: "Andrew Choi",
+    avatar: Joseph_Jeong,
+    name: "Joseph Jeong",
     designation: "CTO",
     socialLinks: [
       {
