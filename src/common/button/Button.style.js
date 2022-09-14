@@ -11,7 +11,9 @@ const ButtonWrapper = styled.button`
   font-family: "NotoSansJP-Bold";
   line-height: 22px;
   text-align: center;
-  font-size: 16px;
+  font-family: NotoSansJP-Bold;
+  font-weight: 700;
+  font-size: 14px;
   text-transform: uppercase;
   box-sizing: border-box;
   overflow: hidden;

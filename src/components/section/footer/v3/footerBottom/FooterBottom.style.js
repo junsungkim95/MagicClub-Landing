@@ -114,6 +114,11 @@ const FooterBottomStyleWrapper = styled.div`
     .footerLogo{
       max-width: 120px;
     }
+
+    .bottom_footer_right {
+      display: none;
+    }
+
     .email_address {
       margin-left: 40px;
     }
@@ -134,8 +139,9 @@ const FooterBottomStyleWrapper = styled.div`
       display: none;
     }
     .footer_menu {
+      min-height: 60px;
       flex-direction: column-reverse;
-      row-gap: 20px;
+      row-gap: 14px;
     }
 
     .footerFrame {
