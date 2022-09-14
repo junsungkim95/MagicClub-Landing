@@ -52,17 +52,16 @@ const Banner = () => {
                     Mint now
                   </Button>
                 }
-                
-                <Button lg variant="outline">
-                  Wishlist now
-                </Button>
               </div>
               <div className="coin-info">
-                <span>MAX 5 NFTS PER WALLET.</span>
-                <span>
+                {lang === "Eng" ? <span>MAX 5 NFTS PER WALLET</span> : <span>지갑당 NFT 5개 구매 가능</span>}
+                {lang === "Eng" ? <span>
                   Price and Minting Date: {" "}
                   <span className="highlighted">TBA</span>
-                </span>
+                </span> : <span>
+                  가격 및 민팅날짜: {" "}
+                  <span className="highlighted">추후 공지 예정</span>
+                </span>}
               </div>
             </div>
           </div>

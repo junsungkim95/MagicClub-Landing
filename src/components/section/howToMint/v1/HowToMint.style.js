@@ -68,7 +68,7 @@ const HowToMintWrapper = styled.section`
             position: absolute;
             font-family: "NotoSansJP-Bold";
             font-style: normal;
-            font-weight: 400;
+            font-weight: 700;
             font-size: 14px;
             line-height: 18px;
             color: #ffffff;

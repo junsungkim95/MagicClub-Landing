@@ -21,9 +21,6 @@ const CTA_footer = () => {
         ></SectionTitle>
         <div className="magic_club_v1_cta_content">
           <div className="join_comunity_btns">
-            <Button lg variant="mint" className="wishlist_btn">
-              Whitelist Now
-            </Button>
             <Button lg variant="blue" className="join_discord_btn">
               {" "}
               <FaDiscord /> Join Discord

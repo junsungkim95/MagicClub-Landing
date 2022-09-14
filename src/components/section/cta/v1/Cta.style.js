@@ -42,6 +42,8 @@ const star7 = keyframes`
 `;
 
 const CTAStyleWrapper = styled.section`
+  padding-top: 40px;
+
   .subtitle{
     font-family: NotoSansJP;
     font-size: 40px;
@@ -151,7 +153,7 @@ const CTAStyleWrapper = styled.section`
     max-width: 430px;
     margin: auto;
     margin-top: 47px;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
     position: relative;
     z-index: 1;
   }

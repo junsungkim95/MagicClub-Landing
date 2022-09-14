@@ -14,7 +14,7 @@ const data = [
   {
     thumb: characterThumb2,
     Eng_name: "ARA",
-    Eng_description: "Dokkaebi of Fairy and Goods - She has the power to control things.",
+    Eng_description: "Dokkaebi of Fairy and Goods - She has the power to control things",
     Kor_name: "아라",
     Kor_description: "요정, 물건의 도깨비 - 물건에 깃드는 초능력을 가지고 있음"
   },
@@ -28,7 +28,7 @@ const data = [
   {
     thumb: characterThumb4,
     Eng_name: "DAWON",
-    Eng_description: "Dokkaebi of Good and Evil - Good and evil coexist in him. And that good and evil sometimes saves and kills people.",
+    Eng_description: "Dokkaebi of Good and Evil - Good and evil coexist in him. And that good and evil sometimes saves and kills people",
     Kor_name: "다원",
     Kor_description: "이매, 망량의 도깨비 - 선과 악이 공존한다. 변덕스러운 성격을 가지고 있어 사람을 죽이기도 살리기도 함"
   },
