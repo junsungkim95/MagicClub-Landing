@@ -67,7 +67,9 @@ overflow: hidden;
 .treeBG-logos {
   // height: 320px;
   width: 400px;
-  padding-bottom: 214px;
+  // padding-top: 107px;
+  // padding-bottom: 107px;
+  padding-top: 214px;
   z-index: 1;
 }
 
@@ -92,7 +94,9 @@ overflow: hidden;
   .treeBG-logos {
     // height: 246px;
     width: 350px;
-    padding-bottom: 153px;
+    padding-top: 75px;
+    padding-bottom: 78px;
+    padding-top: 153px;
   }
 }
 
@@ -110,6 +114,7 @@ overflow: hidden;
   .treeBG-logos {
     // height: 180px;
     width: 300px;
+    padding-top: 100px;
     padding-bottom: 100px;
   }
 }
@@ -131,6 +136,7 @@ overflow: hidden;
   .treeBG-logos {
     // height: 160px;
     width: 250px;
+    padding-top: 70px;
     padding-bottom: 94px;
   }
 }
