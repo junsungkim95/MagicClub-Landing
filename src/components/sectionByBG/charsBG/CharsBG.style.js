@@ -15,7 +15,7 @@ overflow: hidden;
   .about-absolute {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 638ㅋpx);
+    transform: translate(-50%, 638px);
   }
 
   .characters_bg {
