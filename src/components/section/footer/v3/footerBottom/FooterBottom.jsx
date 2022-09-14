@@ -5,6 +5,7 @@ import footerShapesLeft from "../../../../../assets/images/icon/footer_shapes_le
 import footerShapesRight from "../../../../../assets/images/icon/footer_shapes_right.png";
 import logo from "../../../../../assets/images/white_logo.png";
 import frame from "../../../../../assets/images/Frame.svg";
+import pdf from "../../../../../assets/MAGIC_CLUB_Terms_&_Conditions.pdf";
 
 
 const FooterBottom = () => {
@@ -24,7 +25,10 @@ const FooterBottom = () => {
                 <img className="footerFrame" src={frame} alt="magic clib frame" />
                 <img className="footerLogo" src={logo} alt="magic clib logo" />
               </div>
-              <p className="email_address">info@magicclub.io</p>
+              <div>
+                <p className="email_address">info@magicclub.io</p>
+                <a href={pdf} className="tnc_address">info@magicclub.io</a>
+              </div>
             </div>
             <a href="# " className="bact_to_top_btn">
               <img src={backToTopIcon} alt="magic_club nft back to top" />

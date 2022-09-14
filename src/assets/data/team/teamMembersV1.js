@@ -124,25 +124,6 @@ const data = [
     ],
   },
   {
-    avatar: Sooyong_Park,
-    name: "Sooyong Park",
-    designation: "Advisor",
-    socialLinks: [
-      {
-        icon: <FaLinkedinIn />,
-        url: "#",
-      },
-      {
-        icon: <FaTwitter />,
-        url: "#",
-      },
-      {
-        icon: <FaInstagram />,
-        url: "#",
-      },
-    ],
-  },
-  {
     avatar: James,
     name: "James",
     designation: "Fullstack",
@@ -165,6 +146,25 @@ const data = [
     avatar: Andrew_Choi,
     name: "Andrew Choi",
     designation: "Fullstack",
+    socialLinks: [
+      {
+        icon: <FaLinkedinIn />,
+        url: "#",
+      },
+      {
+        icon: <FaTwitter />,
+        url: "#",
+      },
+      {
+        icon: <FaInstagram />,
+        url: "#",
+      },
+    ],
+  },
+  {
+    avatar: Sooyong_Park,
+    name: "Sooyong Park",
+    designation: "Advisor",
     socialLinks: [
       {
         icon: <FaLinkedinIn />,

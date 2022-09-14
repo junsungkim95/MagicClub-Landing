@@ -15,6 +15,14 @@ const FooterBottomStyleWrapper = styled.div`
     font-family: NotoSansJP;
     margin-left: 60px;
   }
+  .tnc_address {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: NotoSansJP;
+    margin-left: 60px;
+    &:hover {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
   .footer_bottom_content {
     position: relative;
     height: 100%;
@@ -120,6 +128,9 @@ const FooterBottomStyleWrapper = styled.div`
     }
 
     .email_address {
+      margin-left: 40px;
+    }
+    .tnc_address {
       margin-left: 40px;
     }
     .top-footer-content {

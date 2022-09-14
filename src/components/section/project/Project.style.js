@@ -80,6 +80,7 @@ const ProjectWrapper = styled.div`
     }
 
     @media only screen and (max-width: 767px) {
+        padding-bottom: 90px;
         .row{
             .col-md-4 + .col-md-4{ 
                 margin-top: 30px; 

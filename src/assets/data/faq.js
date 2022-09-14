@@ -11,8 +11,8 @@ const data = [
     Eng_title: "When is the minting date?",
     Kor_title: "Q. 민팅 날짜가 언제인가요?",
     Eng_text:
-      "The Pre Sale is scheduled for 10/12 and 13, and the Public Sale is scheduled for 10/19.",
-    Kor_text: "Pre Sale은 10/19일, Public Sale은 10/20일로 예정되어 있습니다.",
+      "Pre-sale and Public sale are scheduled for Mid-October.",
+    Kor_text: "pre sale, puplic sale 은 10월 중순경 예정입니다",
   },
   {
     Eng_title: "How much is the minting price?",

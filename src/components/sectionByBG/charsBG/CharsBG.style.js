@@ -128,10 +128,10 @@ overflow: hidden;
       transform: translate(-50%, 30px);
     }
     .about-absolute {
-      transform: translate(-50%, 650px);
+      transform: translate(-50%, 400px);
     }
     .characters_bg {
-      padding-top: 630px;
+      padding-top: 380px;
     }
   }
 `;
