@@ -120,7 +120,7 @@ const Header = () => {
               </Button>
 
               }
-              <a href="#Gitbook">
+              <a href="https://adam-gallery-2.gitbook.io/magic-club/">
                 <img className="gitbook_logo" src={gitbook_logo} alt="magic_club nft logo" />
               </a>
               {/* 리코일 테스트 공간 */}

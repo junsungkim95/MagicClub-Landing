@@ -82,7 +82,7 @@ const MobileMenu = ({ mobileMenuhandle }) => {
           <a href="# ">
             <FaDiscord />
           </a>
-          <a href="#Gitbook">
+          <a href="https://adam-gallery-2.gitbook.io/magic-club/">
             <img className="gitbook_logo_mobile" src={gitbook_logo} alt="magic_club nft logo" />
           </a>
         </div>
