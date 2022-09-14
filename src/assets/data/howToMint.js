@@ -1,22 +1,22 @@
 const data = [
     {
         num: "1",
-        mintColor: "green",
+        mintColor: "default",
         text: "Connect Your Wallet"
     },
     {
         num: "2",
-        mintColor: "blue",
-        text: "Select Your Quantity"
+        mintColor: "default",
+        text: "Select Quantity"
     },
     {
         num: "3",
-        mintColor: "yellow",
+        mintColor: "default",
         text: "Confiem the Transaction"
     },
     {
         num: "4",
-        mintColor: "red",
+        mintColor: "default",
         text: "Receive Your NFTs"
     },
 ]

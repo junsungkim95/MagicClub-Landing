@@ -26,7 +26,7 @@ const HowToMintWrapper = styled.section`
         margin-top: 20px;
         margin-left: auto;
           margin-right: auto;
-          max-width: 1000px;
+          max-width: 780px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -42,10 +42,10 @@ const HowToMintWrapper = styled.section`
             font-style: normal;
             font-weight: 400;
             font-size: 60px;
-            line-height: 70px;
-            margin-bottom: 100px;
+            line-height: 110px;
+            margin-bottom: 60px;
             text-transform: uppercase;
-            color: transparent;
+            color: #D0B167;
 
             &.green {
               -webkit-text-stroke: 1px rgba(0, 255, 163, 0.7);
@@ -59,6 +59,9 @@ const HowToMintWrapper = styled.section`
             &.red {
               -webkit-text-stroke: 1px rgba(255, 0, 76, 0.7);
             }
+            &.default {
+              -webkit-text-stroke: 1px #D0B167;
+            }
           }
 
           p {
@@ -71,9 +74,9 @@ const HowToMintWrapper = styled.section`
             color: #ffffff;
             max-width: 148px;
             width: 100%;
-            padding: 20px;
+            padding: 31px;
             // margin-left: 30px;
-            margin-top: 20px;
+            margin-top: 65px;
             margin-bottom: 0;
             text-align: center;
           }
@@ -122,17 +125,19 @@ const HowToMintWrapper = styled.section`
     .how_to_mint_container {
       .how_to_mint_content {
         ul {
+          max-width: 440px;
           li {
             h4 {
               font-size: 30px;
-              line-height: 40px;
-              margin-bottom: 60px;
+              line-height: 55px;
+              margin-bottom: 45px;
             }
             p {
+              margin-top: 20px;
               font-size: 10px;
               line-height: 15px;
               // margin-left: 15px;
-              padding: 10px 50px 0;
+              padding: 10px 43px 0;
             }
           }
         }
@@ -145,21 +150,23 @@ const HowToMintWrapper = styled.section`
     .how_to_mint_container {
       .how_to_mint_content {
         ul {
+          margin-top: 0px;
+          max-width: 520px;
           flex-wrap: wrap;
           li {
             width: 25%;
             h4 {
               font-size: 30px;
-              line-height: 70px;
-              margin-bottom: 60px;
+              line-height: 90px;
+              margin-bottom: 40px;
             }
             p {
               font-size: 8px;
               line-height: 10px;
-              padding: 10px 50px 0;
+              padding: 15px 43px 0;
             }
             img {
-              height: 70%;
+              height: 90%;
             }
           }
         }
@@ -177,13 +184,13 @@ const HowToMintWrapper = styled.section`
             width: 50%;
             h4 {
               font-size: 50px;
-              line-height: 90px;
-              margin-bottom: 120px;
+              line-height: 130px;
+              margin-bottom: 80px;
             }
             p {
-              font-size: 16px;
-              line-height: 20px;
-              padding: 10px 30px 0;
+              font-size: 20px;
+              line-height: 26px;
+              padding: 45px 12px 0;
             }
             img {
               height: 45%;
@@ -205,13 +212,13 @@ const HowToMintWrapper = styled.section`
           li {
             h4 {
               font-size: 30px;
-              line-height: 60px;
-              margin-bottom: 70px;
+              line-height: 80px;
+              margin-bottom: 50px;
             }
             p {
-              font-size: 8px;
-              line-height: 10px;
-              padding: 10px 50px 0;
+              font-size: 14px;
+              line-height: 18px;
+              padding: 12px 31px 0;
             }
             width: 100%;
             img {
