@@ -15,7 +15,7 @@ const HowToMint = () => {
       <div className="how_to_mint_container">
         <SectionTitle
           classNameName="md-pb-20"
-          title="HOW TO MINT"
+          title="How To Mint"
         />
         <div className="how_to_mint_title_frame">
           {/* <TitleFrame /> */}
