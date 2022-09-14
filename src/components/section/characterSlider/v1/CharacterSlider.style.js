@@ -65,8 +65,7 @@ const CharacterSliderWrapper = styled.section`
     font-size: 22px;
     font-weight: 700;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 5px;
+    margin-top: 12px;
   }
 
   .charsDesc {
