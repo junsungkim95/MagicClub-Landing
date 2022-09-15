@@ -5,6 +5,7 @@ import footerShapesLeft from "../../../../../assets/images/icon/footer_shapes_le
 import footerShapesRight from "../../../../../assets/images/icon/footer_shapes_right.png";
 import logo from "../../../../../assets/images/white_logo.png";
 import frame from "../../../../../assets/images/Frame.svg";
+import adamLogo from "../../../../../assets/images/Adam_logo.png";
 import pdf from "../../../../../assets/MAGIC_CLUB_Terms_&_Conditions.pdf";
 
 
@@ -22,8 +23,7 @@ const FooterBottom = () => {
           <div className="footer_menu">
             <div className="bottom_footer_left">
               <div className="copyright_text">
-                <img className="footerFrame" src={frame} alt="magic clib frame" />
-                <img className="footerLogo" src={logo} alt="magic clib logo" />
+                <img className="footerLogo" src={adamLogo} alt="magic clib logo" />
               </div>
               <div>
                 <p className="email_address">info@magicclub.io</p>

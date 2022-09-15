@@ -3,7 +3,7 @@ import { useModal } from "../../../utils/ModalContext";
 import { FiX } from "react-icons/fi";
 import Button from "../../button";
 import MintModalStyleWrapper from "./MintNow.style";
-import mintImg from "../../../assets/images/icon/mint-img.png";
+import mintImg from "../../../assets/images/nft/00maru.png";
 import hoverShape from "../../../assets/images/icon/hov_shape_L.svg";
 import { totalMintCount, mint } from '../../../utils/web3mint';
 import { useEffect } from "react";
@@ -87,7 +87,7 @@ const MintNowModal = () => {
                   <li>
                     <h5>Remaining</h5>
                     <h5>
-                      {remaining}/<span>9999</span>
+                      {remaining}/<span>10000</span>
                     </h5>
                   </li>
                   <li>

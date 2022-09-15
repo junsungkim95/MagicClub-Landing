@@ -109,6 +109,13 @@ const MintModalStyleWrapper = styled.div`
     }
   }
 
+  .mint_img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+    height: 170px;
+  }
+
   .mint_count_list {
     margin: 30px 0px;
     ul {

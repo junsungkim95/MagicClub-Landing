@@ -33,7 +33,7 @@ const WalletModal = () => {
                     <FiChevronRight />
                   </span>
                 </a>
-                <a href="# ">
+                {/* <a href="# ">
                   <img src={formatic} alt="Coinbase" />
                   Coinbase
                   <span>
@@ -53,7 +53,7 @@ const WalletModal = () => {
                   <span>
                     <FiChevronRight />
                   </span>
-                </a>
+                </a> */}
               </div>
               <div className="modal_bottom_text">
                 By connecting your wallet, you agree to our

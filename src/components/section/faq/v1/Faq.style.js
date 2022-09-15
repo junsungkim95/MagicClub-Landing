@@ -65,6 +65,14 @@ const FAQStyleWrapper = styled.section`
     z-index: 0;
   }
 
+  ol {
+    padding-left: 18px;
+    list-style-type: decimal;
+    li{
+      font-family: NotoSansJP;
+    }
+  }
+
   @media only screen and (max-width: 991px) {
     .accordion__header {
       h5 {
