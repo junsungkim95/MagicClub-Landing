@@ -1,16 +1,16 @@
-import { useModal } from "../../../../utils/ModalContext";
-import Counter from "../../../../common/counter";
-import Button from "../../../../common/button";
+import { useModal } from "../../../utils/ModalContext";
+import Counter from "../../../common/counter";
+import Button from "../../../common/button";
 import BannerV1Wrapper from "./Banner.style";
 
 import { useEffect, useState } from "react";
-import { totalMintCount } from '../../../../utils/web3mint';
+import { totalMintCount } from '../../../utils/web3mint';
 
 import { useRecoilState } from "recoil";
-import { langState } from '../../../../Atoms/langState';
+import { langState } from '../../../Atoms/langState';
 
 import ReactPlayer from 'react-player';
-import VideoBG from "../../../../assets/images/bg/Video_BG_comp.mp4"
+import VideoBG from "../../../assets/images/bg/Video_BG_comp.mp4"
 
 const Banner = () => {
   const { mintModalHandle, connectWalletModalHanlde, account } = useModal();

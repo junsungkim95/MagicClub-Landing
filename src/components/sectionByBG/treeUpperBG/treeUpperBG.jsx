@@ -2,7 +2,7 @@ import React from 'react'
 // import CharacterSlider from "../../../components/section/characterSlider/v1";
 import Project from "../../section/project";
 import RoadMap from "../../../components/section/roadMap/v2";
-import Team from "../../../components/section/team/v1";
+import Team from "../../../components/section/team";
 import TreeUpperBG from './TreeUpperBG.style';
 
 import MoonBG from '../../../assets/images/bg/TreeupperBg.png';

@@ -53,26 +53,26 @@ const MobileMenu = ({ mobileMenuhandle }) => {
             </Dropdown.Toggle>
       
             <Dropdown.Menu>
-              <Dropdown.Item href="# " onClick={() => setLang("Eng") }>English</Dropdown.Item>
-              <Dropdown.Item href="# " onClick={() => setLang("Kor") }>Korean</Dropdown.Item>
+              <Dropdown.Item href="# " onClick={() => {setLang("Eng"); mobileMenuhandle();} }>English</Dropdown.Item>
+              <Dropdown.Item href="# " onClick={() => {setLang("Kor"); mobileMenuhandle();} }>Korean</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         <div className="magic_club_mobile_menu_list">
           <ul>
             <li className="mobile_menu_hide">
-              <a href="#home">Home</a>
+              <a href="#home" onClick={() => mobileMenuhandle()}>Home</a>
             </li>
             <li className="mobile_menu_hide">
-              <a href="#about">About</a>
+              <a href="#about" onClick={() => mobileMenuhandle()}>About</a>
             </li>
             <li className="mobile_menu_hide">
-              <a href="#roadmap">Roadmap</a>
+              <a href="#roadmap" onClick={() => mobileMenuhandle()}>Roadmap</a>
             </li>
             <li className="mobile_menu_hide">
-              <a href="#team">Team</a>
+              <a href="#team" onClick={() => mobileMenuhandle()}>Team</a>
             </li>
             <li className="mobile_menu_hide">
-              <a href="#faq">FAQ</a>
+              <a href="#faq" onClick={() => mobileMenuhandle()}>FAQ</a>
             </li>
           </ul>
         </div>

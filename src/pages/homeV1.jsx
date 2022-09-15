@@ -2,7 +2,7 @@ import { useModal } from "../utils/ModalContext";
 import GlobalStyles from "../assets/styles/GlobalStyles";
 import Header from "../components/section/header/v1/Header";
 import Layout from "../common/layout";
-import Banner from "../components/section/banner/v1";
+import Banner from "../components/section/banner";
 import CTA from "../components/section/cta/v1";
 import CharacterSlider from "../components/section/characterSlider/v1";
 import MintNowModal from "../common/modal/mintNowModal";

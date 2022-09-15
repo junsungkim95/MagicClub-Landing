@@ -1,9 +1,9 @@
  
-import SectionTitle from "../../../../common/sectionTitle";
+import SectionTitle from "../../../common/sectionTitle";
 import TeamMember from "./teamMember";
-import data from "../../../../assets/data/team/teamMembersV1";
+import data from "../../../assets/data/team/teamMembersV1";
 import TeamStyleWrapper from "./Team.style";
-import TitleFrame from "../../../../common/titleFrame/TitleFrame";
+import TitleFrame from "../../../common/titleFrame/TitleFrame";
 
 const Team = () => {
   return (
