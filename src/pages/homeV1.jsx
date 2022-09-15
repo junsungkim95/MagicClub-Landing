@@ -12,6 +12,7 @@ import ConnectWallet from "../common/modal/metamask/ConnectWallet";
 import CharsBG from "../components/sectionByBG/charsBG/charsBG";
 import TreeUpperBG from "../components/sectionByBG/treeUpperBG/treeUpperBG";
 import BdUpperBG from "../components/sectionByBG/bdUpperBG/bdUpperBG";
+import Footer from "../components/section/footer/v3"
 
 const HomeV1 = () => {
   const { visibility, walletModalvisibility, metamaskModalVisibility, connectWalletModal } = useModal();
@@ -29,6 +30,7 @@ const HomeV1 = () => {
       <CTA />
       <TreeUpperBG />
       <BdUpperBG />
+      <Footer />
     </Layout>
   );
 };

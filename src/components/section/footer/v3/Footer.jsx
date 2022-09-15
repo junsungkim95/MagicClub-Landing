@@ -5,7 +5,7 @@ import FooterStyleWrapper from "./Footer.style";
 const Footer = () => {
   return (
     <FooterStyleWrapper>
-      <CTA_footer />
+      {/* <CTA_footer /> */}
       {/* footer bottom  */}
       <FooterBottom />
     </FooterStyleWrapper>

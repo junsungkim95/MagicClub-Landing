@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const FooterBottomStyleWrapper = styled.div`
   position: relative;
-  background: rgba(0, 0, 0, 0.2);
+  background: #06122c;
   backdrop-filter: blur(20px);
   z-index: 10;
   .footerLogo{
@@ -28,7 +28,7 @@ const FooterBottomStyleWrapper = styled.div`
       font-size: 10px;
     }
     font-family: NotoSansJP;
-    margin-top: 10px;
+    margin-top: 12px;
     margin-left: 60px;
   }
   .addresses_mobile {
@@ -60,6 +60,8 @@ const FooterBottomStyleWrapper = styled.div`
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
     align-items: center;
     justify-content: space-between;
     min-height: 100px;
@@ -148,7 +150,7 @@ const FooterBottomStyleWrapper = styled.div`
       margin-left: 40px;
     }
     .addresses_pc {
-      display: none;
+      // display: none;
     }
     .addresses_mobile {
       display: block;

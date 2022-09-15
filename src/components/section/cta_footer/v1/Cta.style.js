@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const CTAStyleWrapper = styled.section`
-margin-bottom: 1000px;
+padding-bottom: 1000px;
   .magic_club_title_section {
     width: 45%;
     margin: 0 auto;

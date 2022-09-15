@@ -13,19 +13,19 @@ const FooterBottom = () => {
   return (
     <FooterBottomStyleWrapper className="footer_bottom">
       <div className="footer_bottom_content">
-        <span className="footer_shapes_left">
+        {/* <span className="footer_shapes_left">
           <img src={footerShapesLeft} alt="nft footer" />
         </span>
         <span className="footer_shapes_right">
           <img src={footerShapesRight} alt="nft footer" />
-        </span>
+        </span> */}
         <div className="container">
           <div className="footer_menu">
             <div className="bottom_footer_left">
               <div className="copyright_text">
                 <img className="footerLogo" src={adamLogo} alt="magic clib logo" />
               </div>
-              <div>
+              <div className="addr_div">
                 <p className="email_address">info@magicclub.io</p>
                 <a href={pdf} className="tnc_address">MAGIC CLUB Terms & Conditions</a>
                 <div className="addresses addresses_pc">
@@ -34,11 +34,11 @@ const FooterBottom = () => {
                   <p>Copyright © 2022 Magicclub.io All rights reserved.</p>
                 </div>
               </div>
-              <div className="addresses addresses_mobile">
+              {/* <div className="addresses addresses_mobile">
                 <p>ADAMGALLERY PTE. LTD. (COMPANY NO. 202215311D)</p>
                 <p>111 SOMERSET ROAD #06-01A</p>
                 <p>Copyright © 2022 Magicclub.io All rights reserved.</p>
-              </div>
+              </div> */}
             </div>
             <a href="# " className="bact_to_top_btn">
               <img src={backToTopIcon} alt="magic_club nft back to top" />
