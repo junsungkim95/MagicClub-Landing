@@ -26,7 +26,7 @@ const RoadMap = () => {
           </div>
           <div className="row">
             {data?.map((item, i) => (
-              <div key={i} className="col-md-6">
+              <div key={i} className="col-md-6" data-aos="fade-up" data-aos-duration="2000">
                 <RoadMapItem id={i} {...item} />
               </div>
             ))}
