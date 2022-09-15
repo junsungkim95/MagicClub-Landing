@@ -305,8 +305,8 @@ const RoadMapStyleWrapper = styled.section`
       }
   
       p {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 14px;
+        line-height: 22px;
       }
 
       .text_1 {
