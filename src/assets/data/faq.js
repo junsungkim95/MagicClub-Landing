@@ -5,7 +5,7 @@ const data = [
     Eng_text:
       "It is a membership NFT of the Magic Club that consists of 10,000 NFTs. You will receive a set point every week through a total of 6 rarities, which will be exchanged for MCT, a token of the Magic Club. In the exchange of points to tokens, the points received by users are ranked, and differential payments according to the ranking are automatically performed from the set number of coins each week. In addition, Magic Club NFT will also guarantee a whitelist of upcoming Magic Club contents.",
     Kor_text:
-      "총 10000개로 구성 된 Magic Club의 맴버쉽 NFT 입니다. 총 6개의 레어리티를 통해 정해진 포인트를 매주 받으시게 되며 이를 Magic Club의 토큰인 MCT로 교환하게 됩니다. 포인트에서 토큰으로의 교환은 유저분들이 받은 포인트를 랭킹화하여 매주 정해진 코인개수에서 랭킹에 따른 차등지급을 자동으로 진행하게 됩니다. 또한 Magic Club NFT는 차후 Magic Club의 차기 컨텐츠들의 화이트리스트도 보장해주게 됩니다.",
+      "총 10000개로 구성 된 Magic Club의 맴버쉽 NFT 입니다. 총 6개의 레어리티를 통해 정해진 포인트를 매주 받게 되며 이를 Magic Club의 토큰인 MCT로 교환하게 됩니다. 포인트에서 토큰으로의 교환은 유저분들이 받은 포인트를 랭킹화하여 매주 정해진 코인개수에서 랭킹에 따른 차등지급을 자동으로 진행하게 됩니다. 또한 Magic Club NFT는 차후 Magic Club의 차기 컨텐츠들의 화이트리스트도 보장해주게 됩니다.",
   },
   {
     Eng_title: "When is the minting date?",

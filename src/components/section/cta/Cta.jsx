@@ -1,10 +1,10 @@
-import SectionTitle from "../../../../common/sectionTitle";
-import Button from "../../../../common/button";
+import SectionTitle from "../../../common/sectionTitle";
+import Button from "../../../common/button";
 
 import CTAStyleWrapper from "./Cta.style";
 
 import { useRecoilState } from "recoil";
-import { langState } from "../../../../Atoms/langState";
+import { langState } from "../../../Atoms/langState";
 
 const CTA = () => {
   const [lang] = useRecoilState(langState);

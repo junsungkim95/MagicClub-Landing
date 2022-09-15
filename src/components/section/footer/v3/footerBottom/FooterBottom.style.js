@@ -6,7 +6,7 @@ const FooterBottomStyleWrapper = styled.div`
   backdrop-filter: blur(20px);
   z-index: 10;
   .footerLogo{
-    max-width: 150px;
+    max-width: 120px;
   }
   .footerFrame {
     height: 43px;
@@ -22,6 +22,17 @@ const FooterBottomStyleWrapper = styled.div`
     &:hover {
       color: rgba(255, 255, 255, 1);
     }
+  }
+  .addresses {
+    p {
+      font-size: 10px;
+    }
+    font-family: NotoSansJP;
+    margin-top: 10px;
+    margin-left: 60px;
+  }
+  .addresses_mobile {
+    display: none;
   }
   .footer_bottom_content {
     position: relative;
@@ -120,7 +131,7 @@ const FooterBottomStyleWrapper = styled.div`
   @media only screen and (max-width: 991px) {
     padding: 10px 0px;
     .footerLogo{
-      max-width: 120px;
+      max-width: 112px;
     }
 
     .bottom_footer_right {
@@ -132,6 +143,15 @@ const FooterBottomStyleWrapper = styled.div`
     }
     .tnc_address {
       margin-left: 40px;
+    }
+    .addresses {
+      margin-left: 40px;
+    }
+    .addresses_pc {
+      display: none;
+    }
+    .addresses_mobile {
+      display: block;
     }
     .top-footer-content {
       .footer_image {

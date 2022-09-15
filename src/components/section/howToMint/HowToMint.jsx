@@ -1,12 +1,12 @@
-import SectionTitle from "../../../../common/sectionTitle";
-import data from "../../../../assets/data/howToMint";
-import TitleFrame from "../../../../common/titleFrame/TitleFrame";
-import htm_box from "../../../../assets/images/bg/htm_box.png"
+import SectionTitle from "../../../common/sectionTitle";
+import data from "../../../assets/data/howToMint";
+import TitleFrame from "../../../common/titleFrame/TitleFrame";
+import htm_box from "../../../assets/images/bg/htm_box.png"
 
 import HowToMintWrapper from "./HowToMint.style";
 
 import { useRecoilState } from "recoil";
-import { langState } from '../../../../Atoms/langState';
+import { langState } from '../../../Atoms/langState';
 
 const HowToMint = () => {
   const [lang] = useRecoilState(langState);

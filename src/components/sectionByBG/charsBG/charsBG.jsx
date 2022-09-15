@@ -1,6 +1,6 @@
 import React from 'react'
-import HowToMint from "../../../components/section/howToMint/v1";
-import About from "../../../components/section/about/v2";
+import HowToMint from "../../../components/section/howToMint";
+import About from "../../section/about_us";
 import characters from "../../../assets/images/bg/MainChars.png";
 import CharsrBG from "./CharsBG.style";
 

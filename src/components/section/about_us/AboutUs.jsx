@@ -1,13 +1,13 @@
-import SectionTitle from "../../../../common/sectionTitle";
-import AboutStyleWrapper from "./About.style";
+import SectionTitle from "../../../common/sectionTitle";
+import AboutUsStyleWrapper from "./AboutUs.style";
 
 import { useRecoilState } from "recoil";
-import { langState } from "../../../../Atoms/langState";
+import { langState } from "../../../Atoms/langState";
 
-const About = () => {
+const AboutUs = () => {
   const [lang] = useRecoilState(langState);
   return (
-    <AboutStyleWrapper className="v2_about_us_section" id="about">
+    <AboutUsStyleWrapper className="v2_about_us_section" id="about">
       <div className="container">
         <SectionTitle
           className="text-center"
@@ -32,8 +32,8 @@ const About = () => {
           </div>
         </div>
       </div>
-    </AboutStyleWrapper>
+    </AboutUsStyleWrapper>
   );
 };
 
-export default About;
+export default AboutUs;

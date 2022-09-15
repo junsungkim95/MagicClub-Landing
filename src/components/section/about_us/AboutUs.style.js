@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import aboutBg from "../../../../assets/images/nft/v2_about_bg.png"
-const AboutStyleWrapper = styled.section` 
+import aboutBg from "../../../assets/images/nft/v2_about_bg.png"
+const AboutUsStyleWrapper = styled.section` 
     // min-height: 1590px;
     padding-top: 132px;
     padding-bottom: 0px;
@@ -108,4 +108,4 @@ const AboutStyleWrapper = styled.section`
 
 `
 
-export default AboutStyleWrapper;
+export default AboutUsStyleWrapper;

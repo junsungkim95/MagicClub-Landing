@@ -1,19 +1,19 @@
-import { useModal } from "../../../../utils/ModalContext";
+import { useModal } from "../../../utils/ModalContext";
 import { useEffect, useState } from "react";
 import { FaDiscord, FaWallet } from "react-icons/fa";
-import metamaskIcon from "../../../../assets/images/icon/MetaMask.svg";
+import metamaskIcon from "../../../assets/images/icon/MetaMask.svg";
 import { MdNotes } from "react-icons/md";
-import Button from "../../../../common/button";
+import Button from "../../../common/button";
 import NavWrapper from "./Header.style";
-import MobileMenu from "../mobileMenu/MobileMenu";
-import logo from "../../../../assets/images/logo.png";
-import frame from "../../../../assets/images/Frame.svg";
-import gitbook_logo from "../../../../assets/images/icon/gitbook-icon.svg";
-import { isMetaMaskInstalled } from '../../../../config';
+import MobileMenu from "./mobileMenu/MobileMenu";
+import logo from "../../../assets/images/logo.png";
+import frame from "../../../assets/images/Frame.svg";
+import gitbook_logo from "../../../assets/images/icon/gitbook-icon.svg";
+import { isMetaMaskInstalled } from '../../../config';
 import Dropdown from 'react-bootstrap/Dropdown';
 
 import { useRecoilState } from "recoil";
-import { langState } from '../../../../Atoms/langState';
+import { langState } from '../../../Atoms/langState';
 
 const Header = () => {
   const { walletModalHandle, connectWalletHandle, metamaskModalHandle, account, isWalletAlreadyConnected, disconnectWalletFromApp } = useModal();
