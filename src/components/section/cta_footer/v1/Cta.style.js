@@ -106,7 +106,7 @@ padding-bottom: 1000px;
   }
 
   @media only screen and (max-width: 768px) {
-    margin-bottom: 600px;
+    padding-bottom: 600px;
     .magic_club_title_section {
       width: 60%;
     }
@@ -115,7 +115,7 @@ padding-bottom: 1000px;
     }
   }
   @media only screen and (max-width: 575px) {
-    margin-bottom: 500px;
+    padding-bottom: 500px;
     .join_comunity_btns {
       max-width: 400px;
       .wishlist_btn {
