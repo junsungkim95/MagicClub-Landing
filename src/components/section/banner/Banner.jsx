@@ -41,7 +41,7 @@ const Banner = () => {
                 / 10000 Minted
               </h3>
               <div className="banner_buttons">
-                {
+                {/* {
                   account ? 
                   <Button lg variant="mint" onClick={() => mintModalHandle()}>
                     {" "}
@@ -51,7 +51,7 @@ const Banner = () => {
                     {" "}
                     Mint now
                   </Button>
-                }
+                } */}
               </div>
               <div className="coin-info">
                 {lang === "Eng" ? <span>MAX 5 NFTS PER WALLET</span> : <span>지갑당 NFT 5개 구매 가능</span>}
@@ -62,7 +62,7 @@ const Banner = () => {
                   가격 및 민팅날짜: {" "}
                   <span className="highlighted">추후 공지 예정</span>
                 </span>}
-                {vdView === true ? <p>true</p>: <p>false</p>}
+                {/* {vdView === true ? <p>true</p>: <p>false</p>} */}
               </div>
             </div>
           </div>
