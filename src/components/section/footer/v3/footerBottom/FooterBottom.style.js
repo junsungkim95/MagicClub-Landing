@@ -169,6 +169,7 @@ const FooterBottomStyleWrapper = styled.div`
 
     .bottom_footer_left {
       flex-direction: column;
+      align-items: start;
       .copyright_text {
         text-align: center;
       }
