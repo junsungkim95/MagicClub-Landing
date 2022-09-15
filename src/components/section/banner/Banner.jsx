@@ -18,15 +18,15 @@ const Banner = () => {
   const [lang] = useRecoilState(langState);
   const [vdView, setVdView] = useState("hidden")
 
-  useEffect(() =>{
-    const calculateRemainingItems = async () => {
-      let totaltMintedItems = await totalMintCount();
-      console.log(totaltMintedItems);
-      setRemaining(totaltMintedItems);
-    }
+  // useEffect(() =>{
+  //   const calculateRemainingItems = async () => {
+  //     let totaltMintedItems = await totalMintCount();
+  //     console.log(totaltMintedItems);
+  //     setRemaining(totaltMintedItems);
+  //   }
 
-    calculateRemainingItems();
-  },[])
+  //   calculateRemainingItems();
+  // },[])
   return (
     <BannerV1Wrapper id="home">
       <div className="container">
