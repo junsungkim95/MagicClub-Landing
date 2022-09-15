@@ -163,6 +163,7 @@ const FooterBottomStyleWrapper = styled.div`
     }
 
     .bottom_footer_left {
+      flex-direction: column;
       .copyright_text {
         text-align: center;
       }
