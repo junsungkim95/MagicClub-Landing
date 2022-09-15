@@ -51,6 +51,11 @@ const MobileMenuStyleWrapper = styled.div`
     animation: 1s ${menuAnimation};
   }
 
+  .magic_club_logo {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
   .mobile_menu_logo {
     width: 100%;
     position: relative;
@@ -58,8 +63,8 @@ const MobileMenuStyleWrapper = styled.div`
 
   .mobile_menu_close_btn {
     position: absolute;
-    right: 0px;
-    top: 50%;
+    right: -5%;
+    top: 0%;
     background: none;
     border: none;
     outline: none;

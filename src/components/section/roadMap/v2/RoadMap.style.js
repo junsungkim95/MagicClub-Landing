@@ -361,7 +361,7 @@ const RoadMapStyleWrapper = styled.section`
       .v2_roadmap_card_item {
         margin: 0px;
         width: 100%;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
         &.v2_roadmap_card_item_even {
           .even_right_box {
             left: 0;

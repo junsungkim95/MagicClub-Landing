@@ -3,7 +3,7 @@ import { useModal } from "../../../../utils/ModalContext";
 import { FaDiscord, FaTwitter, FaWallet } from "react-icons/fa";
 import { BsXLg } from "react-icons/bs";
 import Button from "../../../../common/button";
-import logo from "../../../../assets/images/logo.png";
+import logo from "../../../../assets/images/MoonLogo.png";
 import gitbook_logo from "../../../../assets/images/icon/gitbook-icon.svg";
 import metamaskIcon from "../../../../assets/images/icon/MetaMask.svg";
 import Dropdown from 'react-bootstrap/Dropdown';
