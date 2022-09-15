@@ -30,19 +30,14 @@ const FooterBottom = () => {
                 <a href={pdf} className="tnc_address">MAGIC CLUB Terms & Conditions</a>
                 <div className="addresses addresses_pc">
                   <p>ADAMGALLERY PTE. LTD. (COMPANY NO. 202215311D)</p>
-                  <p>111 SOMERSET ROAD #06-01A</p>
+                  <p>111 SOMERSET ROAD #06-01A SOMERSET SINGAPORE 238164</p>
                   <p>Copyright © 2022 Magicclub.io All rights reserved.</p>
                 </div>
               </div>
-              {/* <div className="addresses addresses_mobile">
-                <p>ADAMGALLERY PTE. LTD. (COMPANY NO. 202215311D)</p>
-                <p>111 SOMERSET ROAD #06-01A</p>
-                <p>Copyright © 2022 Magicclub.io All rights reserved.</p>
-              </div> */}
             </div>
-            <a href="# " className="bact_to_top_btn">
+            {/* <a href="# " className="bact_to_top_btn">
               <img src={backToTopIcon} alt="magic_club nft back to top" />
-            </a>
+            </a> */}
             <div className="bottom_footer_right">
               <ul>
                 {data?.map((item, i) => (
