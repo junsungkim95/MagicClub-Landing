@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
         <meta charset="utf-8" />
         <title>
           {" "}
-          Magic Club - NFT Minting/Collection Landing Page
+          Magic Club NFT Marketplace
         </title>
         <meta name="description" content="" />
         <link rel="shortcut icon" type="image/x-icon" href={favIcon} />
