@@ -15,8 +15,8 @@ import VideoBG from "../../../assets/images/bg/Video_BG_comp.mp4"
 const Banner = () => {
   const { mintModalHandle, connectWalletModalHanlde, account } = useModal();
   const [remaining, setRemaining] = useState(0);
-
   const [lang] = useRecoilState(langState);
+  const [vdView, setVdView] = useState("hidden")
 
   useEffect(() =>{
     const calculateRemainingItems = async () => {
@@ -62,6 +62,7 @@ const Banner = () => {
                   가격 및 민팅날짜: {" "}
                   <span className="highlighted">추후 공지 예정</span>
                 </span>}
+                {vdView === true ? <p>true</p>: <p>false</p>}
               </div>
             </div>
           </div>
@@ -77,6 +78,8 @@ const Banner = () => {
           muted={true} // 자동 재생 on
           loop={true}
           playsinline={true} // ios 동영상 플레이어로 넘어가는 것 방지
+          style={{visibility: vdView}}
+          onReady={()=>setVdView("visible")}
         />
       </div>
     </BannerV1Wrapper>

@@ -19,7 +19,7 @@ const CharacterSlider = () => {
       {/* <TitleFrame /> */}
       <div className="chars-wrapper">
         {data?.map((item, i) => (
-          <div className="chars-box">
+          <div className="chars-box" key={i}>
             <div className="character-thumb">
               <img src={item.thumb} alt="magic club nft character" />
             </div>
