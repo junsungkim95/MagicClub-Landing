@@ -25,9 +25,10 @@ const FooterBottomStyleWrapper = styled.div`
   }
   .addresses {
     p {
-      font-size: 10px;
+      font-family: NotoSansJP-Thin;
+      font-weight: 100;
+      font-size: 12px;
     }
-    font-family: NotoSansJP;
     margin-top: 12px;
     margin-left: 60px;
   }

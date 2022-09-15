@@ -9,3 +9,8 @@
     font-family: NotoSansJP-Bold;
     src: url('../styles/fonts/NotoSansJP-Bold.otf');
 }
+
+@font-face {
+    font-family: NotoSansJP-Thin;
+    src: url('../styles/fonts/NotoSansJP-Thin.otf');
+}
