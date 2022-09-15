@@ -140,15 +140,20 @@ const FooterBottomStyleWrapper = styled.div`
     .bottom_footer_right {
       display: none;
     }
-
+    .addr_div {
+      margin-top: 30px;
+    }
     .email_address {
-      margin-left: 40px;
+      // margin-left: 40px;
+      margin-left: 0px;
     }
     .tnc_address {
-      margin-left: 40px;
+      // margin-left: 40px;
+      margin-left: 0px;
     }
     .addresses {
-      margin-left: 40px;
+      // margin-left: 40px;
+      margin-left: 0px;
     }
     .addresses_pc {
       // display: none;
