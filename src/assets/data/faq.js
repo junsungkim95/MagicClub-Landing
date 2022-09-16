@@ -48,6 +48,32 @@ const data = [
   {
     Eng_title: "What is the benefit of the Magic Club NFT Holder?",
     Kor_title: "Q. 매직클럽 NFT 홀더 베네핏은 무엇인가요?",
+    Eng_text:[
+      <div className="faq_ol_list">
+        <span>Reward for 10,000 Magic Club NFT holders</span>
+        <ol>
+          <li>MCT Token Rewards every week for 10 years (compensation for NFT Staking)</li>
+          <li>Grant of IP copyright (Unlimited commercial use is possible, per NFT)</li>
+          <li>Authorization of DAO participation activities</li>
+          <li>Granting the Whitelist for Magic Shoes Pre-sale</li>
+          <li>Granting the right to participate in the Magic Shoes test (MCT Reward compensation to test participants)</li>
+          <li>Offline party for holders will be hosted once a year</li>
+        </ol>
+      </div>
+      ],
+    Kor_text:[
+    <div className="faq_ol_list">
+      <span>전체 10,000개의 매직클럽 NFT 홀더 보상</span>
+      <ol>
+        <li>10년간 매주 MCT 토큰 리워드 보상 (NFT 스테이킹에 대한 보상)</li>
+        <li>IP 저작권 부여 (무제한 2차창작 가능, 보유 NFT 1개당)</li>
+        <li>DAO 참여 활동 권한 부여</li>
+        <li>매직슈즈 프리세일 화이트 리스트 대상권 부여</li>
+        <li>매직슈즈 테스트 참여권 부여 (테스트 참여자에게 MCT 리워드 보상)</li>
+        <li>연1회 홀더 대상 오프라인 파티 주최 예정</li>
+      </ol>
+    </div>
+  ]
   //   Eng_text:[
   //     "Reward for 10,000 Magic Club NFT holders", <br />,
   //     "1. MCT Token Rewards every week for 10 years (compensation for NFT Staking)", <br />,
@@ -64,11 +90,11 @@ const data = [
   //     "5. 매직슈즈 테스트 참여권 부여 (테스트 참여자에게 MCT 리워드 보상)", <br />,
   //     "6. 연1회 홀더 대상 오프라인 파티 주최 예정",]
   // },
-  Eng_text:
-    "Reward for 10,000 Magic Club NFT holders\n1. MCT Token Rewards every week for 10 years (compensation for NFT Staking)\n2. Grant of IP copyright (Unlimited commercial use is possible, per NFT)\n3. Authorization of DAO participation activities\n4. Granting the Whitelist for Magic Shoes Pre-sale\n5. Granting the right to participate in the Magic Shoes test (MCT Reward compensation to test participants)\n6. Offline party for holders will be hosted once a year",
-  Kor_text:
-    "전체 10,000개의 매직클럽 NFT 홀더 보상\n1. 10년간 매주 MCT 토큰 리워드 보상 (NFT 스테이킹에 대한 보상)\n2. IP 저작권 부여 (무제한 2차창작 가능, 보유 NFT 1개당)\n3. DAO 참여 활동 권한 부여\n4. 매직슈즈 프리세일 화이트 리스트 대상권 부여\n5. 매직슈즈 테스트 참여권 부여 (테스트 참여자에게 MCT 리워드 보상)\n6. 연1회 홀더 대상 오프라인 파티 주최 예정"
-},
+  // Eng_text:
+  //   "Reward for 10,000 Magic Club NFT holders\n1. MCT Token Rewards every week for 10 years (compensation for NFT Staking)\n2. Grant of IP copyright (Unlimited commercial use is possible, per NFT)\n3. Authorization of DAO participation activities\n4. Granting the Whitelist for Magic Shoes Pre-sale\n5. Granting the right to participate in the Magic Shoes test (MCT Reward compensation to test participants)\n6. Offline party for holders will be hosted once a year",
+  // Kor_text:
+  //   "전체 10,000개의 매직클럽 NFT 홀더 보상\n1. 10년간 매주 MCT 토큰 리워드 보상 (NFT 스테이킹에 대한 보상)\n2. IP 저작권 부여 (무제한 2차창작 가능, 보유 NFT 1개당)\n3. DAO 참여 활동 권한 부여\n4. 매직슈즈 프리세일 화이트 리스트 대상권 부여\n5. 매직슈즈 테스트 참여권 부여 (테스트 참여자에게 MCT 리워드 보상)\n6. 연1회 홀더 대상 오프라인 파티 주최 예정"
+  },
   {
     Eng_title: "Where can I purchase Magic Club NFTs?",
     Kor_title: "Q. Magic Club NFT는 어디서 구매할 수 있을까요?",

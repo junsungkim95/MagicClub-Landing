@@ -65,13 +65,24 @@ const FAQStyleWrapper = styled.section`
     z-index: 0;
   }
 
-  ol {
-    padding-left: 18px;
-    list-style-type: decimal;
-    li{
+  .faq_ol_list {
+    padding: 0 48px 24px 29px;
+    span {
       font-family: NotoSansJP;
+      font-weight: 400;
+      color: rgba(255,255,255,0.7);
+    }
+    ol {
+      padding-left: 18px;
+      list-style-type: decimal;
+      li{
+        font-family: NotoSansJP;
+        font-weight: 400;
+        color: rgba(255,255,255,0.7);
+      }
     }
   }
+  
 
   @media only screen and (max-width: 991px) {
     .accordion__header {

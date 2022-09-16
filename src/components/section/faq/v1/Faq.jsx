@@ -57,7 +57,13 @@ const FAQ = () => {
                     ))
                     : 
                     <></>} */}
-                    <p style={{whiteSpace: "pre-wrap"}}>{item[`${lang}_text`]}</p>
+                    {typeof(item[`${lang}_text`]) === "object" ? 
+                    item[`${lang}_text`].map((itm, idx) => (
+                      <span key={idx}>{itm}</span>
+                    ))
+                    : 
+                    <p>{item[`${lang}_text`]}</p>}
+                    {/* <p style={{whiteSpace: "pre-wrap"}}>{item[`${lang}_text`]}</p> */}
                   </AccordionBody>
                 </AccordionItem>
               ))}
