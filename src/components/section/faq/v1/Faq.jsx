@@ -51,13 +51,13 @@ const FAQ = () => {
                   </AccordionTitle>
                   <AccordionBody>
                     {/* json 배열 쓰는 내용 키값 에러 해결 */}
-                    {typeof(item[`${lang}_text`]) === "object" ? 
+                    {/* {typeof(item[`${lang}_text`]) === "object" ? 
                     item[`${lang}_text`].map((itm, idx) => (
                       <span style={{display: 'none'}} key={idx}>{itm}</span>
                     ))
                     : 
-                    <></>}
-                    <p>{item[`${lang}_text`]}</p>
+                    <></>} */}
+                    <p style={{whiteSpace: "pre-wrap"}}>{item[`${lang}_text`]}</p>
                   </AccordionBody>
                 </AccordionItem>
               ))}
