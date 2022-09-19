@@ -3,6 +3,7 @@ import GlobalStyles from "../assets/styles/GlobalStyles";
 import Header from "../components/section/header/Header";
 import Layout from "../common/layout";
 import Banner from "../components/section/banner";
+import Story from "../components/section/story"
 import CTA from "../components/section/cta";
 import CharacterSlider from "../components/section/characterSlider/v1";
 import MintNowModal from "../common/modal/mintNowModal";
@@ -27,6 +28,7 @@ const HomeV1 = () => {
       <Banner />
       <CharsBG />
       {/* <CharacterSlider /> */}
+      <Story />
       <CTA />
       <TreeUpperBG />
       <BdUpperBG />
