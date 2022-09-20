@@ -90,10 +90,10 @@ Ara mumbles to herself, and at the end of the meeting, she decides to help human
     // "아라는 혼자 중얼거리듯 말하며 회의 끝에 인간을 돕고 인간과 어울리며 인간들의 부와 명예를 다시 회복 시키기로 결론을 내린다."],
   },
   {
-    Eng_title: "Part 2. Eng title",
-    Kor_title: "Part 2. Kor Title",
-    Eng_text: "Part 2. Eng story text.",
-    Kor_text: "Part 2. Kor story text.",
+    Eng_title: "Part 2. ...",
+    Kor_title: "Part 2. ...",
+    Eng_text: "...",
+    Kor_text: "...",
   },
 ];
 
