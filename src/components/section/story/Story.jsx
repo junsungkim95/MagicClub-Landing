@@ -35,7 +35,7 @@ const Story = () => {
           />
           {/* <TitleFrame /> */}
           <div className="magic_club_story_questions">
-            <Accordion className="story_questions">
+            <Accordion className="story_questions" allowZeroExpanded="true" >
               {data?.map((item, i) => (
                 <AccordionItem key={i}>
                   <AccordionTitle handleExpand={handleExpand}>
