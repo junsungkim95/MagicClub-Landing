@@ -1,5 +1,5 @@
 import characterThumb1 from "../../images/nft/00maru2.png";
-import characterThumb2 from "../../images/nft/00ara2.png";
+import characterThumb2 from "../../images/nft/Ara01.png";
 import characterThumb3 from "../../images/nft/00raon1.png";
 import characterThumb4 from "../../images/nft/00dawon.png";
 
