@@ -1,13 +1,12 @@
-import FooterBottomStyleWrapper from "./FooterBottom.style";
-import data from "../../../../../assets/data/socialProfile";
-import backToTopIcon from "../../../../../assets/images/icon/back_to_top.svg";
-import footerShapesLeft from "../../../../../assets/images/icon/footer_shapes_left.png";
-import footerShapesRight from "../../../../../assets/images/icon/footer_shapes_right.png";
-import logo from "../../../../../assets/images/white_logo.png";
-import frame from "../../../../../assets/images/Frame.svg";
-import adamLogo from "../../../../../assets/images/Adam_logo.png";
-import pdf from "../../../../../assets/Magic_Club_Terms_&_Conditions.pdf";
-
+import FooterBottomStyleWrapper from './FooterBottom.style';
+import data from '../../../../../assets/data/socialProfile';
+import backToTopIcon from '../../../../../assets/images/icon/back_to_top.svg';
+import footerShapesLeft from '../../../../../assets/images/icon/footer_shapes_left.png';
+import footerShapesRight from '../../../../../assets/images/icon/footer_shapes_right.png';
+import logo from '../../../../../assets/images/white_logo.png';
+import frame from '../../../../../assets/images/Frame.svg';
+import adamLogo from '../../../../../assets/images/Adam_logo.png';
+import pdf from '../../../../../assets/MAGIC_CLUB_Terms_&_Conditions.pdf';
 
 const FooterBottom = () => {
   return (
@@ -27,7 +26,9 @@ const FooterBottom = () => {
               </div>
               <div className="addr_div">
                 <p className="email_address">info@magicclub.io</p>
-                <a href={pdf} className="tnc_address">MAGIC CLUB Terms & Conditions</a>
+                <a href={pdf} className="tnc_address">
+                  MAGIC CLUB Terms & Conditions
+                </a>
                 <div className="addresses addresses_pc">
                   <p>ADAMGALLERY PTE. LTD. (COMPANY NO. 202215311D)</p>
                   <p>111 SOMERSET ROAD #06-01A SOMERSET SINGAPORE 238164</p>
