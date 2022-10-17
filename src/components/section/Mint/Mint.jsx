@@ -1,15 +1,15 @@
-import Button from '../../../common/button';
+import Button from "../../../common/button";
 
-import MintStyleWrapper from './Mint.style';
-import Web3 from 'web3';
-import Abi from './abi.json';
-import { useCallback, useEffect, useState } from 'react';
-import { getMerkleProof } from './whitelist';
+import MintStyleWrapper from "./Mint.style";
+import Web3 from "web3";
+import Abi from "./abi.json";
+import { useCallback, useEffect, useState } from "react";
+import { getMerkleProof } from "./whitelist";
 
-const Contract = require('web3-eth-contract');
+const Contract = require("web3-eth-contract");
 
-const account = '0x5fD271a9bc50f1E210f15318C6B15d8bB79Cf67d';
-const ABI_CONTRACT_ADDRESS = '0xC3b3C0a9d110ac20d756a8d6f280408C73B4AdE7';
+const account = "0x5fD271a9bc50f1E210f15318C6B15d8bB79Cf67d";
+const ABI_CONTRACT_ADDRESS = "0xC3b3C0a9d110ac20d756a8d6f280408C73B4AdE7";
 
 const web3 = new Web3(window.ethereum);
 const smartContract = new Contract(Abi, ABI_CONTRACT_ADDRESS);
@@ -25,7 +25,7 @@ export default function Mint() {
       smartContract.methods
         .competitionMerkleRoot()
         .call()
-        .then(rootHash => {
+        .then((rootHash) => {
           console.log(rootHash);
           const proof = getMerkleProof(rootHash, account);
           if (!proof) {
@@ -39,9 +39,9 @@ export default function Mint() {
           }
           resolve(proof);
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
-          throw new Error('화이트리스트 대상자 정보를 불러오지 못했습니다.');
+          throw new Error("화이트리스트 대상자 정보를 불러오지 못했습니다.");
         });
     });
   };
@@ -58,9 +58,9 @@ export default function Mint() {
       ] = await smartContract.methods.mintingInformation().call();
       setTotalSupply(3);
       setWei(0.003);
-      setPrice(+web3.utils.fromWei(mintPrice, 'ether'));
+      setPrice(+web3.utils.fromWei(mintPrice, "ether"));
     } catch (e) {
-      console.error('error:', e);
+      console.error("error:", e);
     }
   }, []);
 
@@ -79,7 +79,7 @@ export default function Mint() {
 
     // setModals({ ...modals, isBuying: true });
 
-    const successMint = res => {
+    const successMint = (res) => {
       getInformation();
       // setModals({ ...modals, isBuying: false, isSuccessMint: true });
     };
@@ -87,22 +87,22 @@ export default function Mint() {
     async function getRevertReason(txHash) {
       const tx = await web3.eth.getTransaction(txHash);
 
-      return new Promise(resolve => {
+      return new Promise((resolve) => {
         // 의도된 에러 캐칭을 위해 await가 아닌 콜백 사용
         // @ts-ignore
         web3.eth.call(tx, tx.blockNumber, (err, result) => {
           if (err) {
             try {
               const errorStringArray = err.toString().split('"');
-              const message = errorStringArray[errorStringArray.length - 2].split(':')[1].trim();
+              const message = errorStringArray[errorStringArray.length - 2].split(":")[1].trim();
 
               // resolve(ERR_MSG[message] || '민팅에 실패했습니다.');
-              resolve('민팅에 실패했습니다.');
+              resolve("민팅에 실패했습니다.");
             } catch (e) {
-              resolve('민팅에 실패했습니다.');
+              resolve("민팅에 실패했습니다.");
             }
           }
-          resolve('민팅에 실패했습니다.');
+          resolve("민팅에 실패했습니다.");
         });
       });
     }
@@ -110,7 +110,7 @@ export default function Mint() {
     async function getRevertReason(txHash) {
       const tx = await web3.eth.getTransaction(txHash);
 
-      return new Promise(resolve => {
+      return new Promise((resolve) => {
         // 의도된 에러 캐칭을 위해 await가 아닌 콜백 사용
         // @ts-ignore
         web3.eth.call(tx, tx.blockNumber, (err, result) => {
@@ -119,17 +119,17 @@ export default function Mint() {
               const errorStringArray = err.toString().split('"');
               // const message = errorStringArray[errorStringArray.length - 2].split(":")[1].trim();
 
-              resolve('민팅에 실패했습니다.');
+              resolve("민팅에 실패했습니다.");
             } catch (e) {
-              resolve('민팅에 실패했습니다.');
+              resolve("민팅에 실패했습니다.");
             }
           }
-          resolve('민팅에 실패했습니다.');
+          resolve("민팅에 실패했습니다.");
         });
       });
     }
 
-    const failureMint = async error => {
+    const failureMint = async (error) => {
       try {
         const reason = await getRevertReason(error.receipt.transactionHash);
 
@@ -149,8 +149,8 @@ export default function Mint() {
         // });
       }
     };
-    switch ('WHITELIST') {
-      case 'WHITELIST':
+    switch ("WHITELIST") {
+      case "WHITELIST":
         const competitionMerkleProof = await checkCompetitionWhitelist();
         await smartContract.methods
           .competitionWhitelistMint(amount, competitionMerkleProof)
@@ -201,10 +201,10 @@ export default function Mint() {
     const { ethereum } = window;
 
     ethereum &&
-      ethereum.on('chainChanged', chainId => {
+      ethereum.on("chainChanged", (chainId) => {
         const networkId = parseInt(chainId, 16);
 
-        if (networkId !== 1 && networkId !== 4) {
+        if (networkId !== 1 && networkId !== 5) {
           // setModals({
           //   ...modals,
           //   isMainnet: true,
@@ -222,16 +222,14 @@ export default function Mint() {
 
   useEffect(() => {
     let timer = null;
-    // if (!account) return setModals((prevState) => ({ ...prevState, isMetaMask: true }));
-
-    // setModals(prevState => ({ ...prevState, isMetaMask: false }));
 
     window.ethereum
       .request({
-        method: 'net_version',
+        method: "net_version",
       })
-      .then(async networkId => {
-        if (+networkId === 1 || +networkId === 4) {
+      .then(async (networkId) => {
+        console.log(networkId);
+        if (+networkId === 1 || +networkId === 5) {
           timer = setInterval(() => {
             // getStatus();
             // getBlockNumber();
@@ -249,7 +247,7 @@ export default function Mint() {
         <div className="mint_amount">
           <div>민팅 수량</div>
           <div>가격: 0.03eth</div>
-          <input type="number" value={amount} onChange={e => setAmount(e.target.value)} />
+          <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} />
           <div className="sale_amount">0 / 9999</div>
         </div>
         <Button sm variant="mint" className="mint_btn" onClick={onMinting}>

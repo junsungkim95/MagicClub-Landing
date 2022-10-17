@@ -12,6 +12,7 @@ import { langState } from '../../../Atoms/langState';
 import ReactPlayer from 'react-player';
 import VideoBG from "../../../assets/images/bg/Video_BG_comp.mp4"
 
+
 const Banner = () => {
   const { mintModalHandle, connectWalletModalHanlde, account } = useModal();
   const [remaining, setRemaining] = useState(0);
@@ -41,7 +42,7 @@ const Banner = () => {
                 / 10000 Minted
               </h3>
               <div className="banner_buttons">
-                {/* {
+                {
                   account ? 
                   <Button lg variant="mint" onClick={() => mintModalHandle()}>
                     {" "}
@@ -51,7 +52,7 @@ const Banner = () => {
                     {" "}
                     Mint now
                   </Button>
-                } */}
+                }
               </div>
               <div className="coin-info">
                 {lang === "Eng" ? <span>MAX 5 NFTS PER WALLET</span> : <span>지갑당 NFT 5개 구매 가능</span>}
