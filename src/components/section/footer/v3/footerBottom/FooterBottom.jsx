@@ -6,7 +6,7 @@ import footerShapesRight from "../../../../../assets/images/icon/footer_shapes_r
 import logo from "../../../../../assets/images/white_logo.png";
 import frame from "../../../../../assets/images/Frame.svg";
 import adamLogo from "../../../../../assets/images/Adam_logo.png";
-import pdf from "../../../../../assets/Magic_Club_Terms_&_Conditions.pdf";
+import pdf from "../../../../../assets/MAGIC_CLUB_Terms_&_Conditions.pdf";
 
 
 const FooterBottom = () => {
