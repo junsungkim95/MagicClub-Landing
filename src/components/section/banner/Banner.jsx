@@ -36,7 +36,7 @@ const Banner = () => {
 
     Web3EthContract.setProvider(window.ethereum);
 
-    const ABI_CONTRACT_ADDRESS = "0x588dFd1181d1237D06b94a9A9343Bcdf93a72999";
+    const ABI_CONTRACT_ADDRESS = "0x8e5e575AA13fe81D256a7607a92A479c406E863c";
     const smartContract = new Web3EthContract(Abi, ABI_CONTRACT_ADDRESS);
 
     window.ethereum
@@ -64,7 +64,7 @@ const Banner = () => {
                 <span className="count">
                   <Counter end={totalSupply} duration={0.5} />
                 </span>{" "}
-                / 10000 Minted
+                / 7670 Minted
               </h3>
               <div className="banner_buttons">
                 <Button

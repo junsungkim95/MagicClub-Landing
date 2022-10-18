@@ -12,7 +12,22 @@ import { useCallback } from "react";
 
 const Web3EthContract = require("web3-eth-contract");
 
-const ABI_CONTRACT_ADDRESS = "0x588dFd1181d1237D06b94a9A9343Bcdf93a72999";
+const ABI_CONTRACT_ADDRESS = "0x8e5e575AA13fe81D256a7607a92A479c406E863c";
+
+const ERR_MSG = {
+  "The public sale is not enabled!":
+    "아직 퍼블릭 민팅이 활성화되지 않았습니다.\n잠시만 기다려주세요.",
+  "Bot is not allowed": "봇 구매는 허용되지 않습니다.",
+  "Not yet started": "민팅 가능한 블록 높이에 도달하지 못했습니다.",
+  "Too many requests or zero request": "허용되지 않은 민팅 개수를 요청했습니다.",
+  "Not enough ETH": "금액이 정확하지 않습니다",
+  "Exceed max amount": "최대 판매 개수를 초과했습니다.",
+  "Exceed max amount per person": "구매 가능 개수를 초과했습니다.",
+  "The whitelist sale is not enabled!":
+    "아직 화이트리스트 민팅이 활성화되지 않았습니다.\n잠시만 기다려주세요.",
+  "Invalid proof": "허용되지 않은 지갑 주소입니다.",
+  "Fail with error 'Address already claimed!'": "이미 구매한 지갑 주소입니다.",
+};
 
 const web3 = new Web3(window.ethereum);
 Web3EthContract.setProvider(window.ethereum);
@@ -39,7 +54,6 @@ const MintNowModal = () => {
   };
 
   const decreaseCount = () => {
-    console.log(count);
     if (count <= 1) {
       setMessage("Minimum minting amount 1.");
     } else {
@@ -82,17 +96,17 @@ const MintNowModal = () => {
     // }
 
     const sendObj = {
-      gasLimit: 500000 * +1,
+      gasLimit: 500000 * count,
       from: account[0],
       to: ABI_CONTRACT_ADDRESS,
-      value: web3.utils.toBN(wei).mul(web3.utils.toBN(1)),
+      // value: web3.utils.toBN(wei).mul(web3.utils.toBN(1)),
+      vavlue: price,
     };
-
-    // setModals({ ...modals, isBuying: true });
 
     const successMint = (res) => {
       getInformation();
-      // setModals({ ...modals, isBuying: false, isSuccessMint: true });
+      mintModalHandle();
+      alert("민팅에 성공했습니다.");
     };
 
     async function getRevertReason(txHash) {
@@ -105,9 +119,9 @@ const MintNowModal = () => {
           if (err) {
             try {
               const errorStringArray = err.toString().split('"');
-              // const message = errorStringArray[errorStringArray.length - 2].split(":")[1].trim();
+              const message = errorStringArray[errorStringArray.length - 2].split(":")[1].trim();
 
-              // resolve(ERR_MSG[message] || '민팅에 실패했습니다.');
+              resolve(ERR_MSG[message] || "민팅에 실패했습니다.");
               resolve("민팅에 실패했습니다.");
             } catch (e) {
               resolve("민팅에 실패했습니다.");
@@ -120,25 +134,19 @@ const MintNowModal = () => {
 
     const failureMint = async (error) => {
       try {
-        // const reason = await getRevertReason(error.receipt.transactionHash);
-        // setModals({
-        //   ...modals,
-        //   errMsg: reason,
-        //   isBuying: false,
-        //   isFailure: true,
-        // });
+        const reason = await getRevertReason(error.receipt.transactionHash);
+
+        alert(reason);
       } catch (e) {
         console.log(e);
-        // setModals({
-        //   ...modals,
-        //   errMsg: '민팅에 실패하였습니다.',
-        //   isBuying: false,
-        //   isFailure: true,
-        // });
+        alert("민팅에 실패하였습니다.");
       }
     };
-    console.log("publicMiint", sendObj);
-    await smartContract.methods.publicMint(1).send(sendObj).then(successMint).catch(failureMint);
+    await smartContract.methods
+      .publicMint(count)
+      .send(sendObj)
+      .then(successMint)
+      .catch(failureMint);
 
     // setModals({
     //   ...modals,
@@ -153,7 +161,6 @@ const MintNowModal = () => {
   };
 
   const getInformation = useCallback(async () => {
-    console.log("getInfo", smartContract, await smartContract.methods.mintingInformation().call());
     try {
       const [
         ,
@@ -164,8 +171,11 @@ const MintNowModal = () => {
         // maxSaleAmount,
         mintPrice,
       ] = await smartContract.methods.mintingInformation().call();
+
+      console.log("price:", web3.utils.toBN(mintPrice).mul(web3.utils.toBN(2)));
+
       setWei(mintPrice);
-      setPrice(+web3.utils.fromWei(mintPrice, "ether"));
+      setPrice(web3.utils.fromWei(mintPrice, "ether"));
     } catch (e) {
       console.error("error:", e);
     }
@@ -225,7 +235,7 @@ const MintNowModal = () => {
                   <li>
                     <h5>Remaining</h5>
                     <h5>
-                      {totalSupply}/<span>10000</span>
+                      {totalSupply}/<span>7670</span>
                     </h5>
                   </li>
                   <li>
