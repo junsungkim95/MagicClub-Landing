@@ -68,8 +68,6 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
     if (count >= maxAmount || count < 1) return;
 
     await onMinting();
-    await getTotalSupply();
-    setLoading(false);
 
     // if (txn.length) {
     //   setMessage("Minted successfully!");
@@ -108,9 +106,11 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
       value: web3.utils.toBN(wei).mul(web3.utils.toBN(count)),
     };
 
-    const successMint = (res) => {
+    const successMint = async (res) => {
       getInformation();
       mintModalHandle();
+      await getTotalSupply();
+      setLoading(false);
       alert("민팅에 성공했습니다.");
     };
 
@@ -146,6 +146,7 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
         console.log(e);
         alert("민팅에 실패하였습니다.");
       }
+      setLoading(false);
     };
     await smartContract.methods
       .publicMint(count)
