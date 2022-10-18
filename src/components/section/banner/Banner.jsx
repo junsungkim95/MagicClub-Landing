@@ -10,7 +10,7 @@ import { useRecoilState } from 'recoil';
 import { langState } from '../../../Atoms/langState';
 
 import ReactPlayer from 'react-player';
-import VideoBG from '../../../assets/images/bg/mcnfts.mp4';
+import VideoBG from '../../../assets/images/bg/mcnftv.mp4';
 
 const Banner = () => {
   const { mintModalHandle, connectWalletModalHanlde, account } = useModal();
