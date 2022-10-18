@@ -3,7 +3,7 @@ import Counter from "../../../common/counter";
 import Button from "../../../common/button";
 import BannerV1Wrapper from "./Banner.style";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { totalMintCount } from "../../../utils/web3mint";
 
 import { useRecoilState } from "recoil";
@@ -11,12 +11,10 @@ import { langState } from "../../../Atoms/langState";
 
 import ReactPlayer from "react-player";
 import VideoBG from "../../../assets/images/bg/Video_BG_comp.mp4";
-import Abi from "../../../common/modal/mintNowModal/abi.json";
-import { isMetaMaskInstalled } from "../../../config";
-const Web3EthContract = require("web3-eth-contract");
 
-const Banner = () => {
-  const [totalSupply, setTotalSupply] = useState(0);
+import { isMetaMaskInstalled } from "../../../config";
+
+const Banner = ({ totalSupply }) => {
   const { metamaskModalHandle, mintModalHandle, connectWalletModalHanlde, account } = useModal();
   const [lang] = useRecoilState(langState);
   const [vdView, setVdView] = useState("hidden");
@@ -30,25 +28,6 @@ const Banner = () => {
 
   //   calculateRemainingItems();
   // },[])
-
-  useEffect(() => {
-    if (!isMetaMaskInstalled()) return;
-
-    Web3EthContract.setProvider(window.ethereum);
-
-    const ABI_CONTRACT_ADDRESS = "0x8e5e575AA13fe81D256a7607a92A479c406E863c";
-    const smartContract = new Web3EthContract(Abi, ABI_CONTRACT_ADDRESS);
-
-    window.ethereum
-      .request({
-        method: "net_version",
-      })
-      .then(async (networkId) => {
-        if (+networkId === 1 || +networkId === 5) {
-          setTotalSupply(await smartContract.methods.totalSupply().call());
-        }
-      });
-  }, []);
 
   return (
     <BannerV1Wrapper id="home">
@@ -64,7 +43,7 @@ const Banner = () => {
                 <span className="count">
                   <Counter end={totalSupply} duration={0.5} />
                 </span>{" "}
-                / 7670 Minted
+                / 9000 Minted
               </h3>
               <div className="banner_buttons">
                 <Button

@@ -47,6 +47,19 @@ const MintModalStyleWrapper = styled.div`
     }
   }
 
+  @keyframes spin {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  .load {
+    animation: spin 1.5s infinite linear;
+  }
+
   .mint_modal_content {
     height: 100%;
     width: 100%;
@@ -60,6 +73,7 @@ const MintModalStyleWrapper = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-height: 635px;
   }
 
   .modal_header {
