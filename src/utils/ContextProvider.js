@@ -42,7 +42,11 @@ const ContextProvider = ({ children }) => {
 
   const connectWalletHandle = async () => {
     const accounts = await connectWallet();
+
+    if (!accounts) return;
+
     setAccount(accounts);
+
     if (!isWalletConnected()) {
       connectWalletLocaly();
     }

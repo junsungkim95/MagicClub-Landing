@@ -38,9 +38,9 @@ const Header = () => {
   const handleWalletConnect = async () => {
     if (!isMetaMaskInstalled()) {
       metamaskModalHandle();
-    } else {
-      connectWalletHandle();
     }
+
+    walletModalHandle();
   };
   useEffect(() => {
     const header = document.getElementById("navbar");
