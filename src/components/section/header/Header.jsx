@@ -9,14 +9,21 @@ import MobileMenu from "./mobileMenu/MobileMenu";
 import logo from "../../../assets/images/logo.png";
 import frame from "../../../assets/images/Frame.svg";
 import gitbook_logo from "../../../assets/images/icon/gitbook-icon.svg";
-import { isMetaMaskInstalled } from '../../../config';
-import Dropdown from 'react-bootstrap/Dropdown';
+import { isMetaMaskInstalled } from "../../../config";
+import Dropdown from "react-bootstrap/Dropdown";
 
 import { useRecoilState } from "recoil";
-import { langState } from '../../../Atoms/langState';
+import { langState } from "../../../Atoms/langState";
 
 const Header = () => {
-  const { walletModalHandle, connectWalletHandle, metamaskModalHandle, account, isWalletAlreadyConnected, disconnectWalletFromApp } = useModal();
+  const {
+    walletModalHandle,
+    connectWalletHandle,
+    metamaskModalHandle,
+    account,
+    isWalletAlreadyConnected,
+    disconnectWalletFromApp,
+  } = useModal();
   const [isMobileMenu, setMobileMenu] = useState(false);
   const handleMobileMenu = () => {
     setMobileMenu(!isMobileMenu);
@@ -24,19 +31,17 @@ const Header = () => {
 
   const [lang, setLang] = useRecoilState(langState);
 
+  const substr = (str, n) => {
+    return str.length > n ? str.substr(0, n - 1) : str;
+  };
 
-  const substr = (str, n) =>{
-    return str.length > n ? str.substr(0, n -1) : str;
-  }
-
-  const handleWalletConnect = async () =>{
-    if(!isMetaMaskInstalled()){
+  const handleWalletConnect = async () => {
+    if (!isMetaMaskInstalled()) {
       metamaskModalHandle();
-    }else{
-      // walletModalHandle();
+    } else {
       connectWalletHandle();
     }
-  }
+  };
   useEffect(() => {
     const header = document.getElementById("navbar");
     const handleScroll = window.addEventListener("scroll", () => {
@@ -54,7 +59,7 @@ const Header = () => {
 
   useEffect(() => {
     isWalletAlreadyConnected();
-  },[isWalletAlreadyConnected]);
+  }, []);
 
   return (
     <NavWrapper className="magic_club_header" id="navbar">
@@ -98,31 +103,27 @@ const Header = () => {
               </button>
               <a href="https://discord.gg/8BWsjJCTTX">
                 <Button sm variant="outline" className="join_btn">
-                <FaDiscord /> <span>Join</span>
-              </Button>
+                  <FaDiscord /> <span>Join</span>
+                </Button>
               </a>
-              { account ?
-              <Dropdown>
-                <Dropdown.Toggle variant="white" id="dropdown-basic" className="connect_btn">
-                  { substr(account.toString(), 15) }
-                </Dropdown.Toggle>
-          
-                <Dropdown.Menu>
-                  <Dropdown.Item href="# " onClick={() => disconnectWalletFromApp() }>Disconnect</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-              :
-              <Button
-                sm
-                variant="hovered"
-                className="connect_btn"
-                onClick={() => handleWalletConnect()}
-              >
-                <img className="metamask_logo" src={metamaskIcon} alt="magic_club nft logo" />
-                <span>Connect</span>
-              </Button>
+              {account ? (
+                <Dropdown>
+                  <Dropdown.Toggle variant="white" id="dropdown-basic" className="connect_btn">
+                    {substr(account.toString(), 15)}
+                  </Dropdown.Toggle>
 
-              }
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="# " onClick={() => disconnectWalletFromApp()}>
+                      Disconnect
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              ) : (
+                <Button sm variant="hovered" className="connect_btn" onClick={handleWalletConnect}>
+                  <img className="metamask_logo" src={metamaskIcon} alt="magic_club nft logo" />
+                  <span>Connect</span>
+                </Button>
+              )}
               <a href="https://adam-gallery-2.gitbook.io/magic-club/">
                 <img className="gitbook_logo" src={gitbook_logo} alt="magic_club nft logo" />
               </a>
@@ -133,10 +134,14 @@ const Header = () => {
                 <Dropdown.Toggle variant="white" id="dropdown-lang" className="lang_btn">
                   {lang}
                 </Dropdown.Toggle>
-          
+
                 <Dropdown.Menu>
-                  <Dropdown.Item href="# " onClick={() => setLang("Eng") }>English</Dropdown.Item>
-                  <Dropdown.Item href="# " onClick={() => setLang("Kor") }>Korean</Dropdown.Item>
+                  <Dropdown.Item href="# " onClick={() => setLang("Eng")}>
+                    English
+                  </Dropdown.Item>
+                  <Dropdown.Item href="# " onClick={() => setLang("Kor")}>
+                    Korean
+                  </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
               {/* 언어변경 버튼 끝 */}

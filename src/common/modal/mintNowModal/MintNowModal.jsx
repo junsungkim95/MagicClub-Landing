@@ -5,7 +5,6 @@ import Button from "../../button";
 import MintModalStyleWrapper from "./MintNow.style";
 import mintImg from "../../../assets/images/nft/00maru.png";
 import hoverShape from "../../../assets/images/icon/hov_shape_L.svg";
-import { totalMintCount, mint } from "../../../utils/web3mint";
 import { useEffect } from "react";
 import Web3 from "web3";
 import Abi from "./abi.json";
@@ -20,20 +19,15 @@ Web3EthContract.setProvider(window.ethereum);
 
 const smartContract = new Web3EthContract(Abi, ABI_CONTRACT_ADDRESS);
 
-console.log(smartContract);
-
 const MintNowModal = () => {
   const { account } = useModal();
 
   const [totalSupply, setTotalSupply] = useState(0);
   const [count, setCount] = useState(1);
   const [message, setMessage] = useState("");
-  const [remaining, setRemaining] = useState(0);
   const { mintModalHandle } = useModal();
   const [price, setPrice] = useState(0);
   const [wei, setWei] = useState(0);
-
-  const TOTAL_ITEMS = 9999;
 
   const increaseCount = () => {
     if (count >= 10) {
@@ -111,7 +105,7 @@ const MintNowModal = () => {
           if (err) {
             try {
               const errorStringArray = err.toString().split('"');
-              const message = errorStringArray[errorStringArray.length - 2].split(":")[1].trim();
+              // const message = errorStringArray[errorStringArray.length - 2].split(":")[1].trim();
 
               // resolve(ERR_MSG[message] || '민팅에 실패했습니다.');
               resolve("민팅에 실패했습니다.");
@@ -126,8 +120,7 @@ const MintNowModal = () => {
 
     const failureMint = async (error) => {
       try {
-        const reason = await getRevertReason(error.receipt.transactionHash);
-
+        // const reason = await getRevertReason(error.receipt.transactionHash);
         // setModals({
         //   ...modals,
         //   errMsg: reason,
@@ -164,11 +157,11 @@ const MintNowModal = () => {
     try {
       const [
         ,
-        mintIndexForSale,
-        mintLimitPerSale,
-        mintLimitPerWallet,
-        startBlockNum,
-        maxSaleAmount,
+        // mintIndexForSale,
+        // mintLimitPerSale,
+        // mintLimitPerWallet,
+        // startBlockNum,
+        // maxSaleAmount,
         mintPrice,
       ] = await smartContract.methods.mintingInformation().call();
       setWei(mintPrice);

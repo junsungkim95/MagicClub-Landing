@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { ModalContext } from "./ModalContext";
-import { connectWallet, connectWalletLocaly, isWalletConnected , disconnectWallet } from '../config';
+import {
+  connectWallet,
+  connectWalletLocaly,
+  isWalletConnected,
+  disconnectWallet,
+  isMetaMaskInstalled,
+} from "../config";
 
 const ContextProvider = ({ children }) => {
   const [visibility, setVisibility] = useState(false);
@@ -8,8 +14,7 @@ const ContextProvider = ({ children }) => {
   const [shareModalVisibility, setShareModalvisibility] = useState(false);
   const [metamaskModalVisibility, setMetamaskModalVisibility] = useState(false);
   const [connectWalletModal, setConnectWalletModal] = useState(false);
-  const [account, setAccount] = useState('');
-
+  const [account, setAccount] = useState("");
 
   const mintModalHandle = () => {
     setVisibility(!visibility);
@@ -27,7 +32,10 @@ const ContextProvider = ({ children }) => {
   };
 
   const connectWalletModalHanlde = () => {
-    if(!isWalletConnected()){
+    if (!isMetaMaskInstalled()) return metamaskModalHandle();
+
+    if (!isWalletConnected()) {
+      console.log(!connectWalletModal);
       setConnectWalletModal(!connectWalletModal);
     }
   };
@@ -35,22 +43,22 @@ const ContextProvider = ({ children }) => {
   const connectWalletHandle = async () => {
     const accounts = await connectWallet();
     setAccount(accounts);
-    if(!isWalletConnected()){
+    if (!isWalletConnected()) {
       connectWalletLocaly();
     }
     setModalvisibility(!walletModalvisibility);
   };
 
   const isWalletAlreadyConnected = async () => {
-    if(isWalletConnected()){
+    if (isWalletConnected() && isMetaMaskInstalled()) {
       const accounts = await connectWallet();
       setAccount(accounts);
     }
   };
 
   const disconnectWalletFromApp = () => {
-    disconnectWallet()
-    setAccount('');
+    disconnectWallet();
+    setAccount("");
   };
 
   return (
@@ -69,7 +77,7 @@ const ContextProvider = ({ children }) => {
         isWalletAlreadyConnected,
         disconnectWalletFromApp,
         connectWalletModalHanlde,
-        connectWalletModal
+        connectWalletModal,
       }}
     >
       {children}
