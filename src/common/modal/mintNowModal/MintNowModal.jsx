@@ -40,21 +40,21 @@ const smartContract = new Web3EthContract(Abi, ABI_CONTRACT_ADDRESS);
 
 const mintingPeriod = [
   {
-    blockStart: 7794915,
-    blockEnd: 7795035,
+    blockStart: 7795035,
+    blockEnd: 7795155,
     name: "OG",
     perWallet: "4",
     perTransaction: 4,
   },
   {
-    blockStart: 7795035,
-    blockEnd: 7795155,
+    blockStart: 7795155,
+    blockEnd: 7795275,
     name: "WHITELIST",
     perWallet: "Unlimited",
   },
   {
-    blockStart: 7795155,
-    blockEnd: 7795275,
+    blockStart: 7795275,
+    blockEnd: 7795395,
     name: "PUBLIC",
     perWallet: "Unlimited",
     perTransaction: 4,
