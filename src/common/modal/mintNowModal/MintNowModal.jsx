@@ -12,27 +12,32 @@ import { useCallback } from "react";
 import { ogAddress } from "./ogAddress";
 import { whitelistAddress } from "./whitelistAddress";
 import { getMerkleProof } from "./whitelist";
+import { useRecoilState } from "recoil";
+import { langState } from "../../../Atoms/langState";
 
 const Web3EthContract = require("web3-eth-contract");
 const NETWORK = process.env.REACT_APP_NETWORK;
 const ABI_CONTRACT_ADDRESS =
-  NETWORK === "mainnet" ? process.env.REACT_APP_MINT_CONTRACT : process.env.REACT_APP_TEST_CONTRACT;
+  NETWORK === "mainnet"
+    ? process.env.REACT_APP_MINT_CONTRACT
+    : process.env.REACT_APP_TEST_CONTRACT;
 
 const ERR_MSG = {
   "The public sale is not enabled!":
     "아직 퍼블릭 민팅이 활성화되지 않았습니다.\n잠시만 기다려주세요.",
   "Bot is not allowed": "봇 구매는 허용되지 않습니다.",
   "Not yet started": "민팅 가능한 블록 높이에 도달하지 못했습니다.",
-  "Too many requests or zero request": "허용되지 않은 민팅 개수를 요청했습니다.",
+  "Too many requests or zero request":
+    "허용되지 않은 민팅 개수를 요청했습니다.",
   "Not enough ETH": "금액이 정확하지 않습니다",
   "Exceed max amount": "최대 판매 개수를 초과했습니다.",
   "Exceed max amount per person": "구매 가능 개수를 초과했습니다.",
   "The whitelist sale is not enabled!":
     "아직 화이트리스트 민팅이 활성화되지 않았습니다.\n잠시만 기다려주세요.",
   "Invalid proof": "허용되지 않은 지갑 주소입니다.",
-  "execution reverted: Address already claimed!": "이미 구매한 지갑 주소입니다.",
+  "execution reverted: Address already claimed!":
+    "이미 구매한 지갑 주소입니다.",
 };
-
 const web3 = new Web3(window.ethereum);
 Web3EthContract.setProvider(window.ethereum);
 
@@ -68,6 +73,7 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
   const [price, setPrice] = useState(0);
   const [wei, setWei] = useState(0);
   const [saleAmount, setSaleAmount] = useState(0);
+  const [lang] = useRecoilState(langState);
 
   const getCurrentBlock = async () => await web3.eth.getBlockNumber();
 
@@ -129,14 +135,22 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
 
           if (!proof) {
             setLoading(false);
-            return alert("화이트리스트 대상자가 아닙니다.");
+            return alert(
+              lang === "Eng"
+                ? "You are not an whitelist."
+                : "화이트리스트 대상자가 아닙니다."
+            );
           }
           resolve(proof);
         })
         .catch((error) => {
           console.log(error);
           setLoading(false);
-          throw new Error("화이트리스트 대상자 정보를 불러오지 못했습니다.");
+          throw new Error(
+            lang === "Eng"
+              ? "Failed to retrieve from whitelist"
+              : "화이트리스트 대상자 정보를 불러오지 못했습니다."
+          );
         });
     });
   };
@@ -172,15 +186,27 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
           if (err) {
             try {
               const errorStringArray = err.toString().split('"');
-              const message = errorStringArray[errorStringArray.length - 2].split(":")[1].trim();
+              const message = errorStringArray[errorStringArray.length - 2]
+                .split(":")[1]
+                .trim();
 
-              resolve(ERR_MSG[message] || "민팅에 실패했습니다.");
-              resolve("민팅에 실패했습니다.");
+              resolve(
+                lang === "Eng"
+                  ? message
+                  : ERR_MSG[message] || lang === "Eng"
+                  ? "Minting failed"
+                  : "민팅에 실패했습니다."
+              );
+              resolve(
+                lang === "Eng" ? "Minting failed" : "민팅에 실패했습니다."
+              );
             } catch (e) {
-              resolve("민팅에 실패했습니다.");
+              resolve(
+                lang === "Eng" ? "Minting failed" : "민팅에 실패했습니다."
+              );
             }
           }
-          resolve("민팅에 실패했습니다.");
+          resolve(lang === "Eng" ? "Minting failed" : "민팅에 실패했습니다.");
         });
       });
     }
@@ -192,14 +218,16 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
         alert(reason);
       } catch (e) {
         console.log(e);
-        alert("민팅에 실패하였습니다.");
+        alert(lang === "Eng" ? "Minting failed" : "민팅에 실패하였습니다.");
       }
       setLoading(false);
     };
 
     switch (status) {
       case "OG": {
-        const competitionMerkleProof = await checkCompetitionWhitelist(ogAddress);
+        const competitionMerkleProof = await checkCompetitionWhitelist(
+          ogAddress
+        );
 
         await smartContract.methods
           .competitionWhitelistMint(count, competitionMerkleProof)
@@ -209,7 +237,9 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
         break;
       }
       case "WHITELIST": {
-        const competitionMerkleProof = await checkCompetitionWhitelist(whitelistAddress);
+        const competitionMerkleProof = await checkCompetitionWhitelist(
+          whitelistAddress
+        );
         await smartContract.methods
           .competitionWhitelistMint(count, competitionMerkleProof)
           .send(sendObj)
@@ -226,7 +256,11 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
         break;
 
       default:
-        alert(`민팅 기간이 아닙니다.\n기간에 맞춰 민팅을 진행해주세요.`);
+        alert(
+          lang === "Eng"
+            ? `It's not minting period.\nTry it again later.`
+            : `민팅 기간이 아닙니다.\n기간에 맞춰 민팅을 진행해주세요.`
+        );
         setLoading(false);
         break;
     }
@@ -335,7 +369,12 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
                     <h5>Quantity</h5>
                     <div className="mint_quantity_sect">
                       <button onClick={decreaseCount}>-</button>
-                      <input type="text" id="quantity" value={count} onChange={() => {}} />
+                      <input
+                        type="text"
+                        id="quantity"
+                        value={count}
+                        onChange={() => {}}
+                      />
                       <button onClick={increaseCount}>+</button>
                     </div>
                     <h5>
@@ -347,7 +386,11 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
               {message && <p>{message}</p>}
 
               <div className="modal_mint_btn">
-                <Button lg variant="mint" onClick={loading ? () => {} : mintNow}>
+                <Button
+                  lg
+                  variant="mint"
+                  onClick={loading ? () => {} : mintNow}
+                >
                   {loading ? (
                     <svg
                       width="20"
