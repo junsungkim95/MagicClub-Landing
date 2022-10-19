@@ -131,8 +131,6 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
         .then((rootHash) => {
           const proof = getMerkleProof(rootHash, account[0], whitelist);
 
-          console.log("proof:", rootHash, proof);
-
           if (!proof) {
             setLoading(false);
             return alert("화이트리스트 대상자가 아닙니다.");
@@ -179,8 +177,6 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
             try {
               const errorStringArray = err.toString().split('"');
               const message = errorStringArray[errorStringArray.length - 2].split(":")[1].trim();
-
-              console.log(message);
 
               resolve(ERR_MSG[message] || "민팅에 실패했습니다.");
               resolve("민팅에 실패했습니다.");
@@ -343,7 +339,7 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
                     <h5>Quantity</h5>
                     <div className="mint_quantity_sect">
                       <button onClick={decreaseCount}>-</button>
-                      <input type="text" id="quantity" value={count} />
+                      <input type="text" id="quantity" value={count} onChange={() => {}} />
                       <button onClick={increaseCount}>+</button>
                     </div>
                     <h5>

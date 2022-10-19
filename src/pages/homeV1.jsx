@@ -42,7 +42,7 @@ const HomeV1 = () => {
               : process.env.REACT_APP_TEST_CONTRACT;
           const smartContract = new Web3EthContract(Abi, ABI_CONTRACT_ADDRESS);
 
-          setTotalSupply(smartContract.methods.totalSupply().call());
+          setTotalSupply(await smartContract.methods.totalSupply().call());
         } else {
           alert("테스트 네트워크로 변경해주세요");
         }
@@ -51,6 +51,8 @@ const HomeV1 = () => {
 
   useEffect(() => {
     if (!isMetaMaskInstalled()) return;
+
+    getTotalSupply();
   }, [getTotalSupply]);
 
   return (
