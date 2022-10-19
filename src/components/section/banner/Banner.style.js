@@ -1,5 +1,5 @@
-import styled, { keyframes } from "styled-components";
-import sectionBgImage from "../../../assets/images/bg/intro_img.png";
+import styled, { keyframes } from 'styled-components';
+import sectionBgImage from '../../../assets/images/bg/intro_img.png';
 
 const rotate = keyframes`
 from {
@@ -45,7 +45,7 @@ const BannerV1Wrapper = styled.section`
     bottom: 10%;
 
     h2 {
-      font-family: "NotoSansJP-Bold";
+      font-family: 'NotoSansJP-Bold';
       font-style: normal;
       font-weight: 400;
       font-size: 40px;
@@ -57,7 +57,7 @@ const BannerV1Wrapper = styled.section`
     }
 
     h3 {
-      font-family: "NotoSansJP-Bold";
+      font-family: 'NotoSansJP-Bold';
       font-style: normal;
       font-weight: 400;
       font-size: 40px;
@@ -78,7 +78,7 @@ const BannerV1Wrapper = styled.section`
       flex-direction: column;
       margin-top: 17px;
       span {
-        font-family: "NotoSansJP-Bold";
+        font-family: 'NotoSansJP-Bold';
         font-size: 18px;
         line-height: 36px;
         font-weight: bold;
@@ -88,7 +88,7 @@ const BannerV1Wrapper = styled.section`
         z-index: 1;
 
         & .highlighted {
-          color: #ffe600;
+          color: #efe705;
         }
       }
     }
@@ -98,8 +98,17 @@ const BannerV1Wrapper = styled.section`
     .magic_club_v1_baner_left {
       left: 8%;
       bottom: 2%;
+      font-weight: bold;
+      text-shadow: 1px 1px #000000;
       h2 {
         margin-bottom: 20px;
+        font-weight: bold;
+        text-shadow: 1px 1px #000000;
+      }
+      h3 {
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-shadow: 1px 1px #000000;
       }
 
       .banner_buttons {

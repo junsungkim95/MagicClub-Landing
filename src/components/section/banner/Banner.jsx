@@ -1,7 +1,7 @@
-import { useModal } from "../../../utils/ModalContext";
-import Counter from "../../../common/counter";
-import Button from "../../../common/button";
-import BannerV1Wrapper from "./Banner.style";
+import { useModal } from '../../../utils/ModalContext';
+import Counter from '../../../common/counter';
+import Button from '../../../common/button';
+import BannerV1Wrapper from './Banner.style';
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { totalMintCount } from "../../../utils/web3mint";
