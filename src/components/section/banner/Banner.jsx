@@ -60,20 +60,19 @@ const Banner = ({ totalSupply }) => {
               </div>
               <div className="coin-info">
                 {lang === "Eng" ? (
-                  <span>MAX 5 NFTS PER WALLET</span>
+                  <span>5 NFTS PER TRANSACTION PER WALLET, MAX 10 PER WALLET DURING OG SALE</span>
                 ) : (
-                  <span>지갑당 NFT 5개 구매 가능</span>
+                  <span>트렌젝션당 NFT 5개 구매 가능, OG 기간 중 지갑당 최대 10개 구매가능</span>
                 )}
                 {lang === "Eng" ? (
                   <span>
-                    Price and Minting Date: <span className="highlighted">TBA</span>
+                    PRICE AND MINTING DATE: <span className="highlighted">0.06 ETH, OCT 19TH 11:00 UTC</span>
                   </span>
                 ) : (
                   <span>
-                    가격 및 민팅날짜: <span className="highlighted">추후 공지 예정</span>
+                    가격 및 민팅날짜: <span className="highlighted">0.06 ETH, 10월 19일 11:00 UTC</span>
                   </span>
                 )}
-                {/* {vdView === true ? <p>true</p>: <p>false</p>} */}
               </div>
             </div>
           </div>
