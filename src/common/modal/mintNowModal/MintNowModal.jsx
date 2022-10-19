@@ -80,8 +80,8 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
       setMessage("Maximum minting amount exceeding!");
     } else {
       setMessage("");
+      setCount(count + 1);
     }
-    setCount(count + 1);
   };
 
   const decreaseCount = () => {
@@ -89,8 +89,8 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
       setMessage("Minimum minting amount 1.");
     } else {
       setMessage("");
+      setCount(count - 1);
     }
-    setCount(count - 1);
   };
 
   const mintNow = async () => {
@@ -119,8 +119,8 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
       setMessage("Minimum minting amount 1.");
     } else {
       setMessage("");
+      setCount(val);
     }
-    setCount(val);
   };
 
   const checkCompetitionWhitelist = (whitelist) => {
@@ -341,7 +341,7 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
                     <h5>Quantity</h5>
                     <div className="mint_quantity_sect">
                       <button onClick={decreaseCount}>-</button>
-                      <input type="text" id="quantity" value={count} onChange={onChangeQuantity} />
+                      <input type="text" id="quantity" value={count} />
                       <button onClick={increaseCount}>+</button>
                     </div>
                     <h5>
