@@ -66,11 +66,11 @@ const Banner = ({ totalSupply }) => {
                 )}
                 {lang === "Eng" ? (
                   <span>
-                    PRICE AND MINTING DATE: <span className="highlighted">0.06 ETH, OCT 19TH 11:00 UTC</span>
+                    PRICE AND MINTING DATE: <span className="highlighted">0.08 ETH, OCT 19TH 14:30 UTC</span>
                   </span>
                 ) : (
                   <span>
-                    가격 및 민팅날짜: <span className="highlighted">0.06 ETH, 10월 19일 11:00 UTC</span>
+                    가격 및 민팅날짜: <span className="highlighted">0.08 ETH, 10월 19일 14:30 UTC</span>
                   </span>
                 )}
               </div>
