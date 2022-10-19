@@ -31,9 +31,8 @@ const HomeV1 = () => {
       })
       .then(async (networkId) => {
         if (
-          (process.env.REACT_APP_NETWORK === "mainnet" && +networkId === 1)(
-            process.env.REACT_APP_NETWORK === "goerli" && +networkId === 5
-          )
+          (process.env.REACT_APP_NETWORK === "mainnet" && +networkId === 1) ||
+          (process.env.REACT_APP_NETWORK === "goerli" && +networkId === 5)
         ) {
           Web3EthContract.setProvider(window.ethereum);
           const NETWORK = process.env.REACT_APP_NETWORK;

@@ -15,9 +15,17 @@ import VideoBG from "../../../assets/images/bg/Video_BG_comp.mp4";
 import { isMetaMaskInstalled } from "../../../config";
 
 const Banner = ({ totalSupply }) => {
-  const { metamaskModalHandle, mintModalHandle, connectWalletModalHanlde, account } = useModal();
+  const { mintModalHandle, metamaskModalHandle, walletModalHandle, account } = useModal();
   const [lang] = useRecoilState(langState);
   const [vdView, setVdView] = useState("hidden");
+
+  const handleWalletConnect = async () => {
+    if (!isMetaMaskInstalled()) {
+      return metamaskModalHandle();
+    }
+
+    walletModalHandle();
+  };
 
   // useEffect(() =>{
   //   const calculateRemainingItems = async () => {
@@ -46,11 +54,7 @@ const Banner = ({ totalSupply }) => {
                 / 9000 Minted
               </h3>
               <div className="banner_buttons">
-                <Button
-                  lg
-                  variant="mint"
-                  onClick={account ? mintModalHandle : connectWalletModalHanlde}
-                >
+                <Button lg variant="mint" onClick={account ? mintModalHandle : handleWalletConnect}>
                   Mint now
                 </Button>
               </div>

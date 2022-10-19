@@ -5,17 +5,16 @@ import hoverShape from "../../../assets/images/icon/hov_shape_L.svg";
 import metamaskIcon from "../../../assets/images/icon/MetaMask.svg";
 
 const ConnectWallet = (props) => {
-  const { connectWalletModalHanlde } = useModal();
+  const { connectWalletHandle } = useModal();
+
   return (
     <>
       <MetamaskModalStyle className="modal_overlay">
-        <div
-          className="mint_modal_box"
-        >
+        <div className="mint_modal_box">
           <div className="mint_modal_content">
             <div className="modal_header">
               <h2>CONNECT WALLET</h2>
-              <button onClick={() => connectWalletModalHanlde()}>
+              <button onClick={connectWalletHandle}>
                 <FiX />
               </button>
             </div>
@@ -25,7 +24,7 @@ const ConnectWallet = (props) => {
                   <img src={metamaskIcon} alt="Meta-mask" />
                   Connect your wallet!
                 </a>
-                </div>
+              </div>
             </div>
 
             <div className="modal_bottom_shape_wrap">

@@ -35,7 +35,6 @@ const ContextProvider = ({ children }) => {
     if (!isMetaMaskInstalled()) return metamaskModalHandle();
 
     if (!isWalletConnected()) {
-      console.log(!connectWalletModal);
       setConnectWalletModal(!connectWalletModal);
     }
   };

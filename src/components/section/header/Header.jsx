@@ -37,7 +37,7 @@ const Header = () => {
 
   const handleWalletConnect = async () => {
     if (!isMetaMaskInstalled()) {
-      metamaskModalHandle();
+      return metamaskModalHandle();
     }
 
     walletModalHandle();

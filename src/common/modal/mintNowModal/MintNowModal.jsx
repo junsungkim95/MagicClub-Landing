@@ -9,6 +9,9 @@ import { useEffect } from "react";
 import Web3 from "web3";
 import Abi from "./abi.json";
 import { useCallback } from "react";
+import { ogAddress } from "./ogAddress";
+import { whitelistAddress } from "./whitelistAddress";
+import { getMerkleProof } from "./whitelist";
 
 const Web3EthContract = require("web3-eth-contract");
 const NETWORK = process.env.REACT_APP_NETWORK;
@@ -35,9 +38,33 @@ Web3EthContract.setProvider(window.ethereum);
 
 const smartContract = new Web3EthContract(Abi, ABI_CONTRACT_ADDRESS);
 
+const mintingPeriod = [
+  {
+    blockStart: 7794682,
+    blockEnd: 7794802,
+    name: "OG",
+    perWallet: "4",
+    perTransaction: 4,
+  },
+  {
+    blockStart: 7794802,
+    blockEnd: 7794922,
+    name: "WHITELIST",
+    perWallet: "Unlimited",
+  },
+  {
+    blockStart: 7794922,
+    blockEnd: 7794042,
+    name: "PUBLIC",
+    perWallet: "Unlimited",
+    perTransaction: 4,
+  },
+];
+
 const MintNowModal = ({ totalSupply, getTotalSupply }) => {
   const { account } = useModal();
 
+  const [status, setStatus] = useState("");
   const [loading, setLoading] = useState(false);
   const [maxAmount, setMaxAmount] = useState(0);
   const [count, setCount] = useState(1);
@@ -45,6 +72,8 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
   const { mintModalHandle } = useModal();
   const [price, setPrice] = useState(0);
   const [wei, setWei] = useState(0);
+
+  const getCurrentBlock = async () => await web3.eth.getBlockNumber();
 
   const increaseCount = () => {
     if (count >= maxAmount) {
@@ -65,8 +94,8 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
   };
 
   const mintNow = async () => {
+    // if (count >= maxAmount || count < 1) return;
     setLoading(true);
-    if (count >= maxAmount || count < 1) return;
 
     await onMinting();
 
@@ -92,6 +121,30 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
       setMessage("");
     }
     setCount(val);
+  };
+
+  const checkCompetitionWhitelist = (whitelist) => {
+    return new Promise((resolve, reject) => {
+      smartContract.methods
+        .competitionMerkleRoot()
+        .call()
+        .then((rootHash) => {
+          const proof = getMerkleProof(rootHash, account[0], whitelist);
+
+          console.log("proof:", rootHash, proof);
+
+          if (!proof) {
+            setLoading(false);
+            return alert("화이트리스트 대상자가 아닙니다.");
+          }
+          resolve(proof);
+        })
+        .catch((error) => {
+          console.log(error);
+          setLoading(false);
+          throw new Error("화이트리스트 대상자 정보를 불러오지 못했습니다.");
+        });
+    });
   };
 
   const onMinting = async () => {
@@ -149,23 +202,58 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
       }
       setLoading(false);
     };
-    await smartContract.methods
-      .publicMint(count)
-      .send(sendObj)
-      .then(successMint)
-      .catch(failureMint);
 
-    // setModals({
-    //   ...modals,
-    //   isMinting: false,
-    //   mintMsg:
-    //     step === 0
-    //       ? `민팅 기간이 아닙니다.\n기간에 맞춰 민팅을 진행해주세요.`
-    //       : step > 3
-    //       ? '민팅이 모두 종료되었습니다.'
-    //       : `${step}차 민팅이 완료되었습니다.\n${step + 1}차 민팅을 이용해주세요.`,
-    // });
+    switch (status) {
+      case "OG": {
+        const competitionMerkleProof = await checkCompetitionWhitelist(ogAddress);
+
+        await smartContract.methods
+          .competitionWhitelistMint(count, competitionMerkleProof)
+          .send(sendObj)
+          .then(successMint)
+          .catch(failureMint);
+        break;
+      }
+      case "WHITELIST": {
+        const competitionMerkleProof = await checkCompetitionWhitelist(whitelistAddress);
+        await smartContract.methods
+          .competitionWhitelistMint(count, competitionMerkleProof)
+          .send(sendObj)
+          .then(successMint)
+          .catch(failureMint);
+        break;
+      }
+      case "PUBLIC":
+        await smartContract.methods
+          .publicMint(count)
+          .send(sendObj)
+          .then(successMint)
+          .catch(failureMint);
+        break;
+
+      default:
+        alert(`민팅 기간이 아닙니다.\n기간에 맞춰 민팅을 진행해주세요.`);
+        setLoading(false);
+        break;
+    }
   };
+
+  const getStatus = useCallback(async () => {
+    // let step = 0;
+    const currentBlock = await getCurrentBlock();
+
+    for (const v of mintingPeriod) {
+      // if (currentBlock > v.blockStart && currentBlock > v.blockEnd) {
+      // step += 1;
+
+      // setStep(step);
+      // }
+      if (currentBlock > v.blockStart && currentBlock <= v.blockEnd) {
+        setStatus(v.name);
+        return v.name;
+      }
+    }
+  }, []);
 
   const getInformation = useCallback(async () => {
     try {
@@ -200,23 +288,27 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
 
   useEffect(() => {
     let timer = null;
-
     window.ethereum
       .request({
         method: "net_version",
       })
       .then(async (networkId) => {
         if (
-          (process.env.REACT_APP_NETWORK === "mainnet" && +networkId === 1)(
-            process.env.REACT_APP_NETWORK === "goerli" && +networkId === 5
-          )
+          (process.env.REACT_APP_NETWORK === "mainnet" && +networkId === 1) ||
+          (process.env.REACT_APP_NETWORK === "goerli" && +networkId === 5)
         ) {
           getInformation();
+          getStatus();
+
+          timer = setInterval(() => {
+            getStatus();
+            getInformation();
+          }, 5000);
         }
       });
 
     return () => clearInterval(timer);
-  }, [getInformation]);
+  }, [getInformation, getStatus]);
 
   return (
     <>
