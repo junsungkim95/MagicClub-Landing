@@ -60,9 +60,9 @@ const Banner = ({ totalSupply }) => {
               </div>
               <div className="coin-info">
                 {lang === "Eng" ? (
-                  <span>5 NFTS PER TRANSACTION</span>
+                  <span>5 NFTS PER TRANSACTION NO LIMIT PER WALLET</span>
                 ) : (
-                  <span>트렌젝션당 NFT 5개 구매 가능</span>
+                  <span>트렌젝션당 NFT 5개 구매 가능, 지갑당 제한없음</span>
                 )}
                 {lang === "Eng" ? (
                   <span>
