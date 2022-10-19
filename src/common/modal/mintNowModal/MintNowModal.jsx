@@ -173,7 +173,8 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
       mintModalHandle();
       await getTotalSupply();
       setLoading(false);
-      alert("민팅에 성공했습니다.");
+      alert(lang === "Eng"
+      ? "Mint success.":  "민팅에 성공했습니다.");
     };
 
     async function getRevertReason(txHash) {
