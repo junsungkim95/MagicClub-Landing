@@ -40,21 +40,21 @@ const smartContract = new Web3EthContract(Abi, ABI_CONTRACT_ADDRESS);
 
 const mintingPeriod = [
   {
-    blockStart: 7795035,
-    blockEnd: 7795155,
+    blockStart: 15781724,
+    blockEnd: 15782774,
     name: "OG",
     perWallet: "4",
     perTransaction: 4,
   },
   {
-    blockStart: 7795155,
-    blockEnd: 7795275,
+    blockStart: 15782774,
+    blockEnd: 15882774,
     name: "WHITELIST",
     perWallet: "Unlimited",
   },
   {
-    blockStart: 7795275,
-    blockEnd: 7795395,
+    blockStart: 15882774,
+    blockEnd: 15982774,
     name: "PUBLIC",
     perWallet: "Unlimited",
     perTransaction: 4,
@@ -72,6 +72,7 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
   const { mintModalHandle } = useModal();
   const [price, setPrice] = useState(0);
   const [wei, setWei] = useState(0);
+  const [saleAmount, setSaleAmount] = useState(0);
 
   const getCurrentBlock = async () => await web3.eth.getBlockNumber();
 
