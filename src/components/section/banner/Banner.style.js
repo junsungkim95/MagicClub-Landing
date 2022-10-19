@@ -82,7 +82,7 @@ const BannerV1Wrapper = styled.section`
         font-size: 18px;
         line-height: 36px;
         font-weight: bold;
-        text-shadow: 2px 2px #000000;
+        text-shadow: 1px 1px #000000;
         text-transform: uppercase;
         color: #ffffff;
         z-index: 1;
@@ -100,6 +100,13 @@ const BannerV1Wrapper = styled.section`
       bottom: 2%;
       h2 {
         margin-bottom: 20px;
+        font-weight: bold;
+        text-shadow: 1px 1px #000000;
+      }
+      h3 {
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-shadow: 1px 1px #000000;
       }
 
       .banner_buttons {
