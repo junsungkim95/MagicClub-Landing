@@ -43,21 +43,16 @@ const mintingPeriod = [
     blockStart: 15781724,
     blockEnd: 15782774,
     name: "OG",
-    perWallet: "4",
-    perTransaction: 4,
   },
   {
     blockStart: 15782774,
     blockEnd: 15882774,
     name: "WHITELIST",
-    perWallet: "Unlimited",
   },
   {
     blockStart: 15882774,
     blockEnd: 15982774,
     name: "PUBLIC",
-    perWallet: "Unlimited",
-    perTransaction: 4,
   },
 ];
 
