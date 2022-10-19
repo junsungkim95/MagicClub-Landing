@@ -3,7 +3,7 @@ import { useModal } from "../../../utils/ModalContext";
 import { FiX } from "react-icons/fi";
 import Button from "../../button";
 import MintModalStyleWrapper from "./MintNow.style";
-import mintImg from "../../../assets/images/nft/00maru.png";
+import mintImg from "../../../assets/images/nft/magicclub-logo.gif";
 import hoverShape from "../../../assets/images/icon/hov_shape_L.svg";
 import { useEffect } from "react";
 import Web3 from "web3";
