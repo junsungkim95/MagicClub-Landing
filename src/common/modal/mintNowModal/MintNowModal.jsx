@@ -11,8 +11,9 @@ import Abi from "./abi.json";
 import { useCallback } from "react";
 
 const Web3EthContract = require("web3-eth-contract");
-
-const ABI_CONTRACT_ADDRESS = "0x8e5e575AA13fe81D256a7607a92A479c406E863c";
+const NETWORK = process.env.REACT_APP_NETWORK;
+const ABI_CONTRACT_ADDRESS =
+  NETWORK === "mainnet" ? process.env.REACT_APP_MINT_CONTRACT : process.env.REACT_APP_TEST_CONTRACT;
 
 const ERR_MSG = {
   "The public sale is not enabled!":
@@ -205,14 +206,12 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
         method: "net_version",
       })
       .then(async (networkId) => {
-        if (+networkId === 1 || +networkId === 5) {
+        if (
+          (process.env.REACT_APP_NETWORK === "mainnet" && +networkId === 1)(
+            process.env.REACT_APP_NETWORK === "goerli" && +networkId === 5
+          )
+        ) {
           getInformation();
-
-          // timer = setInterval(() => {
-          //   // getStatus();
-          //   // getBlockNumber();
-          //   getInformation();
-          // }, 5000);
         }
       });
 
