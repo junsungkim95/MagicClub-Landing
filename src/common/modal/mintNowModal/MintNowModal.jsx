@@ -56,7 +56,7 @@ const mintingPeriod = [
   },
   {
     blockStart: 15882774,
-    blockEnd: 15982774,
+    blockEnd: 15888924,
     name: "PUBLIC",
   },
 ];
