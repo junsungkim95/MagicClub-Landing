@@ -98,6 +98,8 @@ const BannerV1Wrapper = styled.section`
     .magic_club_v1_baner_left {
       left: 8%;
       bottom: 2%;
+      font-weight: bold;
+      text-shadow: 1px 1px #000000;
       h2 {
         margin-bottom: 20px;
         font-weight: bold;
