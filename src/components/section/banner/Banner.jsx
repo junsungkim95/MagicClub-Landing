@@ -60,9 +60,9 @@ const Banner = ({ totalSupply }) => {
               </div>
               <div className="coin-info">
                 {lang === "Eng" ? (
-                  <span>5 NFTS PER TRANSACTION, PER WALLET MAX 10 PER WALLET DURING OG SALE</span>
+                  <span>5 NFTS PER TRANSACTION</span>
                 ) : (
-                  <span>트렌젝션당 NFT 5개 구매 가능, OG 기간 중 지갑당 최대 10개 구매가능</span>
+                  <span>트렌젝션당 NFT 5개 구매 가능</span>
                 )}
                 {lang === "Eng" ? (
                   <span>
