@@ -55,7 +55,7 @@ const mintingPeriod = [
     name: "WHITELIST",
   },
   {
-    blockStart: 15882774,
+    blockStart: 15888024,
     blockEnd: 15888924,
     name: "PUBLIC",
   },
