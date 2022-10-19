@@ -82,12 +82,13 @@ const BannerV1Wrapper = styled.section`
         font-size: 18px;
         line-height: 36px;
         font-weight: bold;
+        text-shadow: 2px 2px #000000;
         text-transform: uppercase;
-        color: #000000;
+        color: #ffffff;
         z-index: 1;
 
         & .highlighted {
-          color: #ffe600;
+          color: #efe705;
         }
       }
     }
