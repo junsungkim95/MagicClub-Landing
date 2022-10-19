@@ -30,7 +30,7 @@ const ERR_MSG = {
   "The whitelist sale is not enabled!":
     "아직 화이트리스트 민팅이 활성화되지 않았습니다.\n잠시만 기다려주세요.",
   "Invalid proof": "허용되지 않은 지갑 주소입니다.",
-  "Fail with error 'Address already claimed!'": "이미 구매한 지갑 주소입니다.",
+  "execution reverted: Address already claimed!": "이미 구매한 지갑 주소입니다.",
 };
 
 const web3 = new Web3(window.ethereum);
@@ -40,21 +40,21 @@ const smartContract = new Web3EthContract(Abi, ABI_CONTRACT_ADDRESS);
 
 const mintingPeriod = [
   {
-    blockStart: 7794682,
-    blockEnd: 7794802,
+    blockStart: 7794915,
+    blockEnd: 7795035,
     name: "OG",
     perWallet: "4",
     perTransaction: 4,
   },
   {
-    blockStart: 7794802,
-    blockEnd: 7794922,
+    blockStart: 7795035,
+    blockEnd: 7795155,
     name: "WHITELIST",
     perWallet: "Unlimited",
   },
   {
-    blockStart: 7794922,
-    blockEnd: 7794042,
+    blockStart: 7795155,
+    blockEnd: 7795275,
     name: "PUBLIC",
     perWallet: "Unlimited",
     perTransaction: 4,
@@ -179,6 +179,8 @@ const MintNowModal = ({ totalSupply, getTotalSupply }) => {
             try {
               const errorStringArray = err.toString().split('"');
               const message = errorStringArray[errorStringArray.length - 2].split(":")[1].trim();
+
+              console.log(message);
 
               resolve(ERR_MSG[message] || "민팅에 실패했습니다.");
               resolve("민팅에 실패했습니다.");
