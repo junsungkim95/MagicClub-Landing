@@ -87,6 +87,10 @@ const CTAStyleWrapper = styled.section`
     font-size: 50px;
   }
 
+  .nft_rarity {
+    width: 100%;
+  }
+
   .magic_club_v1_cta_content {
     position: relative;
     z-index: 1;
