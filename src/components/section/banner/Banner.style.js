@@ -73,6 +73,10 @@ const BannerV1Wrapper = styled.section`
       margin-top: 38px;
     }
 
+    .banner_buttons_deleted {
+      height: 60px;
+    }
+
     .coin-info {
       display: flex;
       flex-direction: column;
@@ -91,6 +95,10 @@ const BannerV1Wrapper = styled.section`
           color: #efe705;
         }
       }
+    }
+
+    .coin-info_deleted {
+      height: 60px;
     }
   }
 

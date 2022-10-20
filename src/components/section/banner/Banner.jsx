@@ -54,12 +54,13 @@ const Banner = ({ totalSupply }) => {
                 / 9000 Minted
               </h3>
               <div className="banner_buttons">
-                <Button lg variant="mint" onClick={account ? mintModalHandle : handleWalletConnect}>
+                {/* <Button lg variant="mint" onClick={account ? mintModalHandle : handleWalletConnect}>
                   Mint now
-                </Button>
+                </Button> */}
+                <div className='banner_buttons_deleted'></div>
               </div>
               <div className="coin-info">
-                {lang === "Eng" ? (
+                {/* {lang === "Eng" ? (
                   <span>5 NFTS PER TRANSACTION NO LIMIT PER WALLET</span>
                 ) : (
                   <span>트렌젝션당 NFT 5개 구매 가능, 지갑당 제한없음</span>
@@ -72,7 +73,8 @@ const Banner = ({ totalSupply }) => {
                   <span>
                     가격 및 민팅날짜: <span className="highlighted">0.08 ETH, 10월 19일 14:30 UTC</span>
                   </span>
-                )}
+                )} */}
+                <div className='coin-info_deleted'></div>
               </div>
             </div>
           </div>
