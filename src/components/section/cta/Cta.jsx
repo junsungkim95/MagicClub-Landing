@@ -13,11 +13,11 @@ const CTA = () => {
   const [lang] = useRecoilState(langState);
   return (
     <CTAStyleWrapper>
-      {lang === "Eng" ? (
+      {/* {lang === "Eng" ? (
         <img className="nft_rarity" src={NFT_RARITY_ENG} alt="nft_rarity" />
       ) : (
         <img className="nft_rarity" src={NFT_RARITY_KOR} alt="nft_rarity" />
-      )}
+      )} */}
       {/* <div className="container">
         <SectionTitle
           className="magic_club_title_section text-center cta-title"

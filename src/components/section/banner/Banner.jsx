@@ -43,7 +43,7 @@ const Banner = ({ totalSupply }) => {
         <div className="row">
           <div className="col-lg-6">
             <div className="magic_club_v1_baner_left">
-              <h2>
+              {/* <h2>
                 Magic Club <br />
                 NFT collections
               </h2>
@@ -52,7 +52,7 @@ const Banner = ({ totalSupply }) => {
                   <Counter end={totalSupply} duration={0.5} />
                 </span>{" "}
                 / 9000 Minted
-              </h3>
+              </h3> */}
               <div className="banner_buttons">
                 {/* <Button lg variant="mint" onClick={account ? mintModalHandle : handleWalletConnect}>
                   Mint now
